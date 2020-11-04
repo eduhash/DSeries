@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* Noto Sans */
+@font-face {
+	font-family: 'notokr';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/notokr-light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/notokr-light.woff') format('woff'),
+		url('../fonts/notokr-light.ttf') format('truetype'),
+		url('../fonts/notokr-light.svg#notokr-light') format('svg');
+}
+@font-face {
+	font-family: 'notokr';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/notokr-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/notokr-regular.woff') format('woff'),
+		url('../fonts/notokr-regular.ttf') format('truetype'),
+		url('../fonts/notokr-regular.svg#notokr-regular') format('svg');
+}
+@font-face {
+	font-family: 'notokr';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/notokr-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/notokr-bold.woff') format('woff'),
+		url('../fonts/notokr-bold.ttf') format('truetype'),
+		url('../fonts/notokr-bold.svg#notokr-bold') format('svg');
+}
+/* Roboto */
+@font-face {
+	font-family:'Roboto';
+	src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Regular.woff') format('woff'),
+		url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight:500;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'Roboto';
+	src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Bold.woff') format('woff'),
+		url('../fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight:600;
+	font-style:normal;
+}
+
+html{font-size:62.5%; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+html, body {height:100%;}
+body {padding:0; margin:0; font-family:'Roboto', 'notokr', AppleGothic, sans-serif; font-size:14px; font-size:1.4rem; line-height:140%; color:#2e3040; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust:100%; letter-spacing:-0.28px;}
+
+/* .dp-wrap article, .dp-wrap aside, .dp-wrap details, .dp-wrap figcaption, .dp-wrap figure, .dp-wrap footer, .dp-wrap header, .dp-wrap hgroup, .dp-wrap main, .dp-wrap nav, .dp-wrap section, .dp-wrap summary {display: block;} */
+
+.dp-wrap fieldset {display:block; margin:0; padding:0; border:0;}
+.dp-wrap form {margin:0; padding:0;}
+
+.dp-wrap a {text-decoration:none; color:inherit;}
+.dp-wrap img {border:0; vertical-align:top;}
+.dp-wrap em, .dp-wrap address {font-style:normal;}
+.dp-wrap table {width:100%; max-width:100%; border-collapse:collapse;}
+.dp-wrap caption {overflow:hidden; visibility:hidden; position:absolute; width:0; height:0; font-size:0;}
+
+.dp-hidden {position:absolute; top:-9999em; left:-9999em; width:0; height:0; font-size:0; text-indent:-9999em;}
+
+.dp-wrap h1, .dp-wrap h2, .dp-wrap h3, .dp-wrap h4, .dp-wrap h5, .dp-wrap h6, .dp-wrap p {margin:0;}
+.dp-wrap ul, .dp-wrap dl {padding:0; margin:0; list-style:none;}
+
+.dp-wrap input:-webkit-autofill {
+	background:#fff;
+  -webkit-box-shadow: 0 0 0 100px #fff inset;
+  -moz-box-shadow: 0 0 0 100px #fff inset;
+  box-shadow: 0 0 0 100px #fff inset;
+}

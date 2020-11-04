@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0013)about:internet -->
+<html lang="ko">
+<head>
+<!--[if lt IE 9]>
+  <script src="../assets/js/respond.js"></script>
+  <script src="../assets/js/html5shiv.min.js"></script>
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>fileList</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css"/>
+<script src="../assets/js/jquery-1.11.2.min.js"></script>
+
+<style type="text/css">
+    body {padding:0; margin:0; font-size:0.75em; font-family:dotum, "돋움"; color:#333333;}
+    #header {overflow:hidden; padding:15px 15px 5px;}
+    #header h1 {float:left; padding:0; margin:0; font-size:2.5em; color:#666666; font-family:Arial;}
+    #header .logo {float:right; padding:0; margin:0; width:200px;}
+    #header .logo img {width:100%;}
+    #depth1 ul {display:inline-block; white-space:nowrap; padding:5px 10px; margin:0; list-style:none; background:#eeeeee;}
+    #depth1 ul li {display:inline; padding:0; margin:0 10px;}
+    .stepInfo {clear:both; padding:0; margin:15px 0 5px; text-align:right;}
+    .stepInfo li {display:inline; margin-right:10px; font-size:0.9em;}
+    .stepInfo li span {display:inline-block; width:35px; height:13px; margin-right:3px; vertical-align:top;}
+    .listTbl {width:100%; padding:0; margin:0; border:0; border-bottom:1px solid #e7e7e7; border-collapse:collapse;}
+    .listTbl thead th {height:26px; font-weight:normal; border:1px solid #666666; white-space:nowrap;}
+    .listTbl tbody th {height:24px; padding:0 10px; text-align:left; border:1px solid #e7e7e7; background:#eeeeee;}
+    .listTbl tbody td {height:24px; padding:0 10px; border:1px solid #e7e7e7; border-bottom:0; color:#666666}
+    .listTbl th.depth2 {background:#fceff7; border-left:0;}
+    .listTbl td.depth2 {white-space:nowrap; text-align:left; background:#fceff7; border-top-color:#e7e7e7;}
+    .listTbl th.depth3 {background:#f2fcef;}
+    .listTbl td.depth3 {white-space:nowrap; text-align:left; background:#f2fcef; border-top-color:#e7e7e7;}
+    .listTbl th.depth4 {background:#efeffc;}
+    .listTbl td.depth4 {white-space:nowrap; text-align:left; background:#efeffc; border-top-color:#e7e7e7;}
+    .listTbl th.depth5 {background:#fcfcef;}
+    .listTbl td.depth5 {white-space:nowrap; text-align:left; background:#fcfcef; border-top-color:#e7e7e7;}
+    .listTbl th.depth6 {background:#fff6ec;}
+    .listTbl td.depth6 {white-space:nowrap; text-align:left; background:#fff6ec; border-top-color:#e7e7e7;}
+    .listTbl th.popup {background:#effafc;}
+    .listTbl td.popup {white-space:nowrap; text-align:center; background:#effafc; border-top-color:#e7e7e7;}
+    .listTbl td.link {text-align:center;}
+    .listTbl td.link a {white-space:nowrap;}
+    .listTbl td.psd,
+    .listTbl td.endHtml,
+    .listTbl td.check1,
+    .listTbl td.check2,
+    .listTbl td.end,
+    .listTbl td.name {text-align:center; white-space:nowrap;}
+    .listTbl th.name,
+    .listTbl th.last,
+    .listTbl td.name {border-right:0 !important;}
+    .listTbl tr:hover td {background:#548bcc !important; color:#ffffff;}
+		.step.X,
+		.listTbl tr td.step.X {background:#999999 !important; color:#ffffff !important;}
+		.step.O,
+		.listTbl tr td.step.O {background:#000000 !important; color:#ffffff !important;}
+		.txtC {text-align:center;}
+    #footer {position:fixed; left:0; bottom:0; width:100%;}
+    #footer .goTop {text-align:right;}
+    #footer .goTop a {display:inline-block; padding:1px 3px; text-decoration:none; background:#666666; color:#fff;}
+    #footer .footBg {overflow:hidden; padding:10px 0 10px 10px; background:#eeeeee; border-top:1px solid #666666;}
+    #footer .progress,
+    #footer .nameList {padding:5px 0 0; margin:0;}
+    #footer .progress li,
+    #footer .nameList li {display:inline; padding:0; margin:0 10px 0 0; color:blue;}
+    #footer .nameList {display:block;}
+    #footer .tempMenu {float:right; white-space:nowrap; padding:0; margin:0; list-style:none;}
+    #footer .tempMenu li {display:inline; padding:0; margin:0 10px;}
+    #footer .info {padding:0; margin:0; list-style:none;}
+    #container {padding-bottom:150px;}
+    .ajax,
+    .listTbl tr.ajax td {background:yellow;}
+    ol {padding:0 0 0 20px; margin:10px 0;}
+  </style>
+  <script>
+    $(function(){
+      /*grid: 1Dth, 2Dth, 3Dth, 4Dth, 5Dth, Popup, 화면ID(링크), 완료여부, 날짜, 비고, 담당자  */
+      grid('메인','','','','','','main','X','','','송미선');
+    	grid('','D-PASS','조회결과 없을 때','','','','DPass/dpass01','X','2020/11/03','','송미선');
+      grid('','','조회결과 있을 때','','','','DPass/dpass02','X','2020/11/03','','송미선');
+
+    	var html;
+    	function grid(str1,str2,str3,str4,str5,str6,str7,str8,str9,str10,str11){
+  			html += '<tr>'+
+  					'<td class="depth1"><span>'+str1+'</span></td>'+
+  					'<td class="depth2"><span>'+str2+'</span></td>'+
+  					'<td class="depth3"><span>'+str3+'</span></td>'+
+  					'<td class="depth4"><span>'+str4+'</span></td>'+
+  					'<td class="depth5"><span>'+str5+'</span></td>'+
+  					'<td class="popup txtC"><span>'+str6+'</span></td>'+
+  					'<td><span><a href="../html/'+str7+'.html" target="_blank">'+str7+'</a></span></td>'+
+  					'<td class="endHtml step '+ str8 + ' txtC"><span>'+str8+'</span></td>'+
+  					'<td class="txtC"><span>'+str9+'</span></td>'+
+  					'<td class="txtC"><span>'+str10+'</span></td>'+
+  					'<td class="txtC"><span>'+str11+'</span></td>'+
+  					'</tr>';
+
+  			$('#gridCell').html(html);
+    	}
+
+    });
+  </script>
+</head>
+
+<body>
+	<!-- header -->
+	<div id="header">
+		<h1>WEB PUBLISHING GUIDE - 김코디: D-PASS, MyData</h1>
+		<p class="logo"><img src="logo.png" alt="" /></p>
+		<ul class="stepInfo">
+			<li><span class="step X"></span>진행중</li>
+			<li><span class="step O"></span>완료</li>
+		</ul>
+	</div>
+	<!-- //header -->
+	<div id="list">
+		<table class="page-list listTbl">
+			<thead>
+				<tr>
+					<th scope="col" class="depth1">1 Depth</th>
+					<th scope="col" class="depth2">2 Depth</th>
+					<th scope="col" class="depth3">3 Depth</th>
+					<th scope="col" class="depth4">4 Depth</th>
+					<th scope="col" class="depth5">5 Depth</th>
+					<th scope="col" class="popup txtC">popup</th>
+					<th scope="col">화면ID(링크)</th>
+					<th scope="col">완료여부</th>
+					<th scope="col">날짜</th>
+					<th scope="col">비고</th>
+					<th scope="col" class="name">담당자</th>
+				</tr>
+			</thead>
+			<tbody id="gridCell">
+			</tbody>
+		</table>
+	</div>
+	<!-- footer -->
+	<div id="footer">
+		<div class="goTop"><a href="#header">Top</a></div>
+		<div class="footBg">
+			<ul class="tempMenu">
+				<li><a href="../html/temp/layout.html" target="_blank">LAYOUT</a></li>
+				<li><a href="../html/temp/styleGuide.html" target="_blank">styleGuide</a></li>
+			</ul>
+			<ul class="info">
+				<li>프로젝트명: 김코디 스마트학습진단</li>
+				<li>인코딩: utf-8</li>
+			</ul>
+			<ul class="progress">
+				<li class="numHtml">HTML:<span></span></li>
+				<li class="numTotal">total:<span class="tat" style="color:red;"></span>페이지 중 <span class="end" style="color:red;"></span>페이지 완료</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //footer -->
+
+	<script type="text/javascript">
+    $(function() {
+      var total = $($('.depth2')).length - 1; /* 총 갯수 */
+      $('.numTotal .tat').append(total);
+
+      var endHtml = $($('.endHtml.step.O')).length; /* html 완료 */
+      $('.numHtml span').append(endHtml);
+
+      var aa = endHtml
+      $('.numTotal .end').append(aa);
+
+      var end = $($('.end.step2')).length; /* 완료 */
+      $('.numEnd span').append(end);
+
+    });
+  </script>
+
+</body>
+</html>
