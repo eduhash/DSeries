@@ -102,32 +102,110 @@
           </div>
           <div class="dp-filter02">
             <h3 class="dp-filter-tit">02. 상세조건 선택</h3>
-            <ul>
-              <li>
-                <label for="">
-                  <select name="" id="">
+            <ul class="dp-filter02-list">
+              <li class="dp-col-flex">
+                <label for="dp-filter02-slt01" class="dp-select01">
+                  <select name="dp-filter02-slt01" id="dp-filter02-slt01">
                     <option value="">지역선택</option>
+                    <option value="">지역1</option>
+                    <option value="">지역2</option>
                   </select>
                 </label>
               </li>
-              <li>
-                <label for="">
-                  <select name="" id="">
+              <li class="dp-col-flex">
+                <label for="dp-filter02-slt02" class="dp-select01">
+                  <select name="dp-filter02-slt02" id="dp-filter02-slt02">
                     <option value="">구분선택</option>
+                    <option value="">구분1</option>
+                    <option value="">구분2</option>
                   </select>
                 </label>
               </li>
-              <li>
-                <label for="">
-                  <select name="" id="">
+              <li class="dp-col-flex">
+                <label for="dp-filter02-slt03" class="dp-select01">
+                  <select name="dp-filter02-slt03" id="dp-filter02-slt03">
                     <option value="">직류선택</option>
+                    <option value="">직류1</option>
+                    <option value="">직류2</option>
                   </select>
                 </label>
               </li>
             </ul>
+          </div>
+          <div class="dp-filter03 dp-col-flex">
+            <h3 class="dp-filter-tit">03. 결과확인</h3>
+            <div class="dp-filter03-btn-wrap dp-flex-1 dp-col-flex dp-flex-center">
+              <button class="dp-filter-btn-search">조회하기</button>
+              <button class="dp-filter-btn-reselect">다시 입력하기</button>
+            </div>
+          </div>
+        </div>
+        <div class="dp-filtered-result-wrap dp-col-flex">
+          <div class="dp-filtered-chart-wrap dp-bg-dark-blue dp-no-result dp-col-flex dp-flex-1 dp-flex-center">
+            <div class="dp-row-flex ai-center">
+              <i class="dp-no-result-icon"></i>
+              <i class="dp-no-result-dot-icon"></i>
+              <div class="dp-no-result-description">
+                <p class="dp-no-result-tit">아직 조회 결과가 없습니다. 1~2단계 조건을 선택해주세요.</p>
+                <ul class="dp-no-result-txt-list">
+                  <li>➀ 지금 준비하고 있거나 알고 싶은 직렬을 모두 선택합니다.</li>
+                  <li>➁ 직렬을 선택하면 그에 맞는 지역/구분/직류를 순서대로 선택합니다.</li>
+                  <li>➂ 지역/구분/직류는 선택된 직렬에 따라 그 정보가 다르거나 해당사항이 없을 수 있습니다.</li>
+                  <li>➃ 조건 선택 후 '조회하기'를 누르면 해당 정보가 출력됩니다.</li>
+                  <li>➄ 다른 직렬이나 조건으로 조회하고자 할 경우 '다시 입력하기'를 눌러서 초기화합니다.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dp-untact-lecture-wrap dp-row-flex">
+          <div class="dp-untact-lecture-list-wrap">
+            <h3 class="dp-untact-lecture-tit">합격단축 추천 언택트 강의</h3>
+            <div class="dp-untact-lecture-swiper-wrap">
+              <div class="dp-untact-lecture-swiper swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="slide dp-col-flex">
+                      <a href="javascript:void(0);" class="dp-untact-lecture-link">
+                        <iframe src="https://youtube.com/embed/eDX5Hepdgq8" frameborder="0" width="100%" height="105px"></iframe>
+                      </a>
+                      <p class="dp-untact-lecture-link-tit">강의 제목01</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide dp-col-flex">
+                      <a href="javascript:void(0);" class="dp-untact-lecture-link">
+                        <img src="https://kimcodi.kr/new_images/main/teacher_kjg.png" alt="">
+                        <i class="dp-play-icon">재생 버튼 아이콘</i>
+                      </a>
+                      <p class="dp-untact-lecture-link-tit">강의 제목02</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide dp-col-flex">
+                      <a href="javascript:void(0);" class="dp-untact-lecture-link">
+                        <img src="https://kimcodi.kr/new_images/main/teacher_kjg.png" alt="">
+                        <i class="dp-play-icon">재생 버튼 아이콘</i>
+                      </a>
+                      <p class="dp-untact-lecture-link-tit">강의 제목03</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
 
           </div>
-          <div class="dp-filter03">
+          <div class="dp-untact-lecture-rcmd-wrap">
+            <h3 class="dp-untact-lecture-tit">합격단축 추천 과정</h3>
+            <div class="dp-col-flex">
+              <a href="javascript:void(0);" class="dp-untact-lecture-link">
+                <img src="https://kimcodi.kr/new_images/main/teacher_kjg.png" alt="">
+              </a>
+            </div>
+            <p class="dp-untact-lecture-link-tit">학원과정 이름</p>
 
           </div>
         </div>
@@ -173,5 +251,36 @@
   </div>
 
 </body>
+<script>
+  //슬라이더 swiper.js 플러그인으로 구현(자동재생, 페이저, 버튼)
+  function autoplaySwiper(slider){
+  	setTimeout(function() {
+  		var mySwiper = new Swiper(slider, {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+  			pagination: {
+  				el: '.swiper-pagination',
+  				clickable: true,
+  			},
+  			navigation: {
+  				nextEl: '.swiper-button-next',
+  				prevEl: '.swiper-button-prev',
+  			},
+  			loop : true,
+  			autoplay: {
+  				delay: 5000,
+  			},
+  			autoplayDisableOnInteraction: false,
+  			speed: 400,
+  		});
+  	}, 0);
+  }
+$(function(){
+  if($('.dp-untact-lecture-swiper').length > 0){
+    autoplaySwiper('.dp-untact-lecture-swiper');
+  }
+});
+
+</script>
 
 </html>
