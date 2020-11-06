@@ -3,7 +3,7 @@
   <html lang="ko">
   <head>
     <meta charset="utf-8">
-  	<title>dpass01</title>
+  	<title>dpass02</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
@@ -150,19 +150,10 @@
           </div>
         </div>
         <div class="dp-filtered-result-wrap dp-col-flex">
-          <div class="dp-filtered-chart-wrap dp-bg-dark-blue dp-no-result dp-col-flex dp-flex-1 dp-flex-center">
-            <div class="dp-row-flex ai-center">
-              <i class="dp-no-result-icon"></i>
-              <i class="dp-no-result-dot-icon"></i>
-              <div class="dp-no-result-description">
-                <p class="dp-no-result-tit">아직 조회 결과가 없습니다. 1~2단계 조건을 선택해주세요.</p>
-                <ul class="dp-no-result-txt-list">
-                  <li>➀ 지금 준비하고 있거나 알고 싶은 직렬을 모두 선택합니다.</li>
-                  <li>➁ 직렬을 선택하면 그에 맞는 지역/구분/직류를 순서대로 선택합니다.</li>
-                  <li>➂ 지역/구분/직류는 선택된 직렬에 따라 그 정보가 다르거나 해당사항이 없을 수 있습니다.</li>
-                  <li>➃ 조건 선택 후 '조회하기'를 누르면 해당 정보가 출력됩니다.</li>
-                  <li>➄ 다른 직렬이나 조건으로 조회하고자 할 경우 '다시 입력하기'를 눌러서 초기화합니다.</li>
-                </ul>
+          <div class="dp-filtered-chart-wrap dp-bg-dark-blue dp-col-flex dp-flex-1 dp-flex-center">
+            <div class="dp-chart-area">
+              <div class="dp-chart-container">
+                <div id="dp-rate-chart"></div>
               </div>
             </div>
           </div>
@@ -263,6 +254,136 @@
   </div>
 
 </body>
+<script>
+  Highcharts.chart('dp-rate-chart', {
+     chart: {
+     backgroundColor: 'transparent',
+     zoomType: 'xy'
+   },
+   title: {
+       text: ''
+   },
+   xAxis: [{
+     categories: ['1회','2회','3회','4회','5회','6회','7회','8회','9회','10회',
+           '11회','12회','13회','14회','15회','16회','17회','18회','19회','20회',
+           '21회','22회','23회','24회','25회'], // 진단회차 diagnssCnt
+     crosshair: true,
+     labels: {
+         style: {
+             color: '#fff'
+         }
+     }
+   }],
+     yAxis: [{ // Primary yAxis
+     labels: {
+       format: '{value}',
+       style: {
+         color: 'white'
+       }
+     },
+     title: {
+       text: '',
+       style: {
+         color: Highcharts.getOptions().colors[0]
+       }
+     },
+     opposite: false
+
+   }, { // Secondary yAxis
+     gridLineWidth: 0,
+     title: {
+       text: '',
+       style: {
+         color: Highcharts.getOptions().colors[0]
+       }
+     },
+     labels: {
+       format: '{value}',
+       style: {
+         color: 'Highcharts.getOptions().colors[0]'
+       },
+       enabled:false
+     }
+
+   }, { // Tertiary yAxis
+     gridLineWidth: 0,
+     title: {
+       text: '',
+       style: {
+         color: Highcharts.getOptions().colors[3]
+       }
+     },
+     labels: {
+       format: '{value}',
+       style: {
+         color: Highcharts.getOptions().colors[3]
+       },
+       enabled:false
+     },
+     opposite: true
+   }],
+     legend: {
+     layout: 'horizontal',
+     align: 'right',
+     x: 0,
+     verticalAlign: 'top',
+     y: -10,
+     floating: false,
+     backgroundColor:
+       Highcharts.defaultOptions.legend.backgroundColor || // theme
+       'rgba(255,255,255,0)',
+     itemStyle:{
+       color: '#fff',
+     }
+   },
+   labels: {
+       items: [{
+           /* html: 'Total fruit consumption', */
+           style: {
+               left: '50px',
+               top: '18px',
+               color: ( // theme
+                   Highcharts.defaultOptions.title.style &&
+                   Highcharts.defaultOptions.title.style.color
+               ) || 'black'
+           }
+       }]
+   },
+   series: [{
+       type: 'spline',
+       name: '최단 합격생',
+       color: '#4FF35F',
+       data: [300,350,365,400,380,300,350,365,400,380,300,350,365,400,380],
+      marker: {
+       //enabled: false
+     },
+     tooltip: {
+       valueSuffix: ''
+     }
+   }, {
+       type: 'spline',
+       name: '최장 합격생',
+     color: '#FF8373',
+       data: [150,200,215,250,230,150,200,215,250,230,150,200,215,250,230]
+   }, {
+       type: 'spline',
+       name: '합격생 평균',
+       data: [230,280,295,330,310,230,280,295,330,310,230,280,295,330,310]
+   }, {
+       type: 'column',
+       name: '나의 학습현황',
+      color: 'rgba(255,255,0,0.5)',
+       data: [200,250,265,300,280,200,250,265,300,280,200,250,265,300,280]
+   },
+           ]
+});
+
+</script>
+
+
+
+
+
 <script>
   //슬라이더 swiper.js 플러그인으로 구현(자동재생, 페이저, 버튼)
   function autoplaySwiper(slider){
