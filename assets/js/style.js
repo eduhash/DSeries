@@ -68,6 +68,7 @@ function confirmChkList(chkList, chkBtnOn, btnReset){
 		$('.dp-selectMust').find("select option[value!='']:selected").removeAttr("selected");
 		$('.dp-selectMust').removeClass('checkTrue');
 		$('.dp-chkMust input[type="radio"]:checked').removeAttr("checked");
+		$('.dp-filter01-label').removeClass('checkTrue');
 		turnOffBtn(chkBtnOn);
 	});
 
@@ -83,7 +84,6 @@ function turnOffBtn(chkBtnOn){
 	$(chkBtnOn).removeClass('active').addClass('disabled').attr('disabled', true);
 }
 
-
 // 셀렉트 박스 선택 시 dp-select01 클래스에 checkTrue클래스 추가
 function checkOptionSelected(selectEl){
 	selectEl.on('change focus blur', function(){
@@ -95,14 +95,14 @@ function checkOptionSelected(selectEl){
 	});
 }
 
-
-//diagnosis04.html 학습방법 및 패턴조사 페이지에서 사용자가 학습집중시간대 체크박스 한개라도 선택 시 checkTrue 클래스 추가
+//라디오 버튼 선택 시 checkTrue 클래스 추가
 function checkRadioChecked(chkedRadio){
 	chkedRadio.on('click', function(){
-		if($(this).find(':checked').val().length > 0) {
-			$(this).parents('.dp-chkList').addClass('checkTrue');
+		if($(this).parents('.dp-chkList').find(':checked').length > 0) {
+			$(this).parents('.dp-chkList').find('.dp-filter01-label').removeClass('checkTrue');
+			$(this).parents('.dp-filter01-label').addClass('checkTrue');
 		}else {
-			$(this).parents('.dp-chkList').removeClass('checkTrue');
+			$(this).parents('.dp-filter01-label').removeClass('checkTrue');
 		}
 	});
 }
@@ -154,6 +154,10 @@ $(function(){
 
 	if($('.dp-selectMust').length > 0){
 		checkOptionSelected($('.dp-selectMust select'));
+	}
+
+	if($('.dp-filter01-list').length > 0){
+		checkRadioChecked($('.dp-filter01-list input'));
 	}
 
 	if($('.dp-untact-lecture-swiper').length > 0){

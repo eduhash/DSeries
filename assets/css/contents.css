@@ -42,6 +42,7 @@
 .dp-filter-wrap .dp-filter01-list > li {width:33.33%; box-sizing:border-box;}
 .dp-filter-wrap .dp-filter01-label {position:relative; min-height:68px; margin:4px; border:1px solid #256c9d; border-radius:6px; box-sizing:border-box; cursor:pointer;}
 .dp-filter-wrap .dp-filter01-label:after {content:''; position:absolute; top:10px; left:50%; margin-left:-11px; width:22px; height:15px; background:url('../img/down-arrow.svg') no-repeat center; background-size:100%;}
+.dp-filter-wrap .dp-filter01-label.checkTrue:after {background-image:url('../img/down-arrow-hover.svg'); }
 .dp-filter-wrap .dp-filter01-label input {width:0; height:0; opacity:0;}
 .dp-filter-wrap .dp-filter01-txt {position:absolute; top:0; left:0; width:100%; height:100%; padding:33px 0 10px; transition:0.2s; box-sizing:border-box; border-radius:4px;}
 .dp-filter-wrap .dp-filter01-label input[type="radio"]:checked + .dp-filter01-txt {background:#5064b4;}
