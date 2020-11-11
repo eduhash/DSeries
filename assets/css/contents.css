@@ -32,8 +32,9 @@
 .dp-views-txt-wrap .dp-views-txt02 {padding-top:5px; font-size:20px; font-size:2.0rem; font-weight:bold; color:#fff;}
 .dp-tit-right .dp-views-txt03 {margin-top:20px; font-size:14px; font-size:1.4rem; color:#a8acaf; line-height:140%;}
 
-.dp-filter-wrap {display:flex; flex-direction:row; margin-top:50px;}
-.dp-filter-wrap .dp-filter-tit {padding:10px 0; margin-bottom:20px; font-size:18px; font-size:1.8rem; font-weight:normal;}
+.dp-filter-wrap {display:flex; flex-direction:row; margin-top:55px;}
+.dp-filter-wrap .dp-filter-tit {padding:10px 0; margin-bottom:20px; font-size:18px; font-size:1.8rem; font-weight:normal; color:#d2d3d5;}
+.dp-filter02 .dp-filter-tit, .dp-filter03 .dp-filter-tit {padding-left:40px;}
 .dp-filter-wrap .dp-filter01 {flex:4;}
 .dp-filter-wrap .dp-filter02 {flex:2.6;}
 .dp-filter-wrap .dp-filter03 {flex:2.4;}
@@ -67,13 +68,13 @@
 .dp-filter-wrap .dp-filter-btn-reselect:hover:before {transform:rotate(45deg);}
 
 .dp-filtered-chart-wrap {margin-top:65px; min-height:332px; border-radius:15px; box-sizing:border-box;}
-.dp-filtered-chart-wrap.dp-no-result {padding:84px 75px;}
-.dp-no-result-icon {margin-right:20px; width:150px; height:150px; background:url('../img/fontawesome/edit-regular.svg') no-repeat center; background-size:150px;}
+.dp-filtered-chart-wrap .dp-no-result {display:flex; flex-direction:row; align-items:center; padding:84px 75px;}
+.dp-no-result-icon {margin-right:20px; width:130px; height:130px; background:url('../img/fontawesome/search-engine.svg') no-repeat center; background-size:100%;}
 .dp-no-result-dot-icon {position:relative; width:18px; height:18px; margin:0 34px; background:#4f5f82; border-radius:50%; box-sizing:border-box;}
 .dp-no-result-dot-icon:before, .dp-no-result-dot-icon:after {content:''; position:absolute; width:18px; height:18px; background:#4f5f82; border-radius:50%; box-sizing:border-box;}
 .dp-no-result-dot-icon:before {left:-35px;}
 .dp-no-result-dot-icon:after {right:-35px;}
-.dp-no-result-description {margin:0 25px;}
+.dp-no-result-description {margin:0 25px; line-height:180%;}
 .dp-no-result-tit {font-size:18px; font-size:1.8rem; color:#b1b5b7;}
 .dp-no-result .dp-no-result-txt-list {padding-top:15px;}
 .dp-no-result .dp-no-result-txt-list > li {color:#8c8f95; font-size:15px; font-size:1.5rem; line-height:140%; margin-top:5px;}
@@ -154,7 +155,7 @@
   .dp-container {width:100%; padding-top:20px; box-sizing:border-box;}
   .dp-tit-wrap {flex-direction:column;}
 
-  .dp-left-nav {position:fixed; left:-220px; top:0; height:100%;transition:0.4s; background:#515154;}
+  .dp-left-nav {left:-220px; top:0; height:100%; transition:0.4s; background:#515154;}
   .dp-mobile-menu-btn {display:block; position:absolute; top:0; right:-60px; padding:10px; width:60px; height:60px; box-sizing:border-box; outline:0; cursor:pointer; border:0; text-indent:-999999px; background:transparent;}
   .dp-mobile-menu-btn .bar1, .dp-mobile-menu-btn .bar2, .dp-mobile-menu-btn .bar3 {display:block; width:36px; height:4px; background-color:#3cb4ff; margin:6px 0; transition:0.4s;}
   .dp-mobile-menu-btn.active .bar1 {-webkit-transform:rotate(-45deg) translate(-9px, 5px); transform:rotate(-45deg) translate(-9px, 5px);}
@@ -166,11 +167,18 @@
 
   .dp-filter-wrap {flex-direction:column;}
   .dp-filter-wrap .dp-filter-tit {margin-bottom:10px; margin-top:10px;}
+  .dp-filter02 .dp-filter-tit, .dp-filter03 .dp-filter-tit {padding-left:0;}
   .dp-filter-wrap .dp-filter01-list {border:0; padding:0;}
   .dp-filter-wrap .dp-filter02-list {display:flex; flex-direction:row; justify-content:space-between; align-items:center; padding:0; border:0;}
   .dp-filter-wrap .dp-filter02-list > li {flex:1; margin:4px;}
 
   .dp-untact-lecture-wrap {flex-direction:column; margin-top:40px;}
+  .dp-filtered-chart-wrap .dp-no-result {flex-wrap:wrap; padding:25px 25px 40px; justify-content:center;}
+  .dp-no-result-icon {width:40px; height:40px; margin:0;}
+  .dp-no-result-dot-icon {width:9px; height:9px; margin:0 30px;}
+  .dp-no-result-dot-icon:before {width:9px; height:9px; left:-15px;}
+  .dp-no-result-dot-icon:after {width:9px; height:9px; right:-15px;}
+  .dp-no-result-description {margin:30px 0 0; width:100%;}
   .dp-untact-lecture-list-wrap {max-width:100%; min-width:100%;}
   .dp-untact-lecture-wrap .dp-untact-lecture-link {height:80px;}
   .dp-untact-lecture-rcmd-wrap {margin-top:20px; max-width:100%; min-width:100%; padding:0 10px;}
