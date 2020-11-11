@@ -50,11 +50,9 @@ function popClose(e){
 }
 
 // 필수 사항 모두 선택 했는지 체크하고, 다음 버튼 활성화
-function confirmChkList(chkList, chkBtnOn){
+function confirmChkList(chkList, chkBtnOn, btnReset){
 
  	$(chkList).on('click change focus blur keyup', function(){
-
-			console.log('========================================================');
 			var $selectMustLength = $('.dp-selectMust').find("select").length;//3개
 			var $selectedMustLength = $('.dp-selectMust').find("select option[value!='']:selected").length;
 			var $chkMustLength = $('.dp-chkMust').length; //1개
@@ -66,6 +64,13 @@ function confirmChkList(chkList, chkBtnOn){
 				turnOffBtn(chkBtnOn);
 			}
  });
+	$(btnReset).on('click', function(){
+		$('.dp-selectMust').find("select option[value!='']:selected").removeAttr("selected");
+		$('.dp-selectMust').removeClass('checkTrue');
+		$('.dp-chkMust input[type="radio"]:checked').removeAttr("checked");
+		turnOffBtn(chkBtnOn);
+	});
+
 }
 
 //다음 버튼 활성화, active 클래스 추가 disabled 해제
@@ -102,24 +107,39 @@ function checkRadioChecked(chkedRadio){
 	});
 }
 
-
 function navToggle(btn){
 	btn.on('click', function(){
 		var parent = btn.parents('.dp-left-nav');
-		console.log(parent.css('left'));
 		if(parent.css('left')!= '0px'){
 			btn.addClass('active');
 			btn.parents('.dp-left-nav').css('left','0');
-			console.log('open');
 		}else if(parent.css('left')== '0px') {
 			btn.removeClass('active');
 			btn.parents('.dp-left-nav').css('left','-220px');
-			console.log('close');
 		}
 	});
 }
 
-
+//슬라이더 swiper.js 플러그인으로 구현(자동재생, 페이저, 버튼)
+function autoplaySwiper(slider){
+	setTimeout(function() {
+		var mySwiper = new Swiper(slider, {
+			slidesPerView: 3.5,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			loop : true,
+			loopFillGroupWithBlank: true,
+			autoplay: {
+				delay: 5000,
+			},
+			autoplayDisableOnInteraction: false,
+			speed: 400,
+		});
+	}, 0);
+}
 
 
 $(function(){
@@ -129,15 +149,15 @@ $(function(){
 	}
 
 	if($('.dp-chkList').length > 0){
-		confirmChkList('.dp-chkList', '.dp-chkBtnOn');
+		confirmChkList('.dp-chkList', '.dp-chkBtnOn', '.dp-filter-btn-reselect');
 	}
 
 	if($('.dp-selectMust').length > 0){
 		checkOptionSelected($('.dp-selectMust select'));
 	}
 
-
-
-
+	if($('.dp-untact-lecture-swiper').length > 0){
+		autoplaySwiper('.dp-untact-lecture-swiper');
+	}
 
 });

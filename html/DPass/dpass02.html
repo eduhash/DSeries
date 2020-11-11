@@ -1,35 +1,28 @@
 <!DOCTYPE html>
-<!-- saved from url=(0013)about:internet -->
-  <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-  	<title>dpass02</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="../../assets/css/swiper.min.css">
-    <link rel="stylesheet" href="../../assets/css/rangeslider.css">
-    <link rel="stylesheet" href="../../assets/css/base.css">
-    <link rel="stylesheet" href="../../assets/css/common.css">
-    <link rel="stylesheet" href="../../assets/css/contents.css">
-    <script src="../../assets/js/jquery-1.11.2.min.js"></script>
-    <script src="../../assets/js/jquery-ui.js"></script>
-    <script src="../../assets/js/swiper.min.js"></script>
-    <script src="../../assets/js/rangeslider.min.js"></script>
-    <script src="../../assets/js/highcharts.js"></script>
-    <script src="../../assets/js/highcharts-more.js"></script>
-    <script src="../../assets/js/style.js"></script>
-  	<!--[if lt IE 9]>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>dpass02</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/contents.css">
+  <script src="../../assets/js/jquery-1.11.2.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/highcharts.js"></script>
+  <script src="../../assets/js/highcharts-more.js"></script>
+  <script src="../../assets/js/style.js"></script>
+  <!--[if lt IE 9]>
   		<script src="../../assets/js/respond.js"></script>
   		<script src="../../assets/js/html5shiv.min.js"></script>
   	<![endif]-->
 </head>
 
 <body>
-
   <div class="dp-wrap dp-bg-dark">
-    <div  class="dp-container">
+    <div class="dp-container">
       <nav class="dp-left-nav">
         <button class="dp-mobile-menu-btn">
           <i class="bar1"></i><i class="bar2"></i><i class="bar3"></i>
@@ -152,6 +145,7 @@
             </div>
           </div>
         </div>
+
         <div class="dp-filtered-result-wrap dp-col-flex">
           <div class="dp-filtered-chart-wrap dp-bg-dark-blue dp-col-flex dp-flex-1">
             <h3 class="dp-chart-tit">합격선/경쟁률 조회결과</h3>
@@ -198,6 +192,30 @@
                       <p class="dp-untact-lecture-link-tit">강의 제목03</p>
                     </div>
                   </li>
+                  <li class="swiper-slide">
+                    <div class="slide dp-col-flex">
+                      <a href="javascript:void(0);" class="dp-untact-lecture-link" target="_blank" style="background-image:url('https://kimcodi.kr/new_images/main/teacher_kjg.png');">
+                        <i class="dp-play-icon">재생 버튼 아이콘</i>
+                      </a>
+                      <p class="dp-untact-lecture-link-tit">강의 제목04</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide dp-col-flex">
+                      <a href="javascript:void(0);" class="dp-untact-lecture-link" target="_blank" style="background-image:url('https://kimcodi.kr/new_images/sub/landing/landing01_02_cont03.png');">
+                        <i class="dp-play-icon">재생 버튼 아이콘</i>
+                      </a>
+                      <p class="dp-untact-lecture-link-tit">강의 제목05</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide dp-col-flex">
+                      <a href="javascript:void(0);" class="dp-untact-lecture-link" target="_blank" style="background-image:url('https://kimcodi.kr/new_images/sub/landing/landing01_02_cont03.png');">
+                        <i class="dp-play-icon">재생 버튼 아이콘</i>
+                      </a>
+                      <p class="dp-untact-lecture-link-tit">강의 제목06</p>
+                    </div>
+                  </li>
                 </ul>
               </div>
               <div class="swiper-button-next"></div>
@@ -240,7 +258,7 @@
     <div class="dp-popFixedWrap pop01">
       <section class="dp-popWrap">
         <div class="dp-popContainer">
-            <button class="dp-popBtnClose" onclick="popClose($(this));">닫기</button>
+          <button class="dp-popBtnClose" onclick="popClose($(this));">닫기</button>
           <header class="dp-popHeader">
 
           </header>
@@ -288,72 +306,72 @@
       },
     },
     xAxis: [{
-      categories: ['2016<br>1차','2016<br>2차','2017<br>1차','2017<br>2차','2018<br>1차','2018<br>2차','2018<br>3차','2019<br>1차','2019<br>2차','2020<br>1차','2020<br>2차'],
+      categories: ['2016<br>1차', '2016<br>2차', '2017<br>1차', '2017<br>2차', '2018<br>1차', '2018<br>2차', '2018<br>3차', '2019<br>1차', '2019<br>2차', '2020<br>1차', '2020<br>2차'],
       crosshair: true,
       labels: {
         useHTML: true,
         style: {
           color: '#f8f8f8',
-          fontSize:'0.8em'
+          fontSize: '0.8em'
         }
       }
     }],
-     yAxis: [{
-     // 1st yAxis
-    min: 0,
-    //max: 400,
-    tickAmount: 6,
-    gridLineColor: '#444',
-    labels: {
-      format: '{value} 명',
-      style: {
-        color: '#c2c1be'
-      }
-    },
-    title: {
-      text: '선발인원',
-      style: {
-        color: '#c2c1be'
-      }
-    },
-    opposite: false
-   }, {
-     // 2nd yAxis
-    min: 0,
-    max: 150,
-    gridLineWidth: 0,
-    title: {
-      text: '경쟁률',
-      style: {
-        color: '#f4cb6d'
-      }
-    },
-    labels: {
-      format: '{value}',
-      style: {
-        color: '#f4cb6d'
+    yAxis: [{
+      // 1st yAxis
+      min: 0,
+      //max: 400,
+      tickAmount: 6,
+      gridLineColor: '#444',
+      labels: {
+        format: '{value} 명',
+        style: {
+          color: '#c2c1be'
+        }
       },
-    },
-    opposite: true
-   }, {
-    // 3rd yAxis
-    min: 0,
-    max: 450,
-    gridLineWidth: 0,
-    title: {
-      text: '합격선',
-      style: {
-        color:'#7475aa'
-      }
-    },
-    labels: {
-      format: '{value} 점',
-      style: {
-        color: '#7475aa'
+      title: {
+        text: '선발인원',
+        style: {
+          color: '#c2c1be'
+        }
       },
-    },
-    opposite: true
-   }],
+      opposite: false
+    }, {
+      // 2nd yAxis
+      min: 0,
+      max: 150,
+      gridLineWidth: 0,
+      title: {
+        text: '경쟁률',
+        style: {
+          color: '#f4cb6d'
+        }
+      },
+      labels: {
+        format: '{value}',
+        style: {
+          color: '#f4cb6d'
+        },
+      },
+      opposite: true
+    }, {
+      // 3rd yAxis
+      min: 0,
+      max: 450,
+      gridLineWidth: 0,
+      title: {
+        text: '합격선',
+        style: {
+          color: '#7475aa'
+        }
+      },
+      labels: {
+        format: '{value} 점',
+        style: {
+          color: '#7475aa'
+        },
+      },
+      opposite: true
+    }],
     legend: {
       layout: 'horizontal',
       align: 'right',
@@ -361,7 +379,7 @@
       verticalAlign: 'top',
       y: -10,
       floating: false,
-      itemStyle:{
+      itemStyle: {
         color: '#fff',
       }
     },
@@ -370,72 +388,42 @@
         style: {
           left: '50px',
           top: '18px',
-          color:'#ddd'
+          color: '#ddd'
         }
       }]
     },
-   series: [{
-       type: 'column',
-       name: '선발인원',
-       color: 'rgba(194,193,190,0.5)',
-       yAxis: 0,
-       tooltip:{
-          valueDecimals: 0,
-          valueSuffix: ' 명'
-       },
-       data: [200,250,265,300,280,200,250,265,300,280,300]
+    series: [{
+      type: 'column',
+      name: '선발인원',
+      color: 'rgba(194,193,190,0.5)',
+      yAxis: 0,
+      tooltip: {
+        valueDecimals: 0,
+        valueSuffix: ' 명'
+      },
+      data: [200, 250, 265, 300, 280, 200, 250, 265, 300, 280, 300]
     }, {
-       type: 'line',
-       name: '경쟁률',
-       color: '#ffd470',
-        yAxis: 1,
-        marker: {
-          enabled: true,
-        },
-        dashStyle: 'shortdot',
-       data: [15.6,13.7,40,35.2,21.8,40.3,38.5,65.5,59.1,28.6,34.6]
+      type: 'line',
+      name: '경쟁률',
+      color: '#ffd470',
+      yAxis: 1,
+      marker: {
+        enabled: true,
+      },
+      dashStyle: 'shortdot',
+      data: [15.6, 13.7, 40, 35.2, 21.8, 40.3, 38.5, 65.5, 59.1, 28.6, 34.6]
     }, {
-       type: 'line',
-       name: '합격선',
-       color: '#7c7db4',
-        yAxis: 2,
-        tooltip:{
-  			   valueDecimals: 2,
-  			   valueSuffix: ' 점'
-  			},
-       data: [420,450,390,360,450,430,410,420,420,360,390]
+      type: 'line',
+      name: '합격선',
+      color: '#7c7db4',
+      yAxis: 2,
+      tooltip: {
+        valueDecimals: 2,
+        valueSuffix: ' 점'
+      },
+      data: [420, 450, 390, 360, 450, 430, 410, 420, 420, 360, 390]
     }]
   });
-</script>
-
-
-
-<script>
-  //슬라이더 swiper.js 플러그인으로 구현(자동재생, 페이저, 버튼)
-  function autoplaySwiper(slider){
-  	setTimeout(function() {
-  		var mySwiper = new Swiper(slider, {
-        slidesPerView: 3.5,
-        spaceBetween: 30,
-  			navigation: {
-  				nextEl: '.swiper-button-next',
-  				prevEl: '.swiper-button-prev',
-  			},
-  			loop : true,
-  			autoplay: {
-  				delay: 5000,
-  			},
-  			autoplayDisableOnInteraction: false,
-  			speed: 400,
-  		});
-  	}, 0);
-  }
-$(function(){
-  if($('.dp-untact-lecture-swiper').length > 0){
-    autoplaySwiper('.dp-untact-lecture-swiper');
-  }
-});
-
 </script>
 
 

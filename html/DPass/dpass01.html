@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0013)about:internet -->
   <html lang="ko">
   <head>
     <meta charset="utf-8">
   	<title>dpass01</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../assets/css/jquery-ui.css">
     <link rel="stylesheet" href="../../assets/css/swiper.min.css">
-    <link rel="stylesheet" href="../../assets/css/rangeslider.css">
     <link rel="stylesheet" href="../../assets/css/base.css">
     <link rel="stylesheet" href="../../assets/css/common.css">
     <link rel="stylesheet" href="../../assets/css/contents.css">
     <script src="../../assets/js/jquery-1.11.2.min.js"></script>
-    <script src="../../assets/js/jquery-ui.js"></script>
     <script src="../../assets/js/swiper.min.js"></script>
-    <script src="../../assets/js/rangeslider.min.js"></script>
     <script src="../../assets/js/highcharts.js"></script>
     <script src="../../assets/js/highcharts-more.js"></script>
     <script src="../../assets/js/style.js"></script>
@@ -31,6 +25,9 @@
   <div class="dp-wrap dp-bg-dark">
     <div  class="dp-container">
       <nav class="dp-left-nav">
+        <button class="dp-mobile-menu-btn">
+          <i class="bar1"></i><i class="bar2"></i><i class="bar3"></i>
+        </button>
         <ul class="dp-left-nav-list">
           <li class="dp-row-flex jc-flex-end">
             <a href="javascript:void(0);" class="dp-left-nav-main">Main</a>
@@ -70,39 +67,39 @@
         <div class="dp-filter-wrap">
           <div class="dp-filter01">
             <h3 class="dp-filter-tit">01. 공무원 준비직렬 선택</h3>
-            <ul class="dp-filter01-list dp-txtC">
+            <ul class="dp-filter01-list dp-txtC dp-chkList dp-chkMust">
               <li class="dp-col-flex">
-                <label class="dp-filter01-label dp-flex-1" for="dp-filter01-r01">
+                <label for="dp-filter01-r01" class="dp-filter01-label dp-flex-1">
                   <input type="radio" id="dp-filter01-r01" name="dp-filter01-radio">
                   <p class="dp-filter01-txt">경찰공무원</p>
                 </label>
               </li>
               <li class="dp-col-flex">
-                <label class="dp-filter01-label dp-flex-1" for="dp-filter01-r02">
+                <label for="dp-filter01-r02" class="dp-filter01-label dp-flex-1">
                   <input type="radio" id="dp-filter01-r02" name="dp-filter01-radio">
                   <p class="dp-filter01-txt">소방공무원</p>
                 </label>
               </li>
               <li class="dp-col-flex">
-                <label class="dp-filter01-label dp-flex-1" for="dp-filter01-r03">
+                <label for="dp-filter01-r03" class="dp-filter01-label dp-flex-1">
                   <input type="radio" id="dp-filter01-r03" name="dp-filter01-radio">
                   <p class="dp-filter01-txt">행정(국가직)</p>
                 </label>
               </li>
               <li class="dp-col-flex">
-                <label class="dp-filter01-label dp-flex-1" for="dp-filter01-r04">
+                <label for="dp-filter01-r04" class="dp-filter01-label dp-flex-1">
                   <input type="radio" id="dp-filter01-r04" name="dp-filter01-radio">
                   <p class="dp-filter01-txt">행정(지방직)</p>
                 </label>
               </li>
               <li class="dp-col-flex">
-                <label class="dp-filter01-label dp-flex-1" for="dp-filter01-r05">
+                <label for="dp-filter01-r05" class="dp-filter01-label dp-flex-1">
                   <input type="radio" id="dp-filter01-r05" name="dp-filter01-radio">
                   <p class="dp-filter01-txt">행정(지역인재)</p>
                 </label>
               </li>
               <li class="dp-col-flex">
-                <label class="dp-filter01-label dp-flex-1" for="dp-filter01-r06">
+                <label for="dp-filter01-r06" class="dp-filter01-label dp-flex-1">
                   <input type="radio" id="dp-filter01-r06" name="dp-filter01-radio">
                   <p class="dp-filter01-txt">행정(고졸채용)</p>
                 </label>
@@ -113,29 +110,29 @@
             <h3 class="dp-filter-tit">02. 상세조건 선택</h3>
             <ul class="dp-filter02-list">
               <li class="dp-col-flex">
-                <label for="dp-filter02-slt01" class="dp-select01">
+                <label for="dp-filter02-slt01" class="dp-select01 dp-selectMust dp-chkList">
                   <select name="dp-filter02-slt01" id="dp-filter02-slt01">
                     <option value="">지역선택</option>
-                    <option value="">지역1</option>
-                    <option value="">지역2</option>
+                    <option value="지역1">지역1</option>
+                    <option value="지역2">지역2</option>
                   </select>
                 </label>
               </li>
               <li class="dp-col-flex">
-                <label for="dp-filter02-slt02" class="dp-select01">
+                <label for="dp-filter02-slt02" class="dp-select01 dp-selectMust dp-chkList">
                   <select name="dp-filter02-slt02" id="dp-filter02-slt02">
                     <option value="">구분선택</option>
-                    <option value="">구분1</option>
-                    <option value="">구분2</option>
+                    <option value="구분1">구분1</option>
+                    <option value="구분2">구분2</option>
                   </select>
                 </label>
               </li>
               <li class="dp-col-flex">
-                <label for="dp-filter02-slt03" class="dp-select01">
+                <label for="dp-filter02-slt03" class="dp-select01 dp-selectMust dp-chkList">
                   <select name="dp-filter02-slt03" id="dp-filter02-slt03">
                     <option value="">직류선택</option>
-                    <option value="">직류1</option>
-                    <option value="">직류2</option>
+                    <option value="직류1">직류1</option>
+                    <option value="직류2">직류2</option>
                   </select>
                 </label>
               </li>
@@ -144,11 +141,12 @@
           <div class="dp-filter03 dp-col-flex">
             <h3 class="dp-filter-tit">03. 결과확인</h3>
             <div class="dp-filter03-btn-wrap dp-flex-1 dp-col-flex dp-flex-center">
-              <button class="dp-filter-btn-search">조회하기</button>
+              <button class="dp-filter-btn-search dp-chkBtnOn disabled" disabled="disabled">조회하기</button>
               <button class="dp-filter-btn-reselect">다시 입력하기</button>
             </div>
           </div>
         </div>
+
         <div class="dp-filtered-result-wrap dp-col-flex">
           <div class="dp-filtered-chart-wrap dp-bg-dark-blue dp-no-result dp-col-flex dp-flex-1 dp-flex-center">
             <div class="dp-row-flex ai-center">
@@ -198,6 +196,30 @@
                         <i class="dp-play-icon">재생 버튼 아이콘</i>
                       </a>
                       <p class="dp-untact-lecture-link-tit">강의 제목03</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide dp-col-flex">
+                      <a href="javascript:void(0);" class="dp-untact-lecture-link" target="_blank" style="background-image:url('https://kimcodi.kr/new_images/main/teacher_kjg.png');">
+                        <i class="dp-play-icon">재생 버튼 아이콘</i>
+                      </a>
+                      <p class="dp-untact-lecture-link-tit">강의 제목04</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide dp-col-flex">
+                      <a href="javascript:void(0);" class="dp-untact-lecture-link" target="_blank" style="background-image:url('https://kimcodi.kr/new_images/sub/landing/landing01_02_cont03.png');">
+                        <i class="dp-play-icon">재생 버튼 아이콘</i>
+                      </a>
+                      <p class="dp-untact-lecture-link-tit">강의 제목05</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slide dp-col-flex">
+                      <a href="javascript:void(0);" class="dp-untact-lecture-link" target="_blank" style="background-image:url('https://kimcodi.kr/new_images/sub/landing/landing01_02_cont03.png');">
+                        <i class="dp-play-icon">재생 버튼 아이콘</i>
+                      </a>
+                      <p class="dp-untact-lecture-link-tit">강의 제목06</p>
                     </div>
                   </li>
                 </ul>
@@ -259,32 +281,5 @@
   </div>
 
 </body>
-<script>
-  //슬라이더 swiper.js 플러그인으로 구현(자동재생, 페이저, 버튼)
-  function autoplaySwiper(slider){
-  	setTimeout(function() {
-  		var mySwiper = new Swiper(slider, {
-        slidesPerView: 3.5,
-        spaceBetween: 30,
-  			navigation: {
-  				nextEl: '.swiper-button-next',
-  				prevEl: '.swiper-button-prev',
-  			},
-  			loop : true,
-  			autoplay: {
-  				delay: 5000,
-  			},
-  			autoplayDisableOnInteraction: false,
-  			speed: 400,
-  		});
-  	}, 0);
-  }
-$(function(){
-  if($('.dp-untact-lecture-swiper').length > 0){
-    autoplaySwiper('.dp-untact-lecture-swiper');
-  }
-});
-
-</script>
 
 </html>
