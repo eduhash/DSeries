@@ -197,11 +197,23 @@
   .dp-no-result-dot-icon:after {width:9px; height:9px; right:-15px;}
   .dp-no-result-description {margin:30px 0 0; width:100%;}
   .dp-chart-tit {font-size:18px; font-size:1.8rem;}
+
+  /* 김코디 쪽 css 수정 */
+  .contents-container, .contents-wrap {height:auto; padding-bottom:0;}
+  .contents-container .contents {padding-bottom:0;}
+  #footer {padding-top:0;}
+  /* //김코디 쪽 css 수정 */
 }
 
 @media (max-width:767px){
   .dp-filter-wrap {margin-top:40px;}
   .dp-bottom-nav {padding:0;}
+
+  /* 김코디 쪽 css 수정 */
+  .contents-container, .contents-wrap {height:auto; padding-bottom:0;}
+  .contents-container .contents {padding-bottom:0;}
+  #footer {padding-top:0;}
+  /* //김코디 쪽 css 수정 */
 }
 
 @media (max-width:620px){
