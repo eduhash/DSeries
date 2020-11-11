@@ -5,7 +5,7 @@
 .dp-left-nav .dp-left-nav-list > li {padding:14px 15px 14px 0;}
 .dp-left-nav .dp-left-nav-list > li:first-child {padding:0 15px 14px 0;}
 .dp-left-nav .dp-left-nav-list > li > a {position:relative; padding-right:40px; transition:0.3s; font-size:15px; font-size:1.5rem; color:#acacb2;}
-.dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-main {padding-right:0; width:100%; min-height:30px; text-indent:-99999px; background:url('../img/arrow-left-solid.svg') no-repeat right; background-size:30px; box-sizing:border-box;}
+.dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-main {padding-right:0; width:100%; min-height:30px; text-indent:-99999px; background:url('../img/left-arrow.svg') no-repeat right; background-size:30px; box-sizing:border-box;}
 .dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-main:hover {transform:scale(1.2); margin-right:20px;}
 .dp-left-nav .dp-left-nav-list > li > a:after {content:''; position:absolute; right:0; top:50%; margin-top:-9px; width:18px; height:18px;}
 .dp-left-nav .dp-left-nav-list > li > a:hover {color:#fff; font-size:18px; font-size:1.8rem;}
@@ -41,7 +41,7 @@
 .dp-filter-wrap .dp-filter01-list {display:flex; flex-direction:row; flex:1; flex-wrap:wrap; padding-right:40px; border-right:1px dotted #256c9d;}
 .dp-filter-wrap .dp-filter01-list > li {width:33.33%; box-sizing:border-box;}
 .dp-filter-wrap .dp-filter01-label {position:relative; min-height:68px; margin:4px; border:1px solid #256c9d; border-radius:6px; box-sizing:border-box; cursor:pointer;}
-.dp-filter-wrap .dp-filter01-label:after {content:''; position:absolute; top:10px; left:50%; margin-left:-11px; width:22px; height:15px; background:url('../img/chevron-down-solid.svg') no-repeat center; background-size:100%;}
+.dp-filter-wrap .dp-filter01-label:after {content:''; position:absolute; top:10px; left:50%; margin-left:-11px; width:22px; height:15px; background:url('../img/down-arrow.svg') no-repeat center; background-size:100%;}
 .dp-filter-wrap .dp-filter01-label input {width:0; height:0; opacity:0;}
 .dp-filter-wrap .dp-filter01-txt {position:absolute; top:0; left:0; width:100%; height:100%; padding:33px 0 10px; transition:0.2s; box-sizing:border-box; border-radius:4px;}
 .dp-filter-wrap .dp-filter01-label input[type="radio"]:checked + .dp-filter01-txt {background:#5064b4;}
@@ -50,7 +50,7 @@
 .dp-filter-wrap .dp-filter02-list > li:first-child {margin-top:0;}
 
 .dp-select01 {position:relative; width:100%; cursor:pointer;}
-.dp-select01:after {content:''; display:inline-block; position:absolute; right:13px; top:50%; margin-top:-6px; padding:3px; border:solid #2673a2; border-width:0 1px 1px 0; transform:rotate(45deg);}
+.dp-select01:after {content:''; display:inline-block; position:absolute; right:13px; top:50%; margin-top:-6px; padding:3px; border:solid #359edf; border-width:0 1px 1px 0; transform:rotate(45deg);}
 .dp-select01 select {display:block; position:relative; width:100%; height:35px; padding:0 30px 0 8px; font-size:14px; font-size:1.4rem; border:1px solid #25699b; color:#e0e0e0; border-radius:4px; background:#060818; box-sizing:border-box; outline:0; appearance:none; -webkit-appearance:none; -moz-appearance:none; transition:0.4s; cursor:pointer;}
 .dp-select01 select::-ms-expand {display:none;}
 .dp-select01 select:focus {border:1px solid #fff;}
@@ -86,7 +86,7 @@
 .dp-untact-lecture-wrap {display:flex; flex-direction:row; margin-top:70px;}
 .dp-untact-lecture-list-wrap {flex:1; position:relative; min-width:714px;}
 .dp-untact-lecture-rcmd-wrap {min-width:320px; padding-left:50px; padding-right:10px; box-sizing:border-box;}
-.dp-untact-lecture-wrap .dp-untact-lecture-tit {font-size:18px; font-size:1.8rem; margin-bottom:35px; color:#fcfcfd;}
+.dp-untact-lecture-wrap .dp-untact-lecture-tit {font-size:18px; font-size:1.8rem; font-weight:normal; margin-bottom:35px; color:#fcfcfd;}
 .dp-untact-lecture-wrap .dp-untact-lecture-btn-more {margin-right:40px; font-size:14px; font-size:1.4rem; color:#aeb2b5; transition:0.3s;}
 .dp-untact-lecture-wrap .dp-untact-lecture-btn-more:hover {color:#fff;}
 .dp-untact-lecture-swiper-wrap {position:relative; padding:0 40px;}
@@ -156,14 +156,13 @@
   .dp-tit-wrap {flex-direction:column;}
 
   .dp-left-nav {left:-220px; top:0; height:100%; transition:0.4s; background:#515154;}
+  .dp-left-nav .dp-left-nav-list {height:100%;}
+  .dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-main {display:none;}
   .dp-mobile-menu-btn {display:block; position:absolute; top:0; right:-60px; padding:10px; width:60px; height:60px; box-sizing:border-box; outline:0; cursor:pointer; border:0; text-indent:-999999px; background:transparent;}
   .dp-mobile-menu-btn .bar1, .dp-mobile-menu-btn .bar2, .dp-mobile-menu-btn .bar3 {display:block; width:36px; height:4px; background-color:#3cb4ff; margin:6px 0; transition:0.4s;}
   .dp-mobile-menu-btn.active .bar1 {-webkit-transform:rotate(-45deg) translate(-9px, 5px); transform:rotate(-45deg) translate(-9px, 5px);}
   .dp-mobile-menu-btn.active .bar2 {opacity:0;}
   .dp-mobile-menu-btn.active .bar3 {-webkit-transform:rotate(45deg) translate(-9px, -6px); transform:rotate(45deg) translate(-9px, -6px);}
-
-  .dp-left-nav .dp-left-nav-list {height:100%;}
-  .dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-main {display:none;}
 
   .dp-filter-wrap {flex-direction:column;}
   .dp-filter-wrap .dp-filter-tit {margin-bottom:10px; margin-top:10px;}
@@ -173,12 +172,6 @@
   .dp-filter-wrap .dp-filter02-list > li {flex:1; margin:4px;}
 
   .dp-untact-lecture-wrap {flex-direction:column; margin-top:40px;}
-  .dp-filtered-chart-wrap .dp-no-result {flex-wrap:wrap; padding:25px 25px 40px; justify-content:center;}
-  .dp-no-result-icon {width:40px; height:40px; margin:0;}
-  .dp-no-result-dot-icon {width:9px; height:9px; margin:0 30px;}
-  .dp-no-result-dot-icon:before {width:9px; height:9px; left:-15px;}
-  .dp-no-result-dot-icon:after {width:9px; height:9px; right:-15px;}
-  .dp-no-result-description {margin:30px 0 0; width:100%;}
   .dp-untact-lecture-list-wrap {max-width:100%; min-width:100%;}
   .dp-untact-lecture-wrap .dp-untact-lecture-link {height:80px;}
   .dp-untact-lecture-rcmd-wrap {margin-top:20px; max-width:100%; min-width:100%; padding:0 10px;}
@@ -191,6 +184,13 @@
   .dp-filtered-chart-wrap .dp-chart-area::-webkit-scrollbar-thumb {background:#ddd; border-radius:6px;}/* Handle */
   .dp-filtered-chart-wrap .dp-chart-area::-webkit-scrollbar-thumb:hover {background:#fff;}/* Handle on hover */
   .dp-filtered-chart-wrap .dp-chart-area .dp-chart-container {position:relative; min-width:1080px; box-sizing:border-box;}
+  .dp-filtered-chart-wrap .dp-no-result {flex-wrap:wrap; padding:25px 25px 40px; justify-content:center;}
+  .dp-no-result-icon {width:40px; height:40px; margin:0;}
+  .dp-no-result-dot-icon {width:9px; height:9px; margin:0 30px;}
+  .dp-no-result-dot-icon:before {width:9px; height:9px; left:-15px;}
+  .dp-no-result-dot-icon:after {width:9px; height:9px; right:-15px;}
+  .dp-no-result-description {margin:30px 0 0; width:100%;}
+  .dp-chart-tit {font-size:18px; font-size:1.8rem;}
 }
 
 @media (max-width:767px){
