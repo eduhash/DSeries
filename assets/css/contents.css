@@ -15,12 +15,12 @@
 .dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-mydata:after {background:url('../img/cube-solid.svg') no-repeat right; background-size:100%;}
 
 
-.dp-bottom-nav {position:absolute; left:0; bottom:0; width:100%; padding:0 25px; box-sizing:border-box;}
-.dp-bottom-nav .dp-bottom-nav-list > li > a {padding:17px 5px; height:100%; font-size:15px; font-size:1.5rem; color:#e0e4f2; background:#5064b4; border-right:1px solid #060818; border-left:1px solid #060818; transition:0.3s;}
+.dp-bottom-nav {display:flex; flex-direction:row; width:100%; padding:0 25px; box-sizing:border-box;}
+.dp-bottom-nav .dp-bottom-nav-list > li > a {margin-top:100px; padding:17px 5px; height:100%; font-size:15px; font-size:1.5rem; color:#e0e4f2; background:#5064b4; border-right:1px solid #060818; border-left:1px solid #060818; transition:0.3s;}
 .dp-bottom-nav .dp-bottom-nav-list > li > a:hover {background:#fff; color:#282828; font-size:1.6px; font-size:1.6rem;}
 
 
-.dp-main {padding:50px 25px 35px;}
+.dp-main {padding:50px 25px 0;}
 .dp-tit-wrap {display:flex; flex-direction:row;}
 .dp-tit-left {flex:4;}
 .dp-tit-right {flex:6; padding-top:15px;}
@@ -98,6 +98,8 @@
 .dp-untact-lecture-wrap .dp-untact-lecture-link-tit {margin:10px 0; text-align:center; color:#e7e7e9;}
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {right:0px; left:auto; outline:0; margin-top:-35px; z-index:10;}
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {left:0px; right:auto; outline:0; margin-top:-35px; z-index:10;}
+.swiper-button-next:after {font-size:0; width:27px; height:44px; background:url('../img/right-arrow-swiper.svg') no-repeat center; background-size:120%;}
+.swiper-button-prev:after {font-size:0; width:27px; height:44px; background:url('../img/left-arrow-swiper.svg') no-repeat center; background-size:120%;}
 
 
 
