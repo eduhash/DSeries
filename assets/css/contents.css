@@ -15,7 +15,7 @@
 .dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-mydata:after {background:url('../img/cube-solid.svg') no-repeat right; background-size:100%;}
 
 
-.dp-bottom-nav {display:flex; flex-direction:row; width:100%; padding:0 25px; box-sizing:border-box;}
+.dp-bottom-nav {display:flex; flex-direction:row; padding:0 25px; box-sizing:border-box;}
 .dp-bottom-nav .dp-bottom-nav-list > li > a {margin-top:100px; padding:17px 5px; height:100%; font-size:15px; font-size:1.5rem; color:#e0e4f2; background:#5064b4; border-right:1px solid #060818; border-left:1px solid #060818; transition:0.3s;}
 .dp-bottom-nav .dp-bottom-nav-list > li > a:hover {background:#fff; color:#282828; font-size:1.6px; font-size:1.6rem;}
 
@@ -116,15 +116,62 @@
 .dp-parents-login-btn {padding:8px 24px; background:#474747; outline:0; border:0; color:#e3f93e; font-size:17px; font-size:1.7rem; font-weight:normal; cursor:pointer;}
 .dp-parents-login-btn:hover {color:#fff; background:#64655c;}
 .dp-basic-info-wrap {display:flex; flex-direction:row; margin-top:80px;}
-.dp-user-info-wrap {flex:3; padding:35px 40px;}
+.dp-user-info-wrap {flex:2.5; padding:35px 40px;}
 .dp-user-icon {display:inline-block; width:64px; height:64px; background:url('../img/reading.svg') no-repeat center; background-size:100%;}
-.dp-learning-time-wrap {flex:7; display:flex; flex-direction:row; flex-wrap:wrap; padding:0 50px;}
+.dp-learning-time-wrap {flex:7.5; display:flex; flex-direction:row; flex-wrap:wrap; padding:0 0 0 40px;}
 .dp-learning-time-by-place-wrap {width:50%; text-align:center;}
 .dp-learning-time-by-type-wrap {width:50%; text-align:center;}
-.dp-learning-time-guide-txt {width:100%; color:#9b9daa; text-align:center;}
+.dp-learning-time-wrap .dp-learning-time-guide-txt {margin-top:20px; width:100%; color:#9b9daa; text-align:center;}
+
+.dp-user-info-table tr td, .dp-user-info-table tr th {font-size:14px; font-size:1.4rem;}
+.dp-user-info-table td {padding:10px 0 0; color:#c5c7d4;}
+.dp-user-info-table th {padding:10px 25px 0 0; color:#a3a4b9; font-weight:normal;}
+.dp-user-info-table tr:first-child td, .dp-user-info-table tr:first-child th {padding-top:0; padding-bottom:15px;}
+.dp-user-info-table .dp-user-name {font-size:20px; font-size:2.0rem; font-weight:normal; color:#fcfeff;}
+.dp-user-info-table .dp-user-birth-date {margin-top:5px; font-size:13px; font-size:1.3rem;}
+.dp-user-info-table .dp-user-gender {margin-top:3px; font-size:13px; font-size:1.3rem;}
+
+.dp-learning-time-wrap .dp-learning-time-tit {font-size:18px; font-size:1.8rem; font-weight:normal; color:#feffff;}
+.dp-learning-time-wrap .dp-chart-area {height:auto;}
+.dp-learning-time-wrap .dp-chart-parent {padding-bottom:100%;}
+.dp-alarm-icon {display:inline-block; width:50px; height:50px; background:url('../img/alarm.svg') no-repeat center; background-size:100%;}
+.dp-school-icon {display:inline-block; width:45px; height:45px; margin-top:-10px; background:url('../img/school.svg') no-repeat center; background-size:100%;}
+
+.dp-mydata-tab-wrap {margin-top:80px;}
+.dp-mydata-tab-wrap .tab {margin:20px 0 0 0;}
+.dp-mydata-tab-wrap .tab > ul {overflow:hidden; padding:0; margin:0; background:#1a1c2d; list-style:none; border-radius:3px;}
+.dp-mydata-tab-wrap .tab > ul > li {display:table; float:left; width:20%; text-align:center;}
+.dp-mydata-tab-wrap .tab > ul > li > a {display:table-cell; position:relative; width:100%; height:45px; border-left:3px solid #060817; font-size:13px; font-size:1.3rem; line-height:100%; font-weight:normal; vertical-align:middle; color:#f3f5ff; text-decoration:none; box-sizing:border-box;}
+.dp-mydata-tab-wrap .tab > ul > li:first-child > a {border-left:0;}
+.dp-mydata-tab-wrap .tab > ul > li.on > a {background:#3cb4ff; color:#fff;}
+
+.dp-mydata-tab-wrap .dp-tab-inside-wrap {margin-top:40px; padding:0 35px 40px;}
+.dp-mydata-tab-wrap .dp-mydata-tab-section-tit {padding-top:40px; font-size:18px; font-size:1.8rem; font-weight:normal;}
+
+.dp-smart-learning-wrap {display:flex; flex-direction:row; flex-wrap:wrap;}
+.dp-smart-learning-wrap .dp-learning-propensity-chart-wrap {flex:1; padding-right:40px;}
+.dp-smart-learning-wrap .dp-learning-propensity-chart-wrap .dp-chart-area {height:300px;}
+.dp-smart-learning-wrap .dp-learning-propensity-diagram-wrap {flex:2;}
+.dp-smart-learning-wrap .dp-learning-propensity-curating-wrap {width:100%;}
+
+.dp-learning-propensity-diagram-wrap .dp-inner-diagram-wrap {display:flex; flex-direction:row; flex:1; justify-content:space-between; align-items:center; margin-top:40px;}
+.dp-learning-propensity-diagram-wrap .dp-diagram-wrap {display:flex; flex-direction:column; flex:1;}
+.dp-learning-propensity-diagram-wrap .dp-assessmentList {display:flex; flex-direction:row; justify-content:space-between;}
+.dp-learning-propensity-diagram-wrap .dp-assessmentList > li {margin:0 5px; width:100%; background:#060817; border-radius:5px; text-align:center;}
+.dp-learning-propensity-diagram-wrap .dp-diagram-line {display:flex; flex-direction:column; position:relative;}
+.dp-learning-propensity-diagram-wrap .dp-diagram-line:before {content:''; position:absolute; top:0; left:50%; margin-left:-0.5px; width:1px; height:100%; background:#5b5c67;}
+.dp-diagram-line .diagramLine {display:flex; flex-direction:row; justify-content:center; align-items:center; margin:0 5px;}
+.dp-diagram-line .diagramLine:before {content:''; width:66.6%; height:20px; margin:0 0.5rem; border:1px solid #5b5c67; border-top:0; box-sizing:border-box;}
+.dp-diagram-line .diagram-help-txt-wrap {display:flex; flex-direction:row; justify-content:center; align-items:center; position:relative; margin:30px 5px;}
+.dp-diagram-line .diagram-help-txt {flex:1;}
+.dp-learning-propensity-diagram-wrap .dp-assessment-total {margin:0 5px; background:#060817; border-radius:5px;}
+.dp-learning-propensity-diagram-wrap .dp-assessment-txt01 {padding:12px 0 0; font-size:13px; font-size:1.3rem; color:#fefeff;}
+.dp-learning-propensity-diagram-wrap .dp-assessment-txt02 {padding:16px 0 12px; font-size:16px; font-size:1.6rem; color:#deec61;}
+.dp-paper-clip-icon {display:inline-block; margin:0 15px; width:16px; height:26px; background:url('../img/paper-clip.svg') no-repeat center; background-size:100%; box-sizing:border-box;}
 
 
-
+.scrollWrapper {position:relative; flex-grow:1;}
+.scrollWrapper .scrollContainer {position:absolute; width:100%; height:100%; overflow-y:auto;}
 
 
 /* 팝업스타일 */

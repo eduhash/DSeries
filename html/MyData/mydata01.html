@@ -7,7 +7,6 @@
   <title>My Data</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../../assets/css/swiper.min.css">
   <link rel="stylesheet" href="../../assets/css/base.css">
   <link rel="stylesheet" href="../../assets/css/common.css">
@@ -16,6 +15,7 @@
   <script src="../../assets/js/swiper.min.js"></script>
   <script src="../../assets/js/highcharts.js"></script>
   <script src="../../assets/js/highcharts-more.js"></script>
+  <!-- <script src="https://code.highcharts.com/modules/variable-pie.js"></script> -->
   <script src="../../assets/js/style.js"></script>
   <!--[if lt IE 9]>
   		<script src="../../assets/js/respond.js"></script>
@@ -77,10 +77,14 @@
                     <i class="dp-user-icon"></i>
                   </th>
                   <td>
-                    <strong class="fs12">강병찬</strong>
-                    <p>1997-11-04</p>
-                    <p>남자</p>
+                    <strong class="dp-user-name">강병찬</strong>
+                    <p class="dp-user-birth-date">1997-11-04</p>
+                    <p class="dp-user-gender">남자</p>
                   </td>
+                </tr>
+                <tr>
+                  <th scope="row">캠퍼스</th>
+                  <td>안동캠퍼스</td>
                 </tr>
                 <tr>
                   <th scope="row">직렬</th>
@@ -111,14 +115,174 @@
           </div>
           <div class="dp-learning-time-wrap">
             <div class="dp-learning-time-by-place-wrap">
-              <h3>(월)학습/비학습시간 비교</h3>
-              <div class="dp-learning-time-by-place-chart"></div>
+              <h3 class="dp-learning-time-tit">(월)학습/비학습시간 비교</h3>
+              <div class="dp-chart-area">
+                <div class="dp-chart-parent">
+                  <div class="dp-chart-container">
+                    <div id="dp-learning-time-by-place-chart"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="dp-learning-time-by-type-wrap">
-              <h3>(월)학습유형별 시간 비교</h3>
-              <div class="dp-learning-time-by-type-chart"></div>
+              <h3 class="dp-learning-time-tit">(월)학습유형별 시간 비교</h3>
+              <div class="dp-chart-area">
+                <div class="dp-chart-parent">
+                  <div class="dp-chart-container">
+                    <div id="dp-learning-time-by-type-chart"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <p class="dp-learning-time-guide-txt">KPA 기숙반 재원생들과 학부모님들에게 현재 학습현황을 실시간으로 제공합니다.</p>
+          </div>
+        </section>
+        <section class="dp-mydata-tab-wrap">
+          <div class="tabWrap">
+            <div class="tab">
+              <ul>
+                <li class="on"><a href="javascript:void(0);">스마트 학습진단</a></li>
+                <li><a href="javascript:void(0);">성적추이 분석</a></li>
+                <li><a href="javascript:void(0);">학습 수행진단</a></li>
+                <li><a href="javascript:void(0);">시간 소비패턴</a></li>
+                <li><a href="javascript:void(0);">건강/활동 정보</a></li>
+              </ul>
+            </div>
+            <div class="tabCon first">
+              <div class="dp-tab-inside-wrap dp-smart-learning-wrap dp-bg-dark-blue dp-borRadius20">
+                <div class="dp-learning-propensity-chart-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">학습성향 진단</h3>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <div id="dp-learning-propensity-chart"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dp-learning-propensity-diagram-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">학습성향 평가</h3>
+                  <div class="dp-inner-diagram-wrap">
+                    <div class="dp-diagram-wrap">
+                      <ul class="dp-assessmentList">
+                        <li>
+                          <p class="dp-assessment-txt01">자기효능감</p>
+                          <p class="dp-assessment-txt02">3</p>
+                        </li>
+                        <li>
+                          <p class="dp-assessment-txt01">학습태도</p>
+                          <p class="dp-assessment-txt02">3</p>
+                        </li>
+                        <li>
+                          <p class="dp-assessment-txt01">학습동기</p>
+                          <p class="dp-assessment-txt02">4</p>
+                        </li>
+                      </ul>
+                      <div class="dp-diagram-line">
+                        <div class="diagramLine"></div>
+                        <div class="diagram-help-txt-wrap">
+                          <span class="diagram-help-txt dp-txtR">약점의 개선으로</span>
+                          <i class="dp-paper-clip-icon"></i>
+                          <span class="diagram-help-txt">학습시간 증가</span>
+                        </div>
+                      </div>
+                      <div class="dp-assessment-total dp-txtC">
+                        <p class="dp-assessment-txt01">일평균 순공시간 (최근 30일)</p>
+                        <p class="dp-assessment-txt02">01:12</p>
+                      </div>
+                    </div>
+                    <div class="dp-diagram-wrap">
+                      <ul class="dp-assessmentList">
+                        <li>
+                          <p class="dp-assessment-txt01">학습습관</p>
+                          <p class="dp-assessment-txt02">3</p>
+                        </li>
+                        <li>
+                          <p class="dp-assessment-txt01">학습지지</p>
+                          <p class="dp-assessment-txt02">5</p>
+                        </li>
+                        <li>
+                          <p class="dp-assessment-txt01">학습환경</p>
+                          <p class="dp-assessment-txt02">4</p>
+                        </li>
+                      </ul>
+                      <div class="dp-diagram-line">
+                        <div class="diagramLine"></div>
+                        <div class="diagram-help-txt-wrap">
+                          <span class="diagram-help-txt dp-txtR">약점의 개선으로</span>
+                          <i class="dp-paper-clip-icon"></i>
+                          <span class="diagram-help-txt">학습시간 증가</span>
+                        </div>
+                      </div>
+                      <div class="dp-assessment-total dp-txtC">
+                        <p class="dp-assessment-txt01">202008 모의고사 평균점수</p>
+                        <p class="dp-assessment-txt02">38점</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dp-learning-propensity-curating-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">학습 큐레이팅</h3>
+                  <div class="commentsWrapper scrollWrapper">
+                    <ul class="commentsList scrollContainer">
+                      <li>
+                        <p class="fs12 color-light-purple">8울 종합의견 <span class="fs08">이상운 / 2020-08-12</span></p>
+                        <div class="rowFlex flexVCenter mt-05 flex-1">
+                          <i class="icoComments colFlex flexVCenter"></i>
+                          <p class="flex-1 fs08 color-dark-grey ml-1 mr-1">하루 편균균 12-14시간정도 학습하고 있습니다
+                            그중 실강, 인강과 자습으로 꾸준히 학습하고 있습니다.
+                            아직은 모의고사 정석이 높지 않으나 시간이 지나면 성적은 자연스럽게 오르리라 생각합니다.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <p class="fs12 color-light-purple">7월 종합의견 <span class="fs08">이상운 / 2020-07-13</span></p>
+                        <div class="rowFlex flexVCenter mt-05 flex-1">
+                          <i class="icoComments colFlex flexVCenter"></i>
+                          <p class="flex-1 fs08 color-dark-grey ml-1 mr-1">전반 후 아직 적응중 인지 아직 모의고사 점수가 높지는 않습니다.
+                            시간을 두고 지켜보며 지도하도록 하겠습니다.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <p class="fs12 color-light-purple">6월 종합의견 <span class="fs08">이상운 / 2020-06-13</span></p>
+                        <div class="rowFlex flexVCenter mt-05 flex-1">
+                          <i class="icoComments colFlex flexVCenter"></i>
+                          <p class="flex-1 fs08 color-dark-grey ml-1 mr-1">경찰직에서 소방직으로 전환한 학생입니다.
+                            추후 집중 상담 실시 할예정입니다</p>
+                        </div>
+                      </li>
+                      <li>
+                        <p class="fs12 color-light-purple">5월 종합의견 <span class="fs08">김강언 / 2020-05-11</span></p>
+                        <div class="rowFlex flexVCenter mt-05 flex-1">
+                          <i class="icoComments colFlex flexVCenter"></i>
+                          <p class="flex-1 fs08 color-dark-grey ml-1 mr-1">학원규정 잘 준수하는하는 모범적인 학생으로 기본이론 수업에 매진중 입니다. 기초영어반이후 기본이론수업에 매진중이며 수업듣고 복습하면서 매시간관리 철저히 하고 있으며 약간의 긴장감을 갖고 단어장,암기장소지하여 짬시간활용하고 있습니다.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="tabCon">
+              <div class="dp-tab-inside-wrap dp-score-track-wrap dp-bg-dark-blue dp-borRadius20">
+                content 02
+              </div>
+            </div>
+            <div class="tabCon">
+              <div class="dp-tab-inside-wrap dp-perform-diagnosis-wrap dp-bg-dark-blue dp-borRadius20">
+                content 03
+              </div>
+            </div>
+            <div class="tabCon">
+              <div class="dp-tab-inside-wrap dp-time-pattern-wrap dp-bg-dark-blue dp-borRadius20">
+                content 04
+              </div>
+            </div>
+            <div class="tabCon">
+              <div class="dp-tab-inside-wrap dp-health-info-wrap dp-bg-dark-blue dp-borRadius20">
+                content 05
+              </div>
+            </div>
           </div>
         </section>
 
@@ -141,27 +305,314 @@
         </ul>
       </nav>
     </div>
-
-    <!-- pop01 -->
-    <div class="dp-popFixedWrap pop01">
-      <section class="dp-popWrap">
-        <div class="dp-popContainer">
-          <button class="dp-popBtnClose" onclick="popClose($(this));">닫기</button>
-          <header class="dp-popHeader">
-
-          </header>
-          <div class="dp-popBody">
-
-          </div>
-        </div>
-      </section>
-      <div class="dp-dim"></div>
-    </div>
-    <!-- //pop01 -->
-
-
   </div>
-
 </body>
+<script>
+  Highcharts.chart('dp-learning-time-by-place-chart', {
+    chart: {
+      type: 'pie',
+      events: {
+        load: function() {
+          var chartTitle = '<span class="dp-alarm-icon"></span>';
+          this.setTitle({
+            text: chartTitle
+          });
+        }
+      },
+      backgroundColor: 'transparent',
+      zoomType: 'xy',
+      height: '100%',
+
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: '',
+      useHTML: true,
+      align: 'center',
+      verticalAlign: 'middle',
+      y: 0,
+      style: {
+        color: '#fff',
+      },
+    },
+    tooltip: {
+      headerFormat: '',
+      pointFormat: '<span style="color:{point.color}">●</span> <span style="color:#fff"> {point.name}</span>' +
+        ': <span style="color:#fff">{point.y} %</span>',
+      backgroundColor: '#000',
+      borderColor: 'black',
+      borderRadius: 10,
+      borderWidth: 3,
+    },
+    legend: {
+      layout: 'horizontal',
+      squareSymbol: false,
+      symbolRadius: 0,
+      align: 'center',
+      verticalAlign: 'bottom',
+      itemMarginTop: 0,
+      itemMarginBottom: 0,
+      itemStyle: {
+        color: '#bdbec2',
+      },
+      itemHoverStyle: {
+        color: '#fff',
+      },
+    },
+    plotOptions: {
+      pie: {
+        size: '80%',
+        borderWidth: 0,
+        point: {
+          events: {
+            legendItemClick: function() {
+              return false; // <== returning false will cancel the default action
+            }
+          }
+        },
+        allowPointSelect: false, //if 'true', the pie is sliced when cliked
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: true,
+          distance: 5,
+          yHigh: -20,
+          yLow: -20,
+          format: '<b>{point.name}</b>: <br/>{point.y:.0f} %',
+          shape: 'callout',
+          color: '#fff',
+          style: {
+            fontSize: '0.9rem',
+            fontWeight: 'normal',
+            textShadow: 'none',
+          },
+        },
+        showInLegend: true,
+      },
+
+    },
+    series: [{
+      minPointSize: 10,
+      innerSize: '60%',
+      zMin: 0,
+      name: '사용자',
+      startAngle: 270,
+      data: [{
+        name: '학습구역 체류',
+        y: 70,
+        color: '#fcd56c',
+      }, {
+        name: '비학습구역 체류',
+        y: 30,
+        color: '#595959'
+      }]
+    }],
+  });
+</script>
+<script>
+  Highcharts.chart('dp-learning-time-by-type-chart', {
+    chart: {
+      type: 'pie',
+      events: {
+        load: function() {
+          var chartTitle = '<span class="dp-school-icon"></span>';
+          this.setTitle({
+            text: chartTitle
+          });
+        }
+      },
+      backgroundColor: 'transparent',
+      zoomType: 'xy',
+      height: '100%',
+
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: '',
+      useHTML: true,
+      align: 'center',
+      verticalAlign: 'middle',
+      y: 0,
+      style: {
+        color: '#fff',
+      },
+    },
+    tooltip: {
+      headerFormat: '',
+      pointFormat: '<span style="color:{point.color}">●</span> <span style="color:#fff"> {point.name}</span>' +
+        ': <span style="color:#fff">{point.y} %</span>',
+      backgroundColor: '#000',
+      borderColor: 'black',
+      borderRadius: 10,
+      borderWidth: 3,
+    },
+    legend: {
+      layout: 'horizontal',
+      squareSymbol: false,
+      symbolRadius: 0,
+      align: 'center',
+      verticalAlign: 'bottom',
+      itemMarginTop: 0,
+      itemMarginBottom: 0,
+      itemStyle: {
+        color: '#bdbec2',
+      },
+      itemHoverStyle: {
+        color: '#fff',
+      },
+    },
+    plotOptions: {
+      pie: {
+        size: '80%',
+        borderWidth: 0,
+        point: {
+          events: {
+            legendItemClick: function() {
+              return false; // <== returning false will cancel the default action
+            }
+          }
+        },
+        allowPointSelect: false, //if 'true', the pie is sliced when cliked
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: true,
+          distance: 5,
+          yHigh: -20,
+          yLow: -20,
+          format: '<b>{point.name}</b>: <br/>{point.y:.0f} %',
+          shape: 'callout',
+          color: '#fff',
+          style: {
+            fontSize: '0.9rem',
+            fontWeight: 'normal',
+            textShadow: 'none',
+          },
+        },
+        showInLegend: true,
+      },
+
+    },
+    series: [{
+      minPointSize: 10,
+      innerSize: '60%',
+      zMin: 0,
+      name: '사용자',
+      startAngle: 0,
+      data: [{
+        name: '실강',
+        y: 210,
+        color: '#de9c00',
+      }, {
+        name: '체력',
+        y: 17,
+        color: '#a8bc1f'
+      }, {
+        name: '인강',
+        y: 35,
+        color: '#595959'
+      }, {
+        name: '자습실',
+        y: 100,
+        color: '#2d95ae'
+      }]
+    }],
+  });
+</script>
+
+<script>
+  Highcharts.chart('dp-learning-propensity-chart', {
+    chart: {
+      backgroundColor: 'transparent',
+      polar: true,
+      type: 'line',
+      height: (9 / 10) * 100 + '%',
+    },
+    credits: {
+      enabled: false,
+    },
+    accessibility: {
+      description: ''
+    },
+    title: {
+      text: '',
+      x: -80
+    },
+    pane: {
+      size: '90%'
+    },
+    xAxis: {
+      categories: ['자기효능감', '학습태도', '학습동기', '학습습관', '학습지지', '학습환경'],
+      tickmarkPlacement: 'on',
+      color: '#ccc',
+      lineWidth: 0,
+      labels: {
+        style: {
+          color: '#fff'
+        }
+      }
+    },
+    yAxis: {
+      gridLineInterpolation: 'polygon',
+      lineWidth: 0,
+      min: 0,
+      labels: {
+        style: {
+          color: '#ddd'
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong>{point.x}</strong><br/><br/>',
+      pointFormat: '<span style="color:{series.color}">●</span> <span style="color:#333">{series.name}: <b>${point.y:,.0f}</b><br/>',
+      //valuePrefix: ' $',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      }
+    },
+    legend: {
+      align: 'center',
+      verticalAlign: 'top',
+      layout: 'horizontal',
+      itemStyle: {
+        color: '#fff',
+      }
+    },
+    series: [{
+      type: 'area',
+      name: '지난 회차',
+      data: [50000, 39000, 42000, 31000, 26000, 14000],
+      color: '#CCCCCC',
+      pointPlacement: 'on'
+    }, {
+      type: 'area',
+      name: '이번 회차',
+      data: [43000, 19000, 60000, 35000, 17000, 10000],
+      color: '#FFF700',
+      pointPlacement: 'on'
+    }],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            align: 'center',
+            verticalAlign: 'bottom',
+            layout: 'horizontal'
+          },
+          pane: {
+            size: '70%'
+          }
+        }
+      }]
+    }
+  });
+</script>
 
 </html>

@@ -141,6 +141,24 @@ function autoplaySwiper(slider){
 	}, 0);
 }
 
+function tabWrap(){
+    var tabLi = $('.dp-mydata-tab-wrap .tab li');
+
+    $('.dp-mydata-tab-wrap .tabCon').hide();
+    $('.dp-mydata-tab-wrap .tabCon.first').show();
+
+    tabLi.click(function(e){
+        e.preventDefault();
+        var $this = $(this);
+        var $tabCon = $this.parents('.tab').siblings('.tabCon');
+        var $thisIndex = $(this).index();
+        $this.siblings('li').removeClass('on');
+        $this.addClass('on');
+        $tabCon.hide();
+        $tabCon.eq($thisIndex).show();
+    });
+}
+
 
 $(function(){
 
@@ -164,4 +182,7 @@ $(function(){
 		autoplaySwiper('.dp-untact-lecture-swiper');
 	}
 
+	if($('.dp-mydata-tab-wrap').length > 0){
+		tabWrap();
+	}
 });
