@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0013)about:internet -->
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Data</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/contents.css">
+  <script src="../../assets/js/jquery-1.11.2.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/highcharts.js"></script>
+  <script src="../../assets/js/highcharts-more.js"></script>
+  <script src="../../assets/js/style.js"></script>
+  <!--[if lt IE 9]>
+  		<script src="../../assets/js/respond.js"></script>
+  		<script src="../../assets/js/html5shiv.min.js"></script>
+  	<![endif]-->
+</head>
+
+<body>
+
+  <div class="dp-wrap dp-bg-dark">
+    <div class="dp-container">
+      <nav class="dp-left-nav">
+        <button class="dp-mobile-menu-btn">
+          <i class="bar1"></i><i class="bar2"></i><i class="bar3"></i>
+        </button>
+        <ul class="dp-left-nav-list">
+          <li class="dp-row-flex jc-flex-end">
+            <a href="javascript:void(0);" class="dp-left-nav-main">Main</a>
+          </li>
+          <li class="dp-row-flex jc-flex-end">
+            <a href="javascript:void(0);" class="dp-left-nav-dpass">D-PASS 1.0</a>
+          </li>
+          <li class="dp-row-flex jc-flex-end">
+            <a href="javascript:void(0);" class="dp-left-nav-dtest">D-TEST 1.0</a>
+          </li>
+          <li class="dp-row-flex jc-flex-end">
+            <a href="javascript:void(0);" class="dp-left-nav-dtalks">D-TALKS 1.0</a>
+          </li>
+          <li class="dp-row-flex jc-flex-end">
+            <a href="javascript:void(0);" class="dp-left-nav-mydata">My Data 1.0</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="dp-main dp-col-flex">
+        <section class="dp-tit-wrap">
+          <div class="dp-tit-left">
+            <h2 class="dp-tit dp-color-blue">My Data</h2>
+            <p class="dp-tit-description dp-color-blue">나만의 학습 데이터 룸</p>
+          </div>
+          <div class="dp-tit-right dp-col-flex">
+            <div class="dp-row-flex">
+              <button class="dp-parents-login-btn">학부모 접속</button>
+            </div>
+            <p class="dp-views-txt03">나의 학습/비학습 시간을 매일 실시간으로 분석하고, 최선의 학습환경 유지를 위해<br>끝없는 관심과 노력을 기울입니다.(회원 그룹에 따라 데이터 제공 차이가 있습니다.)</p>
+          </div>
+        </section>
+        <section class="dp-basic-info-wrap">
+          <div class="dp-user-info-wrap dp-bg-dark-blue dp-borRadius20">
+            <table class="dp-user-info-table">
+              <caption>사용자 정보</caption>
+              <colgroup>
+                <col width="25%">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <i class="dp-user-icon"></i>
+                  </th>
+                  <td>
+                    <strong class="fs12">강병찬</strong>
+                    <p>1997-11-04</p>
+                    <p>남자</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">직렬</th>
+                  <td>소방</td>
+                </tr>
+                <tr>
+                  <th scope="row">배정반</th>
+                  <td>소방2반</td>
+                </tr>
+                <tr>
+                  <th scope="row">입학일</th>
+                  <td>2020-01-05</td>
+                </tr>
+                <tr>
+                  <th scope="row">수강일</th>
+                  <td>312일</td>
+                </tr>
+                <tr>
+                  <th scope="row">아이디</th>
+                  <td>jiseon4000@gmail.com</td>
+                </tr>
+                <tr>
+                  <th scope="row">연락처</th>
+                  <td>010-3658-2900</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="dp-learning-time-wrap">
+            <div class="dp-learning-time-by-place-wrap">
+              <h3>(월)학습/비학습시간 비교</h3>
+              <div class="dp-learning-time-by-place-chart"></div>
+            </div>
+            <div class="dp-learning-time-by-type-wrap">
+              <h3>(월)학습유형별 시간 비교</h3>
+              <div class="dp-learning-time-by-type-chart"></div>
+            </div>
+            <p class="dp-learning-time-guide-txt">KPA 기숙반 재원생들과 학부모님들에게 현재 학습현황을 실시간으로 제공합니다.</p>
+          </div>
+        </section>
+
+      </main>
+
+      <nav class="dp-bottom-nav">
+        <ul class="dp-bottom-nav-list dp-row-flex dp-flex-1 dp-txtC">
+          <li class="dp-col-flex dp-flex-1">
+            <a href="javascript:void(0);">온라인 강의 전문관</a>
+          </li>
+          <li class="dp-col-flex dp-flex-1">
+            <a href="javascript:void(0);">서울 대방캠퍼스</a>
+          </li>
+          <li class="dp-col-flex dp-flex-1">
+            <a href="javascript:void(0);">광주 동구캠퍼스</a>
+          </li>
+          <li class="dp-col-flex dp-flex-1">
+            <a href="javascript:void(0);">안동 기숙전문캠퍼스</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- pop01 -->
+    <div class="dp-popFixedWrap pop01">
+      <section class="dp-popWrap">
+        <div class="dp-popContainer">
+          <button class="dp-popBtnClose" onclick="popClose($(this));">닫기</button>
+          <header class="dp-popHeader">
+
+          </header>
+          <div class="dp-popBody">
+
+          </div>
+        </div>
+      </section>
+      <div class="dp-dim"></div>
+    </div>
+    <!-- //pop01 -->
+
+
+  </div>
+
+</body>
+
+</html>

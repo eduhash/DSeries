@@ -48,7 +48,7 @@
       </nav>
 
       <main class="dp-main dp-col-flex">
-        <div class="dp-tit-wrap">
+        <section class="dp-tit-wrap">
           <div class="dp-tit-left">
             <h2 class="dp-tit dp-color-blue">D-PASS</h2>
             <p class="dp-tit-description dp-color-blue">2016 ~ 2020 합격정보 조회</p>
@@ -63,46 +63,40 @@
             </div>
             <p class="dp-views-txt03">내가 준비하는 직렬, 지역별 합격선과 경쟁률은 얼마나 될까?<br>합격목표를 세우고 학습계획을 세우는 그 첫걸음!</p>
           </div>
-        </div>
-        <div class="dp-filter-wrap">
+        </section>
+        <section class="dp-filter-wrap">
           <div class="dp-filter01">
             <h3 class="dp-filter-tit">01. 공무원 준비직렬 선택</h3>
-            <ul class="dp-filter01-list dp-txtC dp-chkList dp-chkMust">
-              <li class="dp-col-flex">
-                <label for="dp-filter01-r01" class="dp-filter01-label dp-flex-1">
-                  <input type="radio" id="dp-filter01-r01" name="dp-filter01-radio">
-                  <p class="dp-filter01-txt">경찰공무원</p>
+            <ul class="dp-filter01-slct-list">
+              <li>
+                <label for="dp-filter01-slt01" class="dp-select01 dp-selectMust dp-chkList">
+                  <select name="dp-filter01-slt01" id="dp-filter01-slt01">
+                    <option value="">직군 선택</option>
+                    <option value="직군1">직군1</option>
+                    <option value="직군2">직군2</option>
+                  </select>
                 </label>
+                <p class="dp-filter01-guide-txt">: 경찰/소방/국가직 9급/지방직 등 선택</p>
               </li>
-              <li class="dp-col-flex">
-                <label for="dp-filter01-r02" class="dp-filter01-label dp-flex-1">
-                  <input type="radio" id="dp-filter01-r02" name="dp-filter01-radio">
-                  <p class="dp-filter01-txt">소방공무원</p>
+              <li>
+                <label for="dp-filter01-slt02" class="dp-select01 dp-selectMust dp-chkList">
+                  <select name="dp-filter01-slt02" id="dp-filter01-slt02">
+                    <option value="">직렬선택</option>
+                    <option value="직렬1">직렬1</option>
+                    <option value="직렬2">직렬2</option>
+                  </select>
                 </label>
+                <p class="dp-filter01-guide-txt">: 직군별 응시직렬(일반/기술/교정 등)</p>
               </li>
-              <li class="dp-col-flex">
-                <label for="dp-filter01-r03" class="dp-filter01-label dp-flex-1">
-                  <input type="radio" id="dp-filter01-r03" name="dp-filter01-radio">
-                  <p class="dp-filter01-txt">행정(국가직)</p>
+              <li>
+                <label for="dp-filter01-slt03" class="dp-select01 dp-selectMust dp-chkList">
+                  <select name="dp-filter01-slt03" id="dp-filter01-slt03">
+                    <option value="">직류(세부직) 선택 </option>
+                    <option value="직류1">직류1</option>
+                    <option value="직류2">직류2</option>
+                  </select>
                 </label>
-              </li>
-              <li class="dp-col-flex">
-                <label for="dp-filter01-r04" class="dp-filter01-label dp-flex-1">
-                  <input type="radio" id="dp-filter01-r04" name="dp-filter01-radio">
-                  <p class="dp-filter01-txt">행정(지방직)</p>
-                </label>
-              </li>
-              <li class="dp-col-flex">
-                <label for="dp-filter01-r05" class="dp-filter01-label dp-flex-1">
-                  <input type="radio" id="dp-filter01-r05" name="dp-filter01-radio">
-                  <p class="dp-filter01-txt">행정(지역인재)</p>
-                </label>
-              </li>
-              <li class="dp-col-flex">
-                <label for="dp-filter01-r06" class="dp-filter01-label dp-flex-1">
-                  <input type="radio" id="dp-filter01-r06" name="dp-filter01-radio">
-                  <p class="dp-filter01-txt">행정(고졸채용)</p>
-                </label>
+                <p class="dp-filter01-guide-txt">: 행정직만 해당(경찰/소방직 X)</p>
               </li>
             </ul>
           </div>
@@ -112,27 +106,28 @@
               <li class="dp-col-flex">
                 <label for="dp-filter02-slt01" class="dp-select01 dp-selectMust dp-chkList">
                   <select name="dp-filter02-slt01" id="dp-filter02-slt01">
-                    <option value="">지역선택</option>
-                    <option value="지역1">지역1</option>
-                    <option value="지역2">지역2</option>
+                    <option value="">응시(전형)구분 선택</option>
+                    <option value="전형1">전형1</option>
+                    <option value="전형2">전형2</option>
                   </select>
                 </label>
               </li>
               <li class="dp-col-flex">
                 <label for="dp-filter02-slt02" class="dp-select01 dp-selectMust dp-chkList">
                   <select name="dp-filter02-slt02" id="dp-filter02-slt02">
-                    <option value="">구분선택</option>
-                    <option value="구분1">구분1</option>
-                    <option value="구분2">구분2</option>
+                    <option value="">지역1(광역시/도) 선택</option>
+                    <option value="지역1">지역1</option>
+                    <option value="지역2">지역2</option>
                   </select>
                 </label>
               </li>
               <li class="dp-col-flex">
                 <label for="dp-filter02-slt03" class="dp-select01 dp-selectMust dp-chkList">
                   <select name="dp-filter02-slt03" id="dp-filter02-slt03">
-                    <option value="">직류선택</option>
-                    <option value="직류1">직류1</option>
-                    <option value="직류2">직류2</option>
+                    <option value="">지역2(지방시/군) 선택</option>
+                    <option value="통합">통합</option>
+                    <option value="지방1">지방1</option>
+                    <option value="지방2">지방2</option>
                   </select>
                 </label>
               </li>
@@ -145,9 +140,10 @@
               <button class="dp-filter-btn-reselect">다시 입력하기</button>
             </div>
           </div>
-        </div>
+          <p class="dp-filter-guide-txt">"지역2(지방시/군) 선택"은 충청도 소방직 일반채용과 인천시 행정직 정보조회 시 적용되며, 그 외 직렬은 "통합"으로 선택됩니다.</p>
+        </section>
 
-        <div class="dp-filtered-result-wrap dp-col-flex">
+        <section class="dp-filtered-result-wrap dp-col-flex">
           <div class="dp-filtered-chart-wrap dp-bg-dark-blue dp-col-flex dp-flex-1">
             <!-- 조회결과 없을 때 -->
             <div class="dp-no-result">
@@ -156,19 +152,19 @@
               <div class="dp-no-result-description">
                 <p class="dp-no-result-tit">아직 조회 결과가 없습니다. 1~2단계 조건을 선택해주세요.</p>
                 <ul class="dp-no-result-txt-list">
-                  <li>➀ 지금 준비하고 있거나 알고 싶은 직렬을 모두 선택합니다.</li>
-                  <li>➁ 직렬을 선택하면 그에 맞는 지역/구분/직류를 순서대로 선택합니다.</li>
-                  <li>➂ 지역/구분/직류는 선택된 직렬에 따라 그 정보가 다르거나 해당사항이 없을 수 있습니다.</li>
-                  <li>➃ 조건 선택 후 '조회하기'를 누르면 해당 정보가 출력됩니다.</li>
-                  <li>➄ 다른 직렬이나 조건으로 조회하고자 할 경우 '다시 입력하기'를 눌러서 초기화합니다.</li>
+                  <li class="dp-listed-txt"><span class="dp-list-number">➀</span> 지금 준비하고 있거나 알고 싶은 직렬을 모두 선택합니다.</li>
+                  <li class="dp-listed-txt"><span class="dp-list-number">➁</span> 직군/직렬/직류를 선택하고 그에 맞는 응시구분/지역정보를 순서대로 선택합니다.</li>
+                  <li class="dp-listed-txt"><span class="dp-list-number">➂</span> 직류/응시구분/지역2는 선택된 직렬에 따라 그 정보가 다르거나 해당사항이 없을 수 있습니다.</li>
+                  <li class="dp-listed-txt"><span class="dp-list-number">➃</span> 조건 선택 후 '조회하기'를 누르면 해당 정보가 출력되고, 값이 "0"인 경우는 조회기준에 맞는 채용이 없었음을 의미합니다.</li>
+                  <li class="dp-listed-txt"><span class="dp-list-number">➄</span> 다른 직렬이나 조건으로 조회하고자 할 경우 '다시 입력하기'를 눌러서 초기화합니다.</li>
                 </ul>
               </div>
             </div>
             <!-- //조회결과 없을 때 -->
           </div>
-        </div>
+        </section>
 
-        <div class="dp-untact-lecture-wrap">
+        <section class="dp-untact-lecture-wrap">
           <div class="dp-untact-lecture-list-wrap">
             <div class="dp-row-flex jc-space-between">
               <h3 class="dp-untact-lecture-tit">합격단축 추천 언택트 강의</h3>
@@ -240,7 +236,7 @@
             <p class="dp-untact-lecture-link-tit">학원과정 이름</p>
 
           </div>
-        </div>
+        </section>
 
       </main>
 
@@ -262,22 +258,6 @@
       </nav>
     </div>
 
-    <!-- pop01 -->
-    <div class="dp-popFixedWrap pop01">
-      <section class="dp-popWrap">
-        <div class="dp-popContainer">
-            <button class="dp-popBtnClose" onclick="popClose($(this));">닫기</button>
-          <header class="dp-popHeader">
-
-          </header>
-          <div class="dp-popBody">
-
-          </div>
-        </div>
-      </section>
-      <div class="dp-dim"></div>
-    </div>
-    <!-- //pop01 -->
 
 
   </div>
