@@ -169,9 +169,26 @@
 .dp-learning-propensity-diagram-wrap .dp-assessment-txt02 {padding:16px 0 12px; font-size:16px; font-size:1.6rem; color:#deec61;}
 .dp-paper-clip-icon {display:inline-block; margin:0 15px; width:16px; height:26px; background:url('../img/paper-clip.svg') no-repeat center; background-size:100%; box-sizing:border-box;}
 
+.dp-learning-propensity-curating-wrap {margin-top:30px;  padding-bottom:50px;}
+.dp-learning-propensity-curating-wrap .dp-comments-wrap {height:280px; box-sizing:border-box;}
+.dp-curating-tit-wrap {display:flex; flex-direction:row; justify-content:space-between;}
+.dp-curating-tit-wrap .dp-curating-guide-txt {padding:40px 10px 0 0; color:#9d9fae;}
+.dp-learning-propensity-curating-wrap .dp-comments-list {margin-top:40px;}
+.dp-learning-propensity-curating-wrap .dp-comments-list > li {padding:20px 0; margin-right:60px; border-top:1px solid #585a69;}
+.dp-learning-propensity-curating-wrap .dp-comments-list > li:first-child {padding-top:0; border-top:0;}
+
+.dp-comments-list .dp-comments-tit {margin-bottom:15px; font-size:20px; font-size:2.0rem; color:#a3a1c8; font-weight:normal;}
+.dp-comments-list .dp-comments-writer {display:inline-block; margin-left:10px; font-size:14px; font-size:1.4rem;}
+.dp-comments-list .dp-comments-txt {flex:1; margin:0 0 0 20px; font-size:14px; font-size:1.4rem; color:#a6a6a6;}
+
+.dp-comments-icon {display:flex; justify-content:center; align-items:center; width:60px; height:60px; border-radius:50%; color:#fcd204; border:1px solid #fcd204; box-sizing:border-box; background:url('../img/chatting.svg') no-repeat center; background-size:50%;}
 
 .scrollWrapper {position:relative; flex-grow:1;}
 .scrollWrapper .scrollContainer {position:absolute; width:100%; height:100%; overflow-y:auto;}
+.scrollWrapper .scrollContainer::-webkit-scrollbar {width:5px;}/* width */
+.scrollWrapper .scrollContainer::-webkit-scrollbar-track {background:#999;}/* Track */
+.scrollWrapper .scrollContainer::-webkit-scrollbar-thumb {background:#ddd;}/* Handle */
+.scrollWrapper .scrollContainer::-webkit-scrollbar-thumb:hover {background:#fff;}/* Handle on hover */
 
 
 /* 팝업스타일 */
