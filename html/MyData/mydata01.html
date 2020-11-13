@@ -141,14 +141,14 @@
           <div class="tabWrap">
             <div class="tab">
               <ul>
-                <li class="on"><a href="javascript:void(0);">스마트 학습진단</a></li>
-                <li><a href="javascript:void(0);">성적추이 분석</a></li>
+                <li><a href="javascript:void(0);">스마트 학습진단</a></li>
+                <li class="on"><a href="javascript:void(0);">성적추이 분석</a></li>
                 <li><a href="javascript:void(0);">학습 수행진단</a></li>
                 <li><a href="javascript:void(0);">시간 소비패턴</a></li>
                 <li><a href="javascript:void(0);">건강/활동 정보</a></li>
               </ul>
             </div>
-            <div class="tabCon first">
+            <div class="tabCon">
               <div class="dp-tab-inside-wrap dp-smart-learning-wrap dp-bg-dark-blue dp-borRadius20">
                 <div class="dp-learning-propensity-chart-wrap">
                   <h3 class="dp-mydata-tab-section-tit">학습성향 진단</h3>
@@ -266,9 +266,38 @@
                 </div>
               </div>
             </div>
-            <div class="tabCon">
+            <div class="tabCon first">
               <div class="dp-tab-inside-wrap dp-score-track-wrap dp-bg-dark-blue dp-borRadius20">
-                content 02
+                <div class="dp-perform-by-subj-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">과목별 균형분석</h3>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <div id="dp-perform-by-subj-chart"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dp-case-study-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">CASE STUDY</h3>
+                  <ul class="dp-case-study-guide-wrap">
+                    <li class="dp-row-flex dp-flex-center">
+                      <i class="dp-case-study-good-icon"></i>
+                      <p class="dp-case-study-guide-txt"><strong>BEST!</strong>전 과목 높은 점수로 균형이 좋아서 가장 이상적인 학습성과 형태입니다. 슬럼프 없이 이대로 유지하는데 촛점을 맞추세요.</p>
+                    </li>
+                    <li class="dp-row-flex dp-flex-center">
+                      <i class="dp-case-study-bad-icon"></i>
+                      <p class="dp-case-study-guide-txt"><strong>WORST!</strong>과목별 편중이 심해서 균형이 깨져있는 상태입니다. 가장 피해야할 상황으로 포기과목이 생기기 쉬운 상황입니다.</p>
+                    </li>
+                    <li class="dp-row-flex dp-flex-center">
+                      <i class="dp-case-study-soso-icon"></i>
+                      <p class="dp-case-study-guide-txt"><strong>So..So!</strong>초시생이나 공부경험이 짧은 학생에게 나타나는 경우 걱정하지 않아도 됩니다. 그러나 장기간의 공부경험에 대비해 나타난다면 조심!</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dp-sixmonth-perform-by-subj-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">6개월 모의고사 성과</h3>
+                </div>
               </div>
             </div>
             <div class="tabCon">
@@ -617,5 +646,90 @@
     }
   });
 </script>
+
+<script>
+  Highcharts.chart('dp-perform-by-subj-chart', {
+    chart: {
+      backgroundColor: 'transparent',
+      polar: true,
+      type: 'line',
+      height: (9 / 10) * 100 + '%',
+    },
+    credits: {
+      enabled: false,
+    },
+    accessibility: {
+      description: ''
+    },
+    title: {
+      text: '',
+      x: -80
+    },
+    pane: {
+      size: '90%'
+    },
+    xAxis: {
+      categories: ['과목1', '과목2', '과목3', '과목4', '과목5'],
+      tickmarkPlacement: 'on',
+      color: '#ccc',
+      lineWidth: 0,
+      labels: {
+        style: {
+          color: '#fff'
+        }
+      }
+    },
+    yAxis: {
+      gridLineInterpolation: 'polygon',
+      tickInterval: 100 / 5, //MAX_Y_VALUE/5
+      lineWidth: 0,
+      min: 0,
+      max: 100,
+      labels: {
+        style: {
+          color: '#bdbec2',
+        },
+      },
+    },
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong>{point.x}</strong><br/><br/>',
+      pointFormat: '<span style="color:{series.color}">●</span> <span style="color:#333">{series.name}: <b>${point.y:,.0f}</b><br/>',
+      //valuePrefix: ' $',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      }
+    },
+    legend: {
+      enabled: false,
+    },
+    series: [{
+      type: 'area',
+      color: '#ffff01',
+      opacity: '0.5',
+      data: [80, 75, 90, 60, 55],
+      pointPlacement: 'on'
+    }],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            align: 'center',
+            verticalAlign: 'bottom',
+            layout: 'horizontal'
+          },
+          pane: {
+            size: '70%'
+          }
+        }
+      }]
+    }
+  });
+</script>
+
 
 </html>

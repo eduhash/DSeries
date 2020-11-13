@@ -32,14 +32,14 @@
 .dp-views-txt-wrap .dp-views-txt02 {padding-top:5px; font-size:20px; font-size:2.0rem; font-weight:bold; color:#fff;}
 .dp-tit-right .dp-views-txt03 {margin-top:20px; font-size:14px; font-size:1.4rem; color:#a8acaf; line-height:140%;}
 
-.dp-filter-wrap {display:flex; flex-direction:row; flex-wrap:wrap; margin-top:55px;}
+.dp-filter-wrap {display:flex; flex-direction:row; flex-wrap:wrap; height:100%; margin-top:55px;}
 .dp-filter-wrap .dp-filter-tit {padding:10px 0; margin-bottom:20px; font-size:18px; font-size:1.8rem; font-weight:normal; color:#d2d3d5;}
 .dp-filter02 .dp-filter-tit, .dp-filter03 .dp-filter-tit {padding-left:40px;}
 .dp-filter-wrap .dp-filter-guide-txt {margin-top:25px; width:100%; color:#9b9daa; font-size:14px; font-size:1.4rem; font-weight:normal;}
 .dp-filter-wrap .dp-filter01 {flex:4;}
 .dp-filter-wrap .dp-filter02 {flex:2.6;}
 .dp-filter-wrap .dp-filter03 {flex:2.4;}
-.dp-filter-wrap .dp-filter01-list {display:flex; flex-direction:row; flex:1; flex-wrap:wrap; padding-right:40px; border-right:1px dotted #256c9d;}
+.dp-filter-wrap .dp-filter01-list {display:flex; flex-direction:row; flex:1; flex-wrap:wrap; height:100%; padding-right:40px; border-right:1px dotted #256c9d;}
 .dp-filter-wrap .dp-filter01-list > li {width:33.33%; box-sizing:border-box;}
 .dp-filter-wrap .dp-filter01-label {position:relative; min-height:68px; margin:4px; border:1px solid #256c9d; border-radius:6px; box-sizing:border-box; cursor:pointer;}
 .dp-filter-wrap .dp-filter01-label:after {content:''; position:absolute; top:10px; left:50%; margin-left:-11px; width:22px; height:15px; background:url('../img/down-arrow.svg') no-repeat center; background-size:100%;}
@@ -118,7 +118,7 @@
 .dp-basic-info-wrap {display:flex; flex-direction:row; margin-top:80px;}
 .dp-user-info-wrap {flex:2.5; padding:35px 40px;}
 .dp-user-icon {display:inline-block; width:64px; height:64px; background:url('../img/reading.svg') no-repeat center; background-size:100%;}
-.dp-learning-time-wrap {flex:7.5; display:flex; flex-direction:row; flex-wrap:wrap; padding:0 0 0 40px;}
+.dp-learning-time-wrap {flex:7.5; display:flex; flex-direction:row; flex-wrap:wrap; height:100%; padding:0 0 0 40px;}
 .dp-learning-time-by-place-wrap {width:50%; text-align:center;}
 .dp-learning-time-by-type-wrap {width:50%; text-align:center;}
 .dp-learning-time-wrap .dp-learning-time-guide-txt {margin-top:20px; width:100%; color:#9b9daa; text-align:center;}
@@ -148,7 +148,7 @@
 .dp-mydata-tab-wrap .dp-tab-inside-wrap {margin-top:40px; padding:0 35px 40px;}
 .dp-mydata-tab-wrap .dp-mydata-tab-section-tit {padding-top:40px; font-size:18px; font-size:1.8rem; font-weight:normal;}
 
-.dp-smart-learning-wrap {display:flex; flex-direction:row; flex-wrap:wrap;}
+.dp-smart-learning-wrap {display:flex; flex-direction:row; flex-wrap:wrap; height:100%;}
 .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap {flex:1; padding-right:40px;}
 .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap .dp-chart-area {height:300px;}
 .dp-smart-learning-wrap .dp-learning-propensity-diagram-wrap {flex:2;}
@@ -189,6 +189,22 @@
 .scrollWrapper .scrollContainer::-webkit-scrollbar-track {background:#999;}/* Track */
 .scrollWrapper .scrollContainer::-webkit-scrollbar-thumb {background:#ddd;}/* Handle */
 .scrollWrapper .scrollContainer::-webkit-scrollbar-thumb:hover {background:#fff;}/* Handle on hover */
+
+.dp-score-track-wrap {display:flex; flex-direction:row; flex-wrap:wrap; height:100%;}
+.dp-score-track-wrap .dp-perform-by-subj-wrap {flex:1.2;}
+.dp-score-track-wrap .dp-case-study-wrap {flex:2; margin-left:40px;}
+.dp-score-track-wrap .dp-sixmonth-perform-by-subj-wrap {width:100%;}
+
+.dp-perform-by-subj-wrap .dp-chart-area {margin-top:40px;}
+
+.dp-case-study-wrap .dp-case-study-guide-wrap {margin-top:50px;}
+.dp-case-study-wrap .dp-case-study-guide-wrap > li {padding:5px 0;}
+.dp-case-study-good-icon, .dp-case-study-bad-icon, .dp-case-study-soso-icon {display:inline-block; width:63px; height:73px; box-sizing:border-box;}
+.dp-case-study-good-icon {background:url('../img/ico-polygon-good.jpg') no-repeat center; background-size:100%;}
+.dp-case-study-bad-icon {background:url('../img/ico-polygon-bad.jpg') no-repeat center; background-size:100%;}
+.dp-case-study-soso-icon {background:url('../img/ico-polygon-soso.jpg') no-repeat center; background-size:100%;}
+.dp-case-study-wrap .dp-case-study-guide-txt {flex:1; padding:0px 25px; color:#9fa1ae; font-size:14px; font-size:1.4rem; line-height:160%;}
+.dp-case-study-wrap .dp-case-study-guide-txt strong {display:inline-block; margin-right:6px; color:#fff; font-size:15px; font-size:1.5rem; font-weight:normal;}
 
 
 /* 팝업스타일 */
@@ -282,7 +298,7 @@
   .dp-filtered-chart-wrap .dp-chart-area::-webkit-scrollbar-thumb {background:#ddd; border-radius:6px;}/* Handle */
   .dp-filtered-chart-wrap .dp-chart-area::-webkit-scrollbar-thumb:hover {background:#fff;}/* Handle on hover */
   .dp-filtered-chart-wrap .dp-chart-area .dp-chart-container {position:relative; min-width:1080px; box-sizing:border-box;}
-  .dp-filtered-chart-wrap .dp-no-result {flex-wrap:wrap; padding:25px 25px 40px; justify-content:center;}
+  .dp-filtered-chart-wrap .dp-no-result {flex-wrap:wrap; height:100%; padding:25px 25px 40px; justify-content:center;}
   .dp-no-result-icon {width:40px; height:40px; margin:0;}
   .dp-no-result-dot-icon {width:9px; height:9px; margin:0 30px;}
   .dp-no-result-dot-icon:before {width:9px; height:9px; left:-15px;}
