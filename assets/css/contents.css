@@ -259,14 +259,16 @@
 .dp-borRadius20 {border-radius:20px;}
 
 /* 김코디 쪽 css 수정 */
-.contents-container, .contents-wrap {height:auto; padding-bottom:0;}
-.contents-container .contents {padding-bottom:0;}
+.contents-container, .contents-wrap {position:relative; height:auto; padding-bottom:0;}
+.contents-container .contents {position:relative; padding-bottom:0;}
 #footer {padding-top:0;}
 /* //김코디 쪽 css 수정 */
 
 @media (max-width:1080px){
   .dp-container {width:100%; padding-top:20px; box-sizing:border-box;}
   .dp-tit-wrap {flex-direction:column;}
+  .dp-tit-left {flex:auto;}
+  .dp-tit-right {flex:auto;}
 
   .dp-left-nav {left:-220px; top:0; height:100%; transition:0.4s; background:#515154;}
   .dp-left-nav .dp-left-nav-list {height:100%;}
@@ -307,9 +309,11 @@
   .dp-chart-tit {font-size:18px; font-size:1.8rem;}
 
   /* 김코디 쪽 css 수정 */
-  .contents-container, .contents-wrap {height:auto; padding-bottom:0;}
-  .contents-container .contents {padding-bottom:0;}
+  .contents-container, .contents-wrap {position:relative; height:auto; padding-bottom:0;}
+  .contents-container .contents {position:relative; padding-bottom:0;}
   #footer {padding-top:0;}
+  #footer .main_width {width:100%; padding:20px;}
+  #footer .footer_info .right {width:100%;}
   /* //김코디 쪽 css 수정 */
 }
 
@@ -318,16 +322,18 @@
   .dp-bottom-nav {padding:0;}
 
   /* 김코디 쪽 css 수정 */
-  .contents-container, .contents-wrap {height:auto; padding-bottom:0;}
-  .contents-container .contents {padding-bottom:0;}
+  .contents-container, .contents-wrap {position:relative; height:auto; padding-bottom:0;}
+  .contents-container .contents {position:relative; padding-bottom:0;}
   #footer {padding-top:0;}
+  #footer .main_width {width:100%; padding:20px;}
+  #footer .footer_info .right {width:100%;}
   /* //김코디 쪽 css 수정 */
 }
 
 @media (max-width:620px){
   .dp-filter-wrap .dp-filter01-slct-list {padding-right:0;}
   .dp-filter-wrap .dp-filter01-slct-list > li {flex-direction:column; justify-content:flex-start; align-items:flex-start; margin-top:5px;}
-  .dp-filter-wrap .dp-filter01-guide-txt {margin-top:5px;}
+  .dp-filter-wrap .dp-filter01-guide-txt {flex:auto; margin-top:5px;}
   .dp-filter-wrap .dp-filter02-list {flex-direction:column;}
   .dp-filter-wrap .dp-filter02-list > li {width:100%; margin-top:7px;}
 }
