@@ -763,13 +763,15 @@
     },
     yAxis: {
       gridLineInterpolation: 'polygon',
+      tickInterval: 5 / 5, //MAX_Y_VALUE/5
       lineWidth: 0,
       min: 0,
+      max: 5,
       labels: {
         style: {
-          color: '#ddd'
-        }
-      }
+          color: '#bdbec2',
+        },
+      },
     },
     tooltip: {
       shared: true,
@@ -795,14 +797,16 @@
     series: [{
       type: 'area',
       name: '지난 회차',
-      data: [50000, 39000, 42000, 31000, 26000, 14000],
+      data: [5, 3, 4, 3, 2, 3],
       color: '#CCCCCC',
+      opacity: '0.7',
       pointPlacement: 'on'
     }, {
       type: 'area',
       name: '이번 회차',
-      data: [43000, 19000, 60000, 35000, 17000, 10000],
-      color: '#FFF700',
+      data: [4, 2, 5, 3, 3, 3],
+      color: '#ffff01',
+      opacity: '0.5',
       pointPlacement: 'on'
     }],
     responsive: {
