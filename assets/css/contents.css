@@ -264,8 +264,6 @@
 .dp-popWrap {position:relative; overflow:hidden; max-width:830px; min-height:100px; width:100%; padding:15px; margin:0 auto; border-radius:10px; background:#0c1315; box-shadow:2px 1px 3px rgba(0, 0, 0, 0.2); z-index:20; box-sizing:border-box;}
 .dp-popWrap.maxW580 {max-width:580px;}
 
-
-
 /* background-color */
 .dp-bg-dark {background-color:#060818;}
 .dp-bg-blue {background-color:#3cb4ff;}
@@ -360,7 +358,6 @@
   .dp-no-result-description {margin:30px 0 0; width:100%;}
   .dp-chart-tit {font-size:18px; font-size:1.8rem;}
 
-
   .dp-basic-info-wrap {flex-direction:column; margin-top:30px;}
   .dp-user-info-wrap {flex:auto;}
   .dp-learning-time-wrap {flex:auto; margin-top:40px; padding:0;}
@@ -368,11 +365,9 @@
 
   .dp-smart-learning-wrap {flex-direction:column;}
   .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap {flex:auto; padding-right:0;}
-  .dp-smart-learning-wrap .dp-learning-propensity-diagram-wrap {flex:auto;}
-
-  .dp-learning-time-wrap .dp-chart-area {width:100%; max-width:320px; margin:0 auto;}
-
   .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap .dp-chart-area {width:100%; max-width:320px; min-width:260px; margin:0 auto;}
+  .dp-smart-learning-wrap .dp-learning-propensity-diagram-wrap {flex:auto;}
+  .dp-learning-time-wrap .dp-chart-area {width:100%; max-width:320px; margin:0 auto;}
 
   .dp-perform-study-time-wrap {margin-top:40px;}
   .dp-score-track-wrap {flex-direction:column;}
@@ -381,7 +376,6 @@
   .dp-score-track-wrap .dp-sixmonth-perform-by-subj-wrap {margin-top:40px;}
 
   .dp-time-pattern-wrap {flex-direction:column;}
-
   .dp-time-pattern-wrap .dp-time-pattern-table-wrap {flex:auto; width:100%;}
   .dp-time-pattern-wrap .dp-time-pattern-analysis-wrap {flex:auto; width:100%; margin-top:40px;}
   .dp-time-pattern-analysis-wrap .dp-chart-area {width:100%; max-width:600px; height:330px; margin:0 auto;}
@@ -432,6 +426,10 @@
   .dp-tit-wrap .dp-tit-description {font-size:18px; font-size:1.8rem;}
   .dp-parents-login-status {padding:5px 15px; font-size:14px; font-size:1.4rem;}
   .dp-tit-right .dp-views-txt03 {font-size:13px; font-size:1.3rem;}
+
+  .dp-user-info-table .dp-user-name {font-size:17px; font-size:1.7rem;}
+  .dp-learning-time-wrap .dp-learning-time-tit {font-size:16px; font-size:1.6rem;}
+  .dp-mydata-tab-wrap .dp-mydata-tab-section-tit {font-size:16px; font-size:1.6rem;}
 
   .dp-user-info-wrap {padding:30px 20px;}
 
