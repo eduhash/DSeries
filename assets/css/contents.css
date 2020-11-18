@@ -100,7 +100,7 @@
 .dp-untact-lecture-wrap .dp-untact-lecture-tit {font-size:18px; font-size:1.8rem; font-weight:normal; margin-bottom:35px; color:#fcfcfd;}
 .dp-untact-lecture-wrap .dp-untact-lecture-btn-more {margin-right:40px; font-size:14px; font-size:1.4rem; color:#aeb2b5; transition:0.3s;}
 .dp-untact-lecture-wrap .dp-untact-lecture-btn-more:hover {color:#fff;}
-.dp-untact-lecture-swiper-wrap {position:relative; padding:0 40px;}
+.dp-untact-lecture-swiper-wrap {display:flex; flex-direction:row; position:relative; padding:0 40px;}
 .dp-untact-lecture-wrap .dp-untact-lecture-link {display:flex; flex-flow:row nowrap; align-items:center; justify-content:center; position:relative; overflow:hidden; width:100%; height:105px; box-sizing:border-box; border:1px solid #2f8ac7; transition:0.3s; background:url('') no-repeat center; background-size:cover;}
 .dp-untact-lecture-wrap .dp-untact-lecture-link:hover {border-color:#fff;}
 .dp-play-icon {position:absolute; top:50%; left:50%; margin-left:-20px; margin-top:-20px; width:40px; height:40px; border-radius:50%; background:#ddd url('../img/play-circle-solid.svg') no-repeat center; background-size:110%; text-indent:-99999px; box-sizing:border-box; transition:0.2s;}
@@ -336,6 +336,8 @@
   .dp-filter-wrap .dp-filter01-slct-list {border:0;}
   .dp-filter-wrap .dp-filter02-list {display:flex; flex-direction:row; justify-content:space-between; align-items:center; padding:0; border:0;}
   .dp-filter-wrap .dp-filter02-list > li {flex:1; margin:4px;}
+
+  .dp-main .result_graph {display:flex; flex-direction:column;}
 
   .dp-untact-lecture-wrap {flex-direction:column; margin-top:40px;}
   .dp-untact-lecture-list-wrap {max-width:100%; min-width:100%;}

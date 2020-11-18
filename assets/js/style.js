@@ -173,7 +173,12 @@ function tabWrap(){
         $tabCon.eq($thisIndex).show();
     });
 }
-
+function counterUpNumber(){
+	$('.dp-counterup').counterUp({
+	    delay: 10,
+	    time: 1000
+	});
+}
 
 $(function(){
 
@@ -199,5 +204,9 @@ $(function(){
 
 	if($('.dp-mydata-tab-wrap').length > 0){
 		tabWrap();
+	}
+
+	if($('.dp-counterup').length > 0){
+		counterUpNumber();
 	}
 });
