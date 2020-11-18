@@ -422,6 +422,11 @@
   .dp-filter-wrap {margin-top:40px;}
   .dp-bottom-nav {padding:0;}
 
+  .dp-tit-wrap .dp-tit {font-size:50px; font-size:5.2rem;}
+  .dp-tit-wrap .dp-tit-description {font-size:18px; font-size:1.8rem;}
+  .dp-parents-login-status {padding:5px 15px; font-size:14px; font-size:1.4rem;}
+  .dp-tit-right .dp-views-txt03 {font-size:13px; font-size:1.3rem;}
+
   .dp-user-info-wrap {padding:30px 20px;}
 
   .dp-mydata-tab-wrap .dp-tab-inside-wrap {padding:0 20px 30px;}
