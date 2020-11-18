@@ -124,8 +124,6 @@ function navToggle(btn){
 function autoplaySwiper(slider){
 	setTimeout(function() {
 		var mySwiper = new Swiper(slider, {
-			slidesPerView: 3.5,
-			spaceBetween: 30,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
@@ -137,6 +135,23 @@ function autoplaySwiper(slider){
 			},
 			autoplayDisableOnInteraction: false,
 			speed: 400,
+			breakpoints: {
+		    // when window width is <= 320px
+		    320: {
+		      slidesPerView: 1,
+		      spaceBetween: 20
+		    },
+		    // when window width is <= 480px
+		    480: {
+		      slidesPerView: 2.5,
+		      spaceBetween: 20
+		    },
+		    // when window width is <= 640px
+		    640: {
+		      slidesPerView: 3.5,
+		      spaceBetween: 30
+		    }
+		  }
 		});
 	}, 0);
 }

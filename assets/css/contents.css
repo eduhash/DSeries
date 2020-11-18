@@ -8,7 +8,7 @@
 .dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-main {padding-right:0; width:100%; min-height:30px; text-indent:-99999px; background:url('../img/left-arrow.svg') no-repeat right; background-size:30px; box-sizing:border-box;}
 .dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-main:hover {transform:scale(1.2); margin-right:20px;}
 .dp-left-nav .dp-left-nav-list > li > a:after {content:''; position:absolute; right:0; top:50%; margin-top:-9px; width:18px; height:18px;}
-.dp-left-nav .dp-left-nav-list > li > a:hover {color:#fff; font-size:18px; font-size:1.8rem;}
+.dp-left-nav .dp-left-nav-list > li > a:hover, .dp-left-nav .dp-left-nav-list > li.active > a {color:#fff; font-size:18px; font-size:1.8rem;}
 .dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-dpass:after {background:url('../img/gem-regular.svg') no-repeat right; background-size:100%;}
 .dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-dtest:after {background:url('../img/layer-group-solid.svg') no-repeat right; background-size:16px;}
 .dp-left-nav .dp-left-nav-list > li > a.dp-left-nav-dtalks:after {background:url('../img/cubes-solid.svg') no-repeat right; background-size:100%;}
@@ -341,7 +341,7 @@
 
   .dp-untact-lecture-wrap {flex-direction:column; margin-top:40px;}
   .dp-untact-lecture-list-wrap {max-width:100%; min-width:100%;}
-  .dp-untact-lecture-wrap .dp-untact-lecture-link {height:80px;}
+  .dp-untact-lecture-wrap .dp-untact-lecture-link {height:100px;}
   .dp-untact-lecture-rcmd-wrap {margin-top:20px; max-width:100%; min-width:100%; padding:0 10px;}
   .dp-untact-lecture-rcmd-wrap .dp-untact-lecture-link {width:180px; margin:0 auto;}
   .dp-play-icon {width:30px; height:30px; margin-top:-15px; margin-left:-15px;}
@@ -422,6 +422,9 @@
   .dp-filter-wrap {margin-top:40px;}
   .dp-bottom-nav {padding:0;}
 
+  .dp-bottom-nav .dp-bottom-nav-list > li > a {padding:8px 5px; font-size:13px; font-size:1.3rem;}
+  .dp-bottom-nav .dp-bottom-nav-list > li > a:hover {font-size:13px; font-size:1.3rem;}
+
   .dp-tit-wrap .dp-tit {font-size:50px; font-size:5.2rem;}
   .dp-tit-wrap .dp-tit-description {font-size:18px; font-size:1.8rem;}
   .dp-parents-login-status {padding:5px 15px; font-size:14px; font-size:1.4rem;}
@@ -466,7 +469,7 @@
 
   .dp-perform-level-gage-wrap .dp-level-gage-chart {top:9px; height:6px;}
   .dp-level-chk-list .dp-level-icon {width:24px; height:24px; border-width:1px;}
-  .dp-level-chk-list .dp-level-txt01 {font-size:15px; font-size:1.5rem; font-weight:normal;}
+  .dp-level-chk-list .dp-level-txt01 {font-size:14px; font-size:1.4rem; font-weight:normal;}
   .dp-level-chk-list .dp-level-txt02 {margin-top:8px; padding:3px 5px; font-size:10px; font-size:1.0rem;}
 
   .dp-perform-user-guide-wrap {margin-top:40px;}
