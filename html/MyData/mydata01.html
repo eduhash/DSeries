@@ -15,7 +15,6 @@
   <script src="../../assets/js/swiper.min.js"></script>
   <script src="../../assets/js/highcharts.js"></script>
   <script src="../../assets/js/highcharts-more.js"></script>
-  <!-- <script src="https://code.highcharts.com/modules/variable-pie.js"></script> -->
   <script src="../../assets/js/style.js"></script>
   <!--[if lt IE 9]>
   		<script src="../../assets/js/respond.js"></script>
@@ -58,7 +57,7 @@
           </div>
           <div class="dp-tit-right dp-col-flex">
             <div class="dp-row-flex">
-              <div class="dp-parents-login-status">학생-학부모 접속</div>
+              <div class="dp-parents-login-status">학생 - 학부모 접속</div>
             </div>
             <p class="dp-views-txt03">나의 학습/비학습 시간을 매일 실시간으로 분석하고, 최선의 학습환경 유지를 위해<br>끝없는 관심과 노력을 기울입니다.(회원 그룹에 따라 데이터 제공 차이가 있습니다.)</p>
           </div>
@@ -588,9 +587,9 @@
           yLow: -20,
           format: '<b>{point.name}</b>: <br/>{point.y:.0f} %',
           shape: 'callout',
-          color: '#fff',
+          color: '#a8aab9',
           style: {
-            fontSize: '0.9rem',
+            fontSize: '1.1rem',
             fontWeight: 'normal',
             textShadow: 'none',
           },
@@ -691,9 +690,9 @@
           yLow: -20,
           format: '<b>{point.name}</b>: <br/>{point.y:.0f} %',
           shape: 'callout',
-          color: '#fff',
+          color: '#a8aab9',
           style: {
-            fontSize: '0.9rem',
+            fontSize: '1.1rem',
             fontWeight: 'normal',
             textShadow: 'none',
           },
@@ -748,7 +747,7 @@
       x: -80
     },
     pane: {
-      size: '90%'
+      size: '80%'
     },
     xAxis: {
       categories: ['자기효능감', '학습태도', '학습동기', '학습습관', '학습지지', '학습환경'],
@@ -787,7 +786,6 @@
     },
     series: [{
       type: 'area',
-      //name: '이번 회차',
       data: [4, 2, 5, 3, 3, 3],
       color: '#ffff01',
       opacity: '0.5',
@@ -1614,7 +1612,6 @@
         data: [6.75, 6.75, 6.75, 6.75, 6.75, 6.75, 7],
       },
     ],
-
   });
 </script>
 

@@ -147,8 +147,8 @@
 .dp-mydata-tab-wrap .dp-tab-inside-wrap {margin-top:40px; padding:0 35px 40px;}
 .dp-mydata-tab-wrap .dp-mydata-tab-section-tit {padding-top:40px; font-size:18px; font-size:1.8rem; font-weight:normal;}
 
-.dp-smart-learning-wrap {display:flex; flex-direction:row; flex-wrap:wrap; height:100%;}
-.dp-smart-learning-wrap .dp-learning-propensity-chart-wrap {flex:1.2;}
+.dp-smart-learning-wrap {display:flex; flex-direction:row; flex-wrap:wrap; height:100%; position:relative;}
+.dp-smart-learning-wrap .dp-learning-propensity-chart-wrap {flex:1.2; padding-right:40px;}
 .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap .dp-chart-area {margin-top:20px; height:300px;}
 .dp-smart-learning-wrap .dp-learning-propensity-diagram-wrap {flex:2;}
 .dp-smart-learning-wrap .dp-learning-propensity-curating-wrap {width:100%;}
@@ -156,14 +156,14 @@
 .dp-learning-propensity-diagram-wrap .dp-inner-diagram-wrap {display:flex; flex-direction:row; flex:1; justify-content:space-between; align-items:center; margin-top:50px;}
 .dp-learning-propensity-diagram-wrap .dp-diagram-wrap {display:flex; flex-direction:column; flex:1;}
 .dp-learning-propensity-diagram-wrap .dp-assessmentList {display:flex; flex-direction:row; justify-content:space-between;}
-.dp-learning-propensity-diagram-wrap .dp-assessmentList > li {margin:0 5px; width:100%; background:#060817; border-radius:5px; text-align:center;}
+.dp-learning-propensity-diagram-wrap .dp-assessmentList > li {display:flex; flex-direction:column; flex:1; margin:0 5px; background:#060817; border-radius:5px; text-align:center;}
 .dp-learning-propensity-diagram-wrap .dp-diagram-line {display:flex; flex-direction:column; position:relative;}
 .dp-learning-propensity-diagram-wrap .dp-diagram-line:before {content:''; position:absolute; top:0; left:50%; margin-left:-0.5px; width:1px; height:100%; background:#5b5c67;}
 .dp-diagram-line .diagramLine {display:flex; flex-direction:row; justify-content:center; align-items:center; margin:0 5px;}
 .dp-diagram-line .diagramLine:before {content:''; width:66.6%; height:20px; margin:0 0.5rem; border:1px solid #5b5c67; border-top:0; box-sizing:border-box;}
 .dp-diagram-line .diagram-help-txt-wrap {display:flex; flex-direction:row; justify-content:center; align-items:center; position:relative; margin:30px 5px;}
 .dp-diagram-line .diagram-help-txt {flex:1;}
-.dp-learning-propensity-diagram-wrap .dp-assessment-total {margin:0 5px; background:#060817; border-radius:5px;}
+.dp-learning-propensity-diagram-wrap .dp-assessment-total {display:flex; flex-direction:column; margin:0 5px; background:#060817; border-radius:5px;}
 .dp-learning-propensity-diagram-wrap .dp-assessment-txt01 {padding:12px 0 0; font-size:13px; font-size:1.3rem; color:#fefeff;}
 .dp-learning-propensity-diagram-wrap .dp-assessment-txt02 {padding:16px 0 12px; font-size:16px; font-size:1.6rem; color:#deec61;}
 .dp-paper-clip-icon {display:inline-block; margin:0 15px; width:16px; height:26px; background:url('../img/paper-clip.svg') no-repeat center; background-size:100%; box-sizing:border-box;}
@@ -211,7 +211,7 @@
 .dp-perform-diagnosis-wrap .dp-perform-diagnosis-info-wrap {display:flex; flex-direction:row; justify-content:space-between; align-items:center; margin-top:50px;}
 .dp-perform-diagnosis-info-wrap > li {display:flex; flex-direction:column; margin:0 30px; text-align:center;}
 .dp-perform-diagnosis-info-wrap .dp-perform-label-txt {color:#ecedf0; font-size:18px; font-size:1.8rem;}
-.dp-perform-diagnosis-info-wrap .dp-perform-value-txt {color:#fff; font-size:45px; font-size:4.5rem; line-height:160%;}
+.dp-perform-diagnosis-info-wrap .dp-perform-value-txt {color:#fff; font-size:40px; font-size:4.0rem; line-height:160%;}
 .dp-perform-diagnosis-wrap .dp-perform-level-wrap {display:flex; flex-direction:column; margin-top:20px;}
 .dp-perform-diagnosis-wrap .dp-perform-level-info-wrap {display:flex; flex-direction:row; justify-content:space-between; align-items:center; background:#060817; border-radius:20px;}
 .dp-perform-level-info-wrap .dp-perform-level-info-txt01 {padding:20px 30px; font-size:18px; font-size:1.8rem; color:#f4f4f4;}
@@ -367,7 +367,7 @@
   .dp-mydata-tab-wrap {margin-top:40px;}
 
   .dp-smart-learning-wrap {flex-direction:column;}
-  .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap {flex:auto;}
+  .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap {flex:auto; padding-right:0;}
   .dp-smart-learning-wrap .dp-learning-propensity-diagram-wrap {flex:auto;}
 
   .dp-learning-time-wrap .dp-chart-area {width:100%; max-width:320px; margin:0 auto;}
@@ -385,6 +385,9 @@
   .dp-time-pattern-wrap .dp-time-pattern-table-wrap {flex:auto; width:100%;}
   .dp-time-pattern-wrap .dp-time-pattern-analysis-wrap {flex:auto; width:100%; margin-top:40px;}
   .dp-time-pattern-analysis-wrap .dp-chart-area {width:100%; max-width:600px; height:330px; margin:0 auto;}
+  .dp-time-pattern-table-wrap .dp-time-pattern-study-avgtime {margin-left:10px; font-size:25px; font-size:2.5rem;}
+  .dp-avg-time-table th, .dp-avg-time-table td {font-size:14px; font-size:1.4rem;}
+  .dp-avg-time-table .mins-value-txt {font-size:18px; font-size:1.8rem;}
 
   .dp-sixmonth-perform-by-subj-wrap .dp-chart-area {overflow-x:scroll; height:300px;}
   .dp-sixmonth-perform-by-subj-wrap .dp-chart-area .dp-chart-container {position:relative; min-width:960px; box-sizing:border-box;}
