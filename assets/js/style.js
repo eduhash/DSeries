@@ -156,6 +156,24 @@ function autoplaySwiper(slider){
 	}, 0);
 }
 
+function mainBannerSwiper(slider){
+	setTimeout(function() {
+		var mySwiper = new Swiper(slider, {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			// loop : true,
+			// loopFillGroupWithBlank: true,
+			// autoplay: {
+			// 	delay: 5000,
+			// },
+			// autoplayDisableOnInteraction: false,
+			// speed: 400,
+		});
+	}, 0);
+}
+
 function tabWrap(){
     var tabLi = $('.dp-mydata-tab-wrap .tab li');
 
@@ -173,8 +191,47 @@ function tabWrap(){
         $tabCon.eq($thisIndex).show();
     });
 }
+
 function counterUpNumber(){
 	$('.dp-counterup').counterUp();
+}
+
+function movingClock(){
+	function Horloge() {
+	  var laDate = new Date();
+		if(laDate.getHours() < 10) {
+			var hours = "0" + laDate.getHours();
+		}
+		else {
+			var hours = laDate.getHours();
+		}
+		if(laDate.getHours() < 12) {
+			var hpercent = laDate.getHours()/12*360;
+		}
+		else {
+			var hpercent = (laDate.getHours()-12)/12*360;
+		}
+		$('.h-aiguille').css('transform', 'rotate(' + hpercent + 'deg)');
+		if(laDate.getMinutes() < 10) {
+			var minutes = "0" + laDate.getMinutes();
+		}
+		else {
+			var minutes = laDate.getMinutes();
+		}
+		if(laDate.getSeconds() < 10) {
+			var seconds = "0" + laDate.getSeconds();
+		}
+		else {
+			var seconds = laDate.getSeconds();
+		}
+		var spercent = laDate.getSeconds()/60*360;
+		$('.s-aiguille').css('transform', 'rotate(' + spercent + 'deg)');
+	   var h = hours + ":" + minutes + ":" + seconds;
+		$('.hour').text(h);
+		var mpercent = minutes/60*360;
+		$('.m-aiguille').css('transform', 'rotate(' + mpercent + 'deg)');
+	}
+	setInterval(Horloge, 1000);
 }
 
 $(function(){
@@ -199,11 +256,19 @@ $(function(){
 		autoplaySwiper('.dp-untact-lecture-swiper');
 	}
 
+	if($('.dp-main-banner-swiper').length > 0){
+		mainBannerSwiper('.dp-main-banner-swiper');
+	}
+
 	if($('.dp-mydata-tab-wrap').length > 0){
 		tabWrap();
 	}
 
 	if($('.dp-counterup').length > 0){
 		counterUpNumber();
+	}
+
+	if($('.dp-clock-wrap').length > 0){
+		movingClock();
 	}
 });
