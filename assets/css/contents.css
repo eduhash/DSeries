@@ -426,7 +426,7 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
   .dp-filtered-chart-wrap .dp-chart-area::-webkit-scrollbar-track {background:#999;}/* Track */
   .dp-filtered-chart-wrap .dp-chart-area::-webkit-scrollbar-thumb {background:#ddd; border-radius:6px;}/* Handle */
   .dp-filtered-chart-wrap .dp-chart-area::-webkit-scrollbar-thumb:hover {background:#fff;}/* Handle on hover */
-  .dp-filtered-chart-wrap .dp-chart-area .dp-chart-container {position:relative; min-width:1080px; box-sizing:border-box;}
+  .dp-filtered-chart-wrap .dp-chart-area .dp-chart-container {min-width:1080px; box-sizing:border-box;}
   .dp-filtered-chart-wrap .dp-no-result {flex-wrap:wrap; height:100%; padding:25px 25px 40px; justify-content:center;}
   .dp-no-result-icon {width:40px; height:40px; margin:0;}
   .dp-no-result-dot-icon {width:9px; height:9px; margin:0 30px;}
@@ -461,20 +461,20 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
   .dp-avg-time-table .mins-value-txt {font-size:18px; font-size:1.8rem;}
 
   .dp-sixmonth-perform-by-subj-wrap .dp-chart-area {overflow-x:scroll; height:300px;}
-  .dp-sixmonth-perform-by-subj-wrap .dp-chart-area .dp-chart-container {position:relative; min-width:960px; box-sizing:border-box;}
+  .dp-sixmonth-perform-by-subj-wrap .dp-chart-area .dp-chart-container {min-width:960px; box-sizing:border-box;}
   .dp-threemonth-perform-by-subj-wrap .dp-chart-area {overflow-x:scroll; height:300px;}
-  .dp-threemonth-perform-by-subj-wrap .dp-chart-area .dp-chart-container {position:relative; min-width:960px; box-sizing:border-box;}
+  .dp-threemonth-perform-by-subj-wrap .dp-chart-area .dp-chart-container {min-width:960px; box-sizing:border-box;}
 
   .dp-perform-study-time-wrap .dp-chart-area {overflow-x:scroll; height:300px;}
-  .dp-perform-study-time-wrap .dp-chart-area .dp-chart-container {position:relative; min-width:960px; box-sizing:border-box;}
+  .dp-perform-study-time-wrap .dp-chart-area .dp-chart-container {min-width:960px; box-sizing:border-box;}
 
   .dp-time-pattern-analysis-wrap .dp-chart-area {overflow-x:scroll; height:340px;}
-  .dp-time-pattern-analysis-wrap .dp-chart-area .dp-chart-container {position:relative; min-width:600px; box-sizing:border-box;}
+  .dp-time-pattern-analysis-wrap .dp-chart-area .dp-chart-container {min-width:600px; box-sizing:border-box;}
 
   .dp-health-heartrate-wrap .dp-chart-area {overflow-x:scroll; height:280px;}
-  .dp-health-heartrate-wrap .dp-chart-area .dp-chart-container {position:relative; min-width:960px; box-sizing:border-box;}
+  .dp-health-heartrate-wrap .dp-chart-area .dp-chart-container {min-width:960px; box-sizing:border-box;}
   .dp-health-sleep-time-wrap .dp-chart-area {overflow-x:scroll; height:300px;}
-  .dp-health-sleep-time-wrap .dp-chart-area .dp-chart-container {position:relative; min-width:960px; box-sizing:border-box;}
+  .dp-health-sleep-time-wrap .dp-chart-area .dp-chart-container {min-width:960px; box-sizing:border-box;}
 
   .dp-tab-inside-wrap .dp-chart-area::-webkit-scrollbar {height:6px;}
   .dp-tab-inside-wrap .dp-chart-area::-webkit-scrollbar-track {background:#999;}/* Track */
