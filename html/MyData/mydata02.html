@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<!-- saved from url=(0013)about:internet -->
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Data02</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/contents.css">
+  <script src="../../assets/js/jquery-1.11.2.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/highcharts.js"></script>
+  <script src="../../assets/js/highcharts-more.js"></script>
+  <script src="../../assets/js/style.js"></script>
+  <!--[if lt IE 9]>
+  		<script src="../../assets/js/respond.js"></script>
+  		<script src="../../assets/js/html5shiv.min.js"></script>
+  	<![endif]-->
+</head>
+
+<body>
+
+  <div class="dp-wrap dp-bg-dark">
+    <div class="dp-container">
+      <nav class="dp-left-nav">
+        <button class="dp-mobile-menu-btn">
+          <i class="bar1"></i><i class="bar2"></i><i class="bar3"></i>
+        </button>
+        <ul class="dp-left-nav-list">
+          <li class="dp-row-flex jc-flex-end">
+            <a href="javascript:void(0);" class="dp-left-nav-main">Main</a>
+          </li>
+          <li class="dp-row-flex jc-flex-end">
+            <a href="javascript:void(0);" class="dp-left-nav-dpass">D-PASS 1.0</a>
+          </li>
+          <li class="dp-row-flex jc-flex-end">
+            <a href="javascript:void(0);" class="dp-left-nav-dtest">D-TEST 1.0</a>
+          </li>
+          <li class="dp-row-flex jc-flex-end">
+            <a href="javascript:void(0);" class="dp-left-nav-dtalks">D-TALKS 1.0</a>
+          </li>
+          <li class="dp-row-flex jc-flex-end active">
+            <a href="javascript:void(0);" class="dp-left-nav-mydata">My Data 1.0</a>
+          </li>
+          <li class="dp-row-flex jc-flex-end">
+            <a href="javascript:void(0);" class="dp-left-nav-dteach">D-TEACH 1.0</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="dp-main dp-col-flex">
+        <section class="dp-tit-wrap">
+          <div class="dp-tit-left">
+            <h2 class="dp-tit dp-color-blue">My Data</h2>
+            <p class="dp-tit-description dp-color-blue">나만의 학습 데이터 룸</p>
+          </div>
+          <div class="dp-tit-right dp-col-flex">
+            <div class="dp-row-flex">
+              <div class="dp-parents-login-status">학생 - 학부모 접속</div>
+            </div>
+            <p class="dp-views-txt03">나의 학습/비학습 시간을 매일 실시간으로 분석하고, 최선의 학습환경 유지를 위해<br>끝없는 관심과 노력을 기울입니다.(회원 그룹에 따라 데이터 제공 차이가 있습니다.)</p>
+          </div>
+        </section>
+        <section class="dp-basic-info-wrap">
+          <div class="dp-user-info-wrap dp-bg-dark-blue dp-borRadius20">
+            <table class="dp-user-info-table">
+              <caption>사용자 정보</caption>
+              <colgroup>
+                <col width="25%">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <i class="dp-user-icon"></i>
+                  </th>
+                  <td>
+                    <strong class="dp-user-name">강병찬</strong>
+                    <p class="dp-user-birth-date">1997-11-04</p>
+                    <p class="dp-user-gender">남자</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">캠퍼스</th>
+                  <td>안동캠퍼스</td>
+                </tr>
+                <tr>
+                  <th scope="row">직렬</th>
+                  <td>소방</td>
+                </tr>
+                <tr>
+                  <th scope="row">배정반</th>
+                  <td>소방2반</td>
+                </tr>
+                <tr>
+                  <th scope="row">입학일</th>
+                  <td>2020-01-05</td>
+                </tr>
+                <tr>
+                  <th scope="row">수강일</th>
+                  <td>312일</td>
+                </tr>
+                <tr>
+                  <th scope="row">아이디</th>
+                  <td>jiseon4000@gmail.com</td>
+                </tr>
+                <tr>
+                  <th scope="row">연락처</th>
+                  <td>010-3658-2900</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="dp-learning-time-wrap">
+            <div class="dp-learning-time-by-place-wrap">
+              <h3 class="dp-learning-time-tit">(월)학습/비학습시간 비교</h3>
+              <div class="dp-chart-area">
+                <div class="dp-chart-parent">
+                  <div class="dp-chart-container">
+                    <div id="dp-learning-time-by-place-chart"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dp-learning-time-by-type-wrap">
+              <h3 class="dp-learning-time-tit">(월)학습유형별 시간 비교</h3>
+              <div class="dp-chart-area">
+                <div class="dp-chart-parent">
+                  <div class="dp-chart-container">
+                    <div id="dp-learning-time-by-type-chart"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="dp-learning-time-guide-txt">KPA 기숙반 재원생들과 학부모님들에게 현재 학습현황을 실시간으로 제공합니다.</p>
+          </div>
+        </section>
+        <section class="dp-mydata-tab-wrap">
+          <div class="tabWrap">
+            <div class="tab">
+              <ul>
+                <li class="on"><a href="javascript:void(0);">스마트 학습진단</a></li>
+                <li><a href="javascript:void(0);">성적추이 분석</a></li>
+                <li><a href="javascript:void(0);">학습 수행진단</a></li>
+                <li><a href="javascript:void(0);">시간 소비패턴</a></li>
+                <li><a href="javascript:void(0);">건강/활동 정보</a></li>
+              </ul>
+            </div>
+            <div class="tabCon first">
+              <div class="dp-tab-inside-wrap dp-smart-learning-wrap dp-bg-dark-blue dp-borRadius20">
+                <div class="dp-learning-propensity-chart-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">학습성향 진단</h3>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <!-- <div id="dp-learning-propensity-chart"></div> -->
+                        <!-- 데이터 없을 때 -->
+                        <div class="dp-no-data-wrap">
+                          <i class="dp-no-data-icon"></i>
+                          <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                        </div>
+                        <!-- //데이터 없을 때 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dp-learning-propensity-diagram-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">학습성향 평가</h3>
+                  <div class="dp-inner-diagram-wrap">
+                    <!-- 데이터 없을 때 -->
+                    <div class="dp-no-data-wrap">
+                      <i class="dp-no-data-icon"></i>
+                      <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                    </div>
+                    <!-- //데이터 없을 때 -->
+                  </div>
+                </div>
+                <div class="dp-learning-propensity-curating-wrap">
+                  <div class="dp-curating-tit-wrap">
+                    <h3 class="dp-mydata-tab-section-tit">학습 큐레이팅</h3>
+                    <p class="dp-curating-guide-txt">관리자와 지도교사에게만 보이는 상담이력입니다.</p>
+                  </div>
+                  <div class="dp-comments-wrap scrollWrapper">
+                    <!-- 데이터 없을 때 -->
+                    <div class="dp-no-data-wrap">
+                      <i class="dp-no-data-icon"></i>
+                      <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                    </div>
+                    <!-- //데이터 없을 때 -->
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="tabCon">
+              <div class="dp-tab-inside-wrap dp-score-track-wrap dp-bg-dark-blue dp-borRadius20">
+                <div class="dp-perform-by-subj-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">과목별 균형분석</h3>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <!-- <div id="dp-perform-by-subj-chart"></div> -->
+                        <!-- 데이터 없을 때 -->
+                        <div class="dp-no-data-wrap">
+                          <i class="dp-no-data-icon"></i>
+                          <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                        </div>
+                        <!-- //데이터 없을 때 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dp-case-study-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">CASE STUDY</h3>
+                  <ul class="dp-case-study-guide-wrap">
+                    <li class="dp-row-flex dp-flex-center">
+                      <i class="dp-case-study-good-icon"></i>
+                      <p class="dp-case-study-guide-txt"><strong>BEST!</strong>전 과목 높은 점수로 균형이 좋아서 가장 이상적인 학습성과 형태입니다. 슬럼프 없이 이대로 유지하는데 촛점을 맞추세요.</p>
+                    </li>
+                    <li class="dp-row-flex dp-flex-center">
+                      <i class="dp-case-study-bad-icon"></i>
+                      <p class="dp-case-study-guide-txt"><strong>WORST!</strong>과목별 편중이 심해서 균형이 깨져있는 상태입니다. 가장 피해야할 상황으로 포기과목이 생기기 쉬운 상황입니다.</p>
+                    </li>
+                    <li class="dp-row-flex dp-flex-center">
+                      <i class="dp-case-study-soso-icon"></i>
+                      <p class="dp-case-study-guide-txt"><strong>So..So!</strong>초시생이나 공부경험이 짧은 학생에게 나타나는 경우 걱정하지 않아도 됩니다. 그러나 장기간의 공부경험에 대비해 나타난다면 조심!</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dp-sixmonth-perform-by-subj-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">6개월 모의고사 성과</h3>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <!-- <div id="dp-sixmonth-perform-by-subj-chart"></div> -->
+                        <!-- 데이터 없을 때 -->
+                        <div class="dp-no-data-wrap">
+                          <i class="dp-no-data-icon"></i>
+                          <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                        </div>
+                        <!-- //데이터 없을 때 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dp-threemonth-perform-by-subj-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">3개월 모의고사 성과</h3>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <!-- <div id="dp-threemonth-perform-by-subj-chart"></div> -->
+                        <!-- 데이터 없을 때 -->
+                        <div class="dp-no-data-wrap">
+                          <i class="dp-no-data-icon"></i>
+                          <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                        </div>
+                        <!-- //데이터 없을 때 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabCon">
+              <div class="dp-tab-inside-wrap dp-perform-diagnosis-wrap dp-bg-dark-blue dp-borRadius20">
+                <ul class="dp-perform-diagnosis-info-wrap">
+                  <li>
+                    <p class="dp-perform-label-txt">최근 모의고사 평균</p>
+                    <strong class="dp-perform-value-txt">38점</strong>
+                  </li>
+                  <li>
+                    <p class="dp-perform-label-txt">응시과목</p>
+                    <strong class="dp-perform-value-txt">5</strong>
+                  </li>
+                  <li>
+                    <p class="dp-perform-label-txt">수강일수</p>
+                    <strong class="dp-perform-value-txt">317</strong>
+                  </li>
+                  <li>
+                    <p class="dp-perform-label-txt">나이</p>
+                    <strong class="dp-perform-value-txt">24</strong>
+                  </li>
+                </ul>
+                <div class="dp-perform-level-wrap">
+                  <div class="dp-perform-level-info-wrap">
+                    <p class="dp-perform-level-info-txt01">현재<strong class="dp-perform-level-info-txt03">기초</strong>수준 성과를 보이고 있습니다.</p>
+                    <p class="dp-perform-level-info-txt02">최근 모의고사 기준 직렬별 전체석차<strong class="dp-perform-level-info-txt04">51</strong>위 입니다.</p>
+                  </div>
+                  <div class="dp-perform-level-gage-wrap">
+                    <div class="dp-level-gage-chart">
+                      <i class="dp-level-gage" style="width: 88.0556%;"></i>
+                    </div>
+                    <ul class="dp-level-chk-list rowFlex jc-space-between">
+                      <li>
+                        <i class="dp-level-icon chevron-circle-right-purple-icon"></i>
+                        <strong class="dp-level-txt01">시작</strong>
+                        <p class="dp-level-txt02">0 일</p>
+                      </li>
+                      <li>
+                        <i class="dp-level-icon check-circle-icon"></i>
+                        <strong class="dp-level-txt01">기초</strong>
+                        <p class="dp-level-txt02">60 일</p>
+                      </li>
+                      <li>
+                        <i class="dp-level-icon chevron-circle-right-white-icon"></i>
+                        <strong class="dp-level-txt01">기본</strong>
+                        <p class="dp-level-txt02">120 일</p>
+                      </li>
+                      <li>
+                        <i class="dp-level-icon chevron-circle-right-white-icon"></i>
+                        <strong class="dp-level-txt01">중급</strong>
+                        <p class="dp-level-txt02">180 일</p>
+                      </li>
+                      <li>
+                        <i class="dp-level-icon chevron-circle-right-white-icon"></i>
+                        <strong class="dp-level-txt01">고급</strong>
+                        <p class="dp-level-txt02">240 일</p>
+                      </li>
+                      <li>
+                        <i class="dp-level-icon chevron-circle-right-white-icon"></i>
+                        <strong class="dp-level-txt01">심화</strong>
+                        <p class="dp-level-txt02">300 일</p>
+                      </li>
+                      <li>
+                        <i class="dp-level-icon circle-icon"></i>
+                        <strong class="dp-level-txt01">합격</strong>
+                        <p class="dp-level-txt02">360 일</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dp-perform-study-time-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">단계별 순공시간 비교</h3>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <!-- <div id="dp-perform-study-time-chart"></div> -->
+                        <!-- 데이터 없을 때 -->
+                        <div class="dp-no-data-wrap">
+                          <i class="dp-no-data-icon"></i>
+                          <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                        </div>
+                        <!-- //데이터 없을 때 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dp-perform-user-guide-wrap">
+                  <strong class="dp-perform-user-guide-tit">User Guide</strong>
+                  <div class="dp-perform-user-guide-txt-wrap">
+                    <i class="dp-pen-alt-icon"></i>
+                    <p class="dp-perform-user-guide-txt01">생활관리와 학습관리라는 것은 결국 시간관리가 그 핵심입니다. 학원 일과를 근본으로 하여 주어진 일과시간표를 충실히 따르는 정도에 따라 최소 10시간, 최대 14시간의 학습시간을 얻기위해서 다른 목적의 시간을 어떻게 분배하고 소비하여야 하는지를 제시해주어야 합니다. 하루 24시간(1440분)은 정해져 있는 불변의 기준이기 때문입니다. 학습에
+                      14시간을
+                      사용하고자 한다면 그 전에 비학습시간 10시간을 먼저 배분해주어야 실천 가능한 계획이 되는 것입니다. 단, 이러한 시간관리는 스마트밴드를 충실히 착용한 학생에 한하여 유효합니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabCon">
+              <div class="dp-tab-inside-wrap dp-time-pattern-wrap dp-bg-dark-blue dp-borRadius20">
+                <div class="dp-time-pattern-table-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">평균 학습시간 (최근 30일)</h3>
+                  <!-- 데이터 없을 때 -->
+                  <div class="dp-no-data-wrap">
+                    <i class="dp-no-data-icon"></i>
+                    <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                  </div>
+                  <!-- //데이터 없을 때 -->
+                </div>
+                <div class="dp-time-pattern-analysis-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">시간활용 분석 (최근 30일)</h3>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <!-- <div id="dp-time-pattern-analysis-chart"></div> -->
+                        <!-- 데이터 없을 때 -->
+                        <div class="dp-no-data-wrap">
+                          <i class="dp-no-data-icon"></i>
+                          <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                        </div>
+                        <!-- //데이터 없을 때 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dp-perform-user-guide-wrap">
+                  <strong class="dp-perform-user-guide-tit">User Guide</strong>
+                  <div class="dp-perform-user-guide-txt-wrap">
+                    <i class="dp-pen-alt-icon"></i>
+                    <p class="dp-perform-user-guide-txt01">생활관리와 학습관리라는 것은 결국 시간관리가 그 핵심입니다. 학원 일과를 근본으로 하여 주어진 일과시간표를 충실히 따르는 정도에 따라 최소 10시간, 최대 14시간의 학습시간을 얻기위해서 다른 목적의 시간을 어떻게 분배하고 소비하여야 하는지를 제시해주어야 합니다. 하루 24시간(1440분)은 정해져 있는 불변의 기준이기 때문입니다. 학습에
+                      14시간을 사용하고자 한다면 그 전에 비학습시간 10시간을 먼저 배분해주어야 실천 가능한 계획이 되는 것입니다. 단, 이러한 시간관리는 스마트밴드를 충실히 착용한 학생에 한하여 유효합니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabCon">
+              <div class="dp-tab-inside-wrap dp-health-info-wrap dp-bg-dark-blue dp-borRadius20">
+                <div class="dp-health-heartrate-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">나의 심박수 변화</h3>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <!-- <div id="dp-health-heartrate-chart"></div> -->
+                        <!-- 데이터 없을 때 -->
+                        <div class="dp-no-data-wrap">
+                          <i class="dp-no-data-icon"></i>
+                          <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                        </div>
+                        <!-- //데이터 없을 때 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dp-health-sleep-time-wrap">
+                  <h3 class="dp-mydata-tab-section-tit">최근 1주간 수면시간 분석</h3>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <!-- <div id="dp-health-sleep-time-chart"></div> -->
+                        <!-- 데이터 없을 때 -->
+                        <div class="dp-no-data-wrap">
+                          <i class="dp-no-data-icon"></i>
+                          <p class="dp-no-data-txt">데이터가 없습니다.</p>
+                        </div>
+                        <!-- //데이터 없을 때 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <nav class="dp-bottom-nav">
+        <ul class="dp-bottom-nav-list dp-row-flex dp-flex-1 dp-txtC">
+          <li class="dp-col-flex dp-flex-1">
+            <a href="javascript:void(0);">온라인 강의 전문관</a>
+          </li>
+          <li class="dp-col-flex dp-flex-1">
+            <a href="javascript:void(0);">서울 대방캠퍼스</a>
+          </li>
+          <li class="dp-col-flex dp-flex-1">
+            <a href="javascript:void(0);">광주 동구캠퍼스</a>
+          </li>
+          <li class="dp-col-flex dp-flex-1">
+            <a href="javascript:void(0);">안동 기숙전문캠퍼스</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</body>
+<script>
+  Highcharts.chart('dp-learning-time-by-place-chart', {
+    chart: {
+      type: 'pie',
+      events: {
+        load: function() {
+          var chartTitle = '<span class="dp-alarm-icon"></span>';
+          this.setTitle({
+            text: chartTitle
+          });
+        }
+      },
+      backgroundColor: 'transparent',
+      zoomType: 'xy',
+      height: '100%',
+
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: '',
+      useHTML: true,
+      align: 'center',
+      verticalAlign: 'middle',
+      y: 0,
+      style: {
+        color: '#fff',
+      },
+    },
+    tooltip: {
+      headerFormat: '',
+      pointFormat: '<span style="color:{point.color}">●</span> <span style="color:#fff"> {point.name}</span>' +
+        ': <span style="color:#fff">{point.y} %</span>',
+      backgroundColor: '#000',
+      borderColor: 'black',
+      borderRadius: 10,
+      borderWidth: 3,
+    },
+    legend: {
+      layout: 'horizontal',
+      squareSymbol: false,
+      symbolRadius: 0,
+      align: 'center',
+      verticalAlign: 'bottom',
+      itemMarginTop: 0,
+      itemMarginBottom: 0,
+      itemStyle: {
+        color: '#bdbec2',
+      },
+      itemHoverStyle: {
+        color: '#fff',
+      },
+    },
+    plotOptions: {
+      pie: {
+        size: '80%',
+        borderWidth: 0,
+        point: {
+          events: {
+            legendItemClick: function() {
+              return false; // <== returning false will cancel the default action
+            }
+          }
+        },
+        allowPointSelect: false, //if 'true', the pie is sliced when cliked
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: true,
+          distance: 5,
+          yHigh: -20,
+          yLow: -20,
+          format: '<b>{point.name}</b>: <br/>{point.y:.0f} %',
+          shape: 'callout',
+          color: '#a8aab9',
+          style: {
+            fontSize: '1.1rem',
+            fontWeight: 'normal',
+            textShadow: 'none',
+          },
+        },
+        showInLegend: true,
+      },
+
+    },
+    series: [{
+      minPointSize: 10,
+      innerSize: '60%',
+      zMin: 0,
+      name: '사용자',
+      startAngle: 270,
+      data: [{
+        name: '학습구역 체류',
+        y: 70,
+        color: '#fcd56c',
+      }, {
+        name: '비학습구역 체류',
+        y: 30,
+        color: '#595959'
+      }]
+    }],
+  });
+</script>
+<script>
+  Highcharts.chart('dp-learning-time-by-type-chart', {
+    chart: {
+      type: 'pie',
+      events: {
+        load: function() {
+          var chartTitle = '<span class="dp-school-icon"></span>';
+          this.setTitle({
+            text: chartTitle
+          });
+        }
+      },
+      backgroundColor: 'transparent',
+      zoomType: 'xy',
+      height: '100%',
+
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: '',
+      useHTML: true,
+      align: 'center',
+      verticalAlign: 'middle',
+      y: 0,
+      style: {
+        color: '#fff',
+      },
+    },
+    tooltip: {
+      headerFormat: '',
+      pointFormat: '<span style="color:{point.color}">●</span> <span style="color:#fff"> {point.name}</span>' +
+        ': <span style="color:#fff">{point.y} %</span>',
+      backgroundColor: '#000',
+      borderColor: 'black',
+      borderRadius: 10,
+      borderWidth: 3,
+    },
+    legend: {
+      layout: 'horizontal',
+      squareSymbol: false,
+      symbolRadius: 0,
+      align: 'center',
+      verticalAlign: 'bottom',
+      itemMarginTop: 0,
+      itemMarginBottom: 0,
+      itemStyle: {
+        color: '#bdbec2',
+      },
+      itemHoverStyle: {
+        color: '#fff',
+      },
+    },
+    plotOptions: {
+      pie: {
+        size: '80%',
+        borderWidth: 0,
+        point: {
+          events: {
+            legendItemClick: function() {
+              return false; // <== returning false will cancel the default action
+            }
+          }
+        },
+        allowPointSelect: false, //if 'true', the pie is sliced when cliked
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: true,
+          distance: 5,
+          yHigh: -20,
+          yLow: -20,
+          format: '<b>{point.name}</b>: <br/>{point.y:.0f} %',
+          shape: 'callout',
+          color: '#a8aab9',
+          style: {
+            fontSize: '1.1rem',
+            fontWeight: 'normal',
+            textShadow: 'none',
+          },
+        },
+        showInLegend: true,
+      },
+
+    },
+    series: [{
+      minPointSize: 10,
+      innerSize: '60%',
+      zMin: 0,
+      name: '사용자',
+      startAngle: 0,
+      data: [{
+        name: '실강',
+        y: 210,
+        color: '#de9c00',
+      }, {
+        name: '체력',
+        y: 17,
+        color: '#a8bc1f'
+      }, {
+        name: '인강',
+        y: 35,
+        color: '#595959'
+      }, {
+        name: '자습실',
+        y: 100,
+        color: '#2d95ae'
+      }]
+    }],
+  });
+</script>
+
+<script>
+  Highcharts.chart('dp-learning-propensity-chart', {
+    chart: {
+      backgroundColor: 'transparent',
+      polar: true,
+      type: 'line',
+      height: (9 / 10) * 100 + '%',
+    },
+    credits: {
+      enabled: false,
+    },
+    accessibility: {
+      description: ''
+    },
+    title: {
+      text: '',
+      x: -80
+    },
+    pane: {
+      size: '80%'
+    },
+    xAxis: {
+      categories: ['자기효능감', '학습태도', '학습동기', '학습습관', '학습지지', '학습환경'],
+      tickmarkPlacement: 'on',
+      color: '#ccc',
+      lineWidth: 0,
+      labels: {
+        style: {
+          color: '#fff'
+        }
+      }
+    },
+    yAxis: {
+      gridLineInterpolation: 'polygon',
+      tickInterval: 5 / 5, //MAX_Y_VALUE/5
+      lineWidth: 0,
+      min: 0,
+      max: 5,
+      labels: {
+        style: {
+          color: '#bdbec2',
+        },
+      },
+    },
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong style="color:#ff3333">{point.x}</strong><br/><br/>',
+      pointFormat: '<b>{point.y:,.0f}점</b>',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      }
+    },
+    legend: {
+      enabled: false,
+    },
+    series: [{
+      type: 'area',
+      data: [4, 2, 5, 3, 3, 3],
+      color: '#ffff01',
+      opacity: '0.5',
+      pointPlacement: 'on'
+    }],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            align: 'center',
+            verticalAlign: 'bottom',
+            layout: 'horizontal'
+          },
+          pane: {
+            size: '70%'
+          }
+        }
+      }]
+    }
+  });
+</script>
+
+<script>
+  Highcharts.chart('dp-perform-by-subj-chart', {
+    chart: {
+      backgroundColor: 'transparent',
+      polar: true,
+      type: 'line',
+      height: (9 / 10) * 100 + '%',
+    },
+    credits: {
+      enabled: false,
+    },
+    accessibility: {
+      description: ''
+    },
+    title: {
+      text: '',
+      x: -80
+    },
+    pane: {
+      size: '90%'
+    },
+    xAxis: {
+      categories: ['과목1', '과목2', '과목3', '과목4', '과목5'],
+      tickmarkPlacement: 'on',
+      color: '#ccc',
+      lineWidth: 0,
+      labels: {
+        style: {
+          color: '#fff'
+        }
+      }
+    },
+    yAxis: {
+      gridLineInterpolation: 'polygon',
+      tickInterval: 100 / 5, //MAX_Y_VALUE/5
+      lineWidth: 0,
+      min: 0,
+      max: 100,
+      labels: {
+        style: {
+          color: '#bdbec2',
+        },
+      },
+    },
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong style="color:#ff3333">{point.x}</strong><br/><br/>',
+      pointFormat: '<b>{point.y:,.0f}점</b>',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      }
+    },
+    legend: {
+      enabled: false,
+    },
+    series: [{
+      type: 'area',
+      color: '#ffff01',
+      opacity: '0.5',
+      data: [80, 75, 90, 60, 55],
+      pointPlacement: 'on'
+    }],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            align: 'center',
+            verticalAlign: 'bottom',
+            layout: 'horizontal'
+          },
+          pane: {
+            size: '70%'
+          }
+        }
+      }]
+    }
+  });
+</script>
+<script>
+  Highcharts.chart('dp-sixmonth-perform-by-subj-chart', {
+    chart: {
+      type: 'column',
+      //renderTo: renderTo,
+      backgroundColor: 'transparent',
+      zoomType: 'xy',
+      height: (3 / 10) * 100 + '%', // 10:3 ratio
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: '',
+      align: 'left',
+    },
+    subtitle: {
+      text: '',
+      align: 'left',
+    },
+    xAxis: [{
+      categories: ['202003', '202004', '202005', '202006', '202007', '202008'],
+      crosshair: true,
+      labels: {
+        format: '{value}',
+        style: {
+          color: '#bdbec2',
+        },
+      },
+    }, ],
+    yAxis: [{
+        min: 0,
+        max: 500,
+        tickAmount: 6,
+        gridLineColor: '#444',
+        labels: {
+          format: '{value}점',
+          style: {
+            color: '#bdbec2',
+          },
+        },
+        title: {
+          text: '',
+        },
+        opposite: false,
+      },
+      {
+        min: 0,
+        max: 100,
+        tickAmount: 6,
+        gridLineColor: '#444',
+        labels: {
+          format: '{value}점',
+          style: {
+            color: '#bdbec2',
+          },
+        },
+        title: {
+          text: '',
+        },
+        opposite: true,
+      },
+    ],
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong>{point.x}</strong>월<br/><br/>',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      },
+      valueSuffix: ' 점',
+    },
+    legend: {
+      layout: 'horizontal',
+      align: 'right',
+      x: 0,
+      verticalAlign: 'top',
+      y: -10,
+      floating: false,
+      itemStyle: {
+        color: '#bdbec2',
+      },
+      itemHoverStyle: {
+        color: '#fff',
+      },
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0,
+        pointWidth: 20,
+      },
+      series: {
+        borderWidth: 0,
+        borderRadius: 5,
+      },
+    },
+    series: [{
+        name: '나의 총점(원점수)',
+        type: 'column',
+        color: '#ffff01',
+        yAxis: 0,
+        data: [250, 300, 310, 350, 290, 305],
+      },
+      {
+        name: '직렬 상위 10% 총점 평균',
+        type: 'column',
+        color: '#5fe3a1',
+        yAxis: 0,
+        data: [340, 350, 400, 390, 350, 340],
+      },
+      {
+        name: '직렬 평균 점수',
+        type: 'line',
+        marker: {
+          enabled: true,
+        },
+        dashStyle: 'shortdot',
+        color: '#549cff',
+        yAxis: 1,
+        data: [62.45, 39.7, 43.35, 44.93, 49.60, 51.10],
+        dataLabels: {
+          enabled: true,
+          borderRadius: 5,
+          y: -15,
+          shape: 'callout',
+          backgroundColor: '#000',
+          style: {
+            color: '#fff',
+            fontSize: '9px',
+            fontWeight: 'normal',
+            textOutline: '0px contrast',
+          },
+        },
+      },
+    ],
+
+  });
+</script>
+
+<script>
+  Highcharts.chart('dp-threemonth-perform-by-subj-chart', {
+    chart: {
+      type: 'column',
+      //renderTo: renderTo,
+      backgroundColor: 'transparent',
+      zoomType: 'xy',
+      height: (3 / 10) * 100 + '%', // 10:3 ratio
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: '',
+      align: 'left',
+    },
+    subtitle: {
+      text: '',
+      align: 'left',
+    },
+    xAxis: [{
+      categories: ['과목1', '과목2', '과목3', '과목4', '과목5'],
+      crosshair: true,
+      labels: {
+        format: '{value}',
+        style: {
+          color: '#bdbec2',
+        },
+      },
+    }, ],
+    yAxis: {
+      min: 0,
+      max: 100,
+      tickInterval: '20',
+      gridLineColor: '#444',
+      labels: {
+        format: '{value}',
+        style: {
+          color: '#bdbec2',
+        },
+      },
+      title: {
+        text: '',
+      },
+      opposite: true,
+    },
+
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong>{point.x}</strong>월<br/><br/>',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      },
+      valueSuffix: ' 점',
+    },
+    legend: {
+      layout: 'horizontal',
+      align: 'right',
+      x: 0,
+      verticalAlign: 'top',
+      y: -10,
+      floating: false,
+      itemStyle: {
+        color: '#bdbec2',
+      },
+      itemHoverStyle: {
+        color: '#fff',
+      },
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0.15,
+      },
+      series: {
+        borderWidth: 0,
+        borderRadius: 5,
+        groupPadding: 0.35,
+      },
+    },
+    series: [{
+        name: '202006',
+        type: 'column',
+        color: '#ab5050',
+        data: [50, 30, 75, 85, 60],
+      },
+      {
+        name: '202007',
+        type: 'column',
+        color: '#7d7dc7',
+        data: [60, 45, 80, 65, 65],
+      },
+      {
+        name: '202008',
+        type: 'column',
+        color: '#ffff01',
+        data: [85, 40, 75, 70, 65],
+      },
+      {
+        name: '과목 평균점수',
+        type: 'line',
+        marker: {
+          enabled: true,
+        },
+        dashStyle: 'shortdot',
+        color: '#ab5050',
+        data: [35.25, 39.7, 43.35, 44.93, 49.60],
+      },
+      {
+        name: '과목 평균점수',
+        type: 'line',
+        marker: {
+          enabled: true,
+        },
+        dashStyle: 'shortdot',
+        color: '#ab5050',
+        data: [45.25, 36.7, 63.35, 74.93, 69.60],
+      },
+      {
+        name: '과목 평균점수',
+        type: 'line',
+        marker: {
+          enabled: true,
+        },
+        dashStyle: 'shortdot',
+        color: '#ffff01',
+        data: [55.25, 69.7, 63.35, 64.93, 69.60],
+      },
+    ],
+
+  });
+</script>
+<script>
+  Highcharts.chart('dp-perform-study-time-chart', {
+    chart: {
+      type: 'column',
+      backgroundColor: 'transparent',
+      zoomType: 'xy',
+      height: (3 / 10) * 100 + '%', // 10:4 ratio
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: '',
+      align: 'left',
+    },
+    subtitle: {
+      text: '',
+      align: 'left',
+    },
+    xAxis: [{
+      categories: ['사전학습', '기초단계', '기본단계', '중급단계', '고급단계', '심화단계'],
+      crosshair: true,
+      labels: {
+        format: '{value}',
+        style: {
+          color: '#bdbec2',
+        },
+      },
+    }, ],
+    yAxis: [{
+        min: 0,
+        max: 100,
+        tickAmount: 5,
+        gridLineColor: '#444',
+        labels: {
+          format: '{value}점',
+          style: {
+            color: '#bdbec2',
+          },
+        },
+        title: {
+          text: '',
+        },
+        opposite: false,
+      },
+      {
+        min: 0,
+        max: 24,
+        tickAmount: 5,
+        gridLineColor: '#444',
+        labels: {
+          format: '{value}시간',
+          style: {
+            color: '#bdbec2',
+          },
+        },
+        title: {
+          text: '',
+        },
+        opposite: true,
+      },
+    ],
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong>{point.x}</strong>월<br/><br/>',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      },
+      valueSuffix: ' 점',
+    },
+    legend: {
+      layout: 'horizontal',
+      align: 'right',
+      x: 0,
+      verticalAlign: 'top',
+      y: -10,
+      floating: false,
+      itemStyle: {
+        color: '#bdbec2',
+      },
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0,
+        pointWidth: 20,
+      },
+      series: {
+        borderWidth: 0,
+        borderRadius: 5,
+      },
+    },
+    series: [{
+        name: '단계별 합격생 순공시간',
+        type: 'column',
+        color: '#6464dc',
+        yAxis: 1,
+        data: [10, 11, 13, 14, 15, 16],
+      },
+      {
+        name: '나의 평균 순공시간',
+        type: 'column',
+        color: '#fa6b0d',
+        yAxis: 1,
+        data: [5, 12, 12, 13, null, null],
+      },
+      {
+        name: '합격생 평균점수',
+        type: 'line',
+        marker: {
+          enabled: true,
+        },
+        dashStyle: 'shortdot',
+        color: '#6464dc',
+        yAxis: 0,
+        data: [65, 70, 75, 80, 85, 90],
+        dataLabels: {
+          enabled: true,
+          borderRadius: 5,
+          y: -15,
+          shape: 'callout',
+          backgroundColor: '#000',
+          style: {
+            color: '#fff',
+            fontSize: '9px',
+            fontWeight: 'normal',
+            textOutline: '0px contrast',
+          },
+        },
+      },
+      {
+        name: '나의 평균점수',
+        type: 'line',
+        marker: {
+          enabled: true,
+        },
+        dashStyle: 'shortdot',
+        color: '#fa6b0d',
+        yAxis: 0,
+        data: [42.45, 39.7, 43.35, 44.93, null, null],
+        dataLabels: {
+          enabled: true,
+          borderRadius: 5,
+          y: -15,
+          shape: 'callout',
+          backgroundColor: '#000',
+          style: {
+            color: '#fff',
+            fontSize: '9px',
+            fontWeight: 'normal',
+            textOutline: '0px contrast',
+          },
+        },
+      }
+    ],
+
+  });
+</script>
+<script>
+  Highcharts.chart('dp-time-pattern-analysis-chart', {
+    chart: {
+      type: 'column',
+      backgroundColor: 'transparent',
+      height: (5.5 / 10) * 100 + '%', // 10:5.5 ratio
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: '',
+    },
+
+    xAxis: {
+      labels: {
+        style: {
+          color: '#bdbec2',
+        },
+      },
+      lineColor: '#666',
+      categories: ['10/1', '10/2', '10/3', '10/4', '10/5', '10/6', '10/7', '10/8', '10/9', '10/10', '10/11', '10/12', '10/13', '10/14', '10/15', '10/16', '10/17', '10/18', '10/19', '10/20', '10/21', '10/22', '10/23', '10/24', '10/25', '10/26',
+        '10/27', '10/28', '10/29', '10/30'
+      ]
+    },
+
+    yAxis: {
+      min: 0,
+      title: '',
+      opposite: true,
+      gridLineColor: '#333',
+      labels: {
+        style: {
+          color: '#bdbec2',
+        },
+      },
+    },
+
+    tooltip: {
+      headerFormat: '<strong style="font-size:14px; color:red;" class="titleTooltip">{point.x}</strong><br/><br/>',
+      pointFormat: '<span style="color:{series.color}">●</span>{series.name}: <b>{point.y:%Hh %Mm %Ss}</b> ({point.percentage:.0f}%)<br/>',
+      shared: true,
+    },
+
+    legend: {
+      layout: 'horizontal',
+      align: 'center',
+      verticalAlign: 'topo',
+      itemMarginTop: 0,
+      itemMarginBottom: 0,
+      itemStyle: {
+        color: '#bdbec2',
+      },
+      itemHoverStyle: {
+        color: '#fff',
+      },
+    },
+    plotOptions: {
+      column: {
+        stacking: 'percent',
+        pointPadding: 0,
+        pointWidth: 16,
+      },
+      series: {
+        borderWidth: 0,
+        cursor: 'pointer',
+      },
+    },
+    series: [{
+        name: '실강',
+        color: '#6464dc',
+        data: [14400000, 18000000, 25200000, 28800000, 32400000, 10800000, 0, 0, 18000000, 21600000, 14400000, 18000000, 25200000, 28800000, 32400000, 10800000, 0, 0, 18000000, 21600000, 14400000, 18000000, 25200000, 28800000, 32400000,
+          10800000, 0, 0, 18000000, 21600000
+        ],
+      },
+      {
+        name: '자습',
+        color: '#9b9bfb',
+        data: [32400000, 10800000, 0, 0, 18000000, 10800000, 0, 18000000, 25200000, 28800000, 32400000, 10800000, 25200000, 28800000, 32400000, 10800000, 0, 0, 18000000, 21600000, 14400000, 18000000, 25200000, 10800000, 21600000, 28800000, 0,
+          0, 7200000, 3600000
+        ],
+      },
+      {
+        name: '운동',
+        color: '#a9d0ec',
+        data: [7200000, 7200000, 7200000, 7200000, 7200000, 10800000, 0, 0, 7200000, 7200000, 7200000, 7200000, 7200000, 10800000, 0, 0, 7200000, 7200000, 7200000, 7200000, 7200000, 10800000, 0, 0, 14400000, 7200000, 3600000, 0, 7200000,
+          10800000
+        ],
+      },
+      {
+        name: '식사',
+        color: '#fee2a1',
+        data: [3600000, 1800000, 3600000, 5400000, 3600000, 3600000, 1800000, 3600000, 5400000, 3600000, 3600000, 1800000, 3600000, 5400000, 3600000, 3600000, 1800000, 3600000, 5400000, 3600000, 3600000, 1800000, 3600000, 5400000, 3600000,
+          3600000, 1800000, 3600000, 5400000, 3600000
+        ],
+      },
+      {
+        name: '상담',
+        color: '#fdd472',
+        data: [7200000, 7200000, 7200000, 7200000, 7200000, 10800000, 0, 0, 7200000, 7200000, 7200000, 7200000, 7200000, 10800000, 0, 0, 7200000, 7200000, 7200000, 7200000, 7200000, 10800000, 0, 0, 14400000, 7200000, 3600000, 0, 7200000,
+          10800000
+        ],
+      },
+      {
+        name: '휴식',
+        color: '#fdc543',
+        data: [14400000, 18000000, 25200000, 28800000, 32400000, 10800000, 0, 0, 18000000, 21600000, 14400000, 18000000, 25200000, 28800000, 32400000, 10800000, 0, 0, 18000000, 21600000, 14400000, 18000000, 25200000, 28800000, 32400000,
+          10800000, 0, 0, 18000000, 21600000
+        ],
+      },
+      {
+        name: '수면+기타',
+        color: '#ff8000',
+        data: [14400000, 18000000, 25200000, 28800000, 32400000, 10800000, 0, 0, 18000000, 21600000, 14400000, 18000000, 25200000, 28800000, 32400000, 10800000, 0, 0, 18000000, 21600000, 14400000, 18000000, 25200000, 28800000, 32400000,
+          10800000, 0, 0, 18000000, 21600000
+        ],
+      },
+    ],
+  });
+</script>
+<script>
+  Highcharts.chart('dp-health-heartrate-chart', {
+    chart: {
+      backgroundColor: 'transparent',
+      type: 'spline',
+      height: (2.5 / 10) * 100 + '%', // 10:5.5 ratio
+    },
+    title: {
+      text: ''
+    },
+    subtitle: {
+      text: ''
+    },
+    credits: {
+      enabled: false,
+    },
+    xAxis: {
+      categories: ['04:15', '04:30', '04:45', '05:00', '05:15', '05:30', '05:45', '06:00', '06:15', '06:30', '06:45', '07:00', '07:15', '07:30', '07:45', '08:00', '08:15', '08:30', '08:45', '09:00'], //transDatetime
+      labels: {
+        style: {
+          color: '#fff'
+        }
+      }
+    },
+    yAxis: {
+      title: {
+        text: ''
+      },
+      gridLineColor: '#444',
+      opposite: true,
+      tickAmount: 5,
+      labels: {
+        style: {
+          color: '#fff'
+        }
+      }
+    },
+    plotOptions: {
+      line: {
+        dataLabels: {
+          enabled: true
+        },
+        enableMouseTracking: false
+      }
+    },
+    series: [{
+      name: '심박수',
+      color: '#CEFF01',
+      marker: {
+        enabled: false,
+      },
+      data: [82, 86, 95, 120, 82, 110, 115, 120, 98, 86, 95, 86, 82, 105, 95, 120, 110, 86, 95, 120], //heartBeat
+      showInLegend: false,
+      label: {
+        style: {
+          color: '#CEFF01',
+          fontSize: '16px'
+        }
+      }
+    }]
+  });
+</script>
+
+<script>
+  Highcharts.chart('dp-health-sleep-time-chart', {
+    chart: {
+      type: 'column',
+      backgroundColor: 'transparent',
+      zoomType: 'xy',
+      height: (3 / 10) * 100 + '%', // 10:4 ratio
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: '',
+      align: 'left',
+    },
+    subtitle: {
+      text: '',
+      align: 'left',
+    },
+    xAxis: [{
+      categories: ['10/15', '10/16', '10/17', '10/18', '10/19', '10/20', '10/21'],
+      crosshair: true,
+      labels: {
+        format: '{value}',
+        style: {
+          color: '#bdbec2',
+        },
+      },
+    }, ],
+    yAxis: {
+      title: {
+        text: '',
+      },
+      min: 0,
+      gridLineColor: '#444',
+      tickAmount: 5,
+      opposite: true,
+      labels: {
+        format: '{value} hour',
+        style: {
+          color: '#bdbec2',
+        },
+      },
+    },
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong>{point.x}</strong>월<br/><br/>',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      },
+      valueSuffix: ' hour',
+    },
+    legend: {
+      layout: 'horizontal',
+      align: 'right',
+      x: 0,
+      verticalAlign: 'top',
+      y: -10,
+      floating: false,
+      itemStyle: {
+        color: '#bdbec2',
+      },
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0.3,
+      },
+      series: {
+        borderWidth: 0,
+        borderRadius: 5,
+        groupPadding: 0.15,
+      },
+    },
+    series: [{
+        name: '나의 일별 수면시간',
+        type: 'column',
+        color: '#A3A1FB',
+        tooltip: {
+          valueSuffix: ' hour',
+        },
+        data: [6.75, 7.5, 8, 7.25, 7, 6.5, 6.8],
+        dataLabels: {
+          enabled: true,
+          borderRadius: 5,
+          y: -5,
+          shape: 'callout',
+          backgroundColor: '#000',
+          style: {
+            color: '#fff',
+            fontSize: '9px',
+            fontWeight: 'normal',
+            textOutline: '0px contrast',
+          },
+        },
+      },
+      {
+        name: '합격생 평균 수면시간',
+        type: 'spline',
+        color: '#B4FF01',
+        marker: {
+          enabled: false,
+        },
+        dashStyle: 'shortdot',
+        data: [6.75, 6.75, 6.75, 6.75, 6.75, 6.75, 7],
+      },
+    ],
+  });
+</script>
+
+</html>
