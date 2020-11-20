@@ -2,6 +2,7 @@
 
 .dp-wrap {position:relative; margin:0 auto; font-size:14px; font-size:1.4rem; font-weight:500; color:#f4f4f5; box-sizing:border-box;}
 .dp-container {display:flex; flex-direction:column; flex:1; position:relative; width:1080px; margin:0 auto; box-sizing:border-box;}
+.dp-main-container {display:flex; flex-direction:column; position:relative; width:1080px; box-sizing:border-box;}
 
 .dp-bodyFixed {position:fixed; overflow:hidden; width:100%; height:100%;}
 
