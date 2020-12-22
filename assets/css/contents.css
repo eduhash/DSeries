@@ -658,8 +658,10 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
   .dp-perform-user-guide-wrap .dp-pen-alt-icon {width:24px; height:24px; margin:10px 20px 10px 0;}
   .dp-perform-user-guide-wrap .dp-perform-user-guide-txt01 {font-size:13px; font-size:1.3rem;}
 
+  .dp-my-learning-time-wrap {margin-top:40px;}
   .dp-my-learning-time-wrap .dp-my-learning-time-list {flex-direction:column;}
   .dp-my-learning-time-list > li {flex-direction:row; justify-content:space-between; margin-top:15px;}
+  .dp-my-learning-time-list > li:first-child {margin-top:0;}
   .dp-my-learning-time-wrap .dp-my-learning-time-label {font-size:14px; font-size:1.4rem;}
   .dp-my-learning-time-value-txt {font-size:24px; font-size:2.4rem;}
 
