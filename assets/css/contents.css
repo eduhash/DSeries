@@ -243,7 +243,7 @@
 .dp-case-study-wrap .dp-case-study-guide-txt {flex:1; padding:0px 25px; color:#9fa1ae; font-size:14px; font-size:1.4rem; line-height:160%;}
 .dp-case-study-wrap .dp-case-study-guide-txt strong {display:inline-block; margin-right:6px; color:#fff; font-size:15px; font-size:1.5rem; font-weight:normal;}
 
-.dp-perform-diagnosis-wrap {display:flex; flex-direction:column;}
+.dp-perform-diagnosis-wrap {display:flex; flex-direction:column; width:100%;}
 .dp-perform-diagnosis-wrap .dp-perform-diagnosis-info-wrap {display:flex; flex-direction:row; justify-content:space-between; align-items:center; margin-top:50px;}
 .dp-perform-diagnosis-info-wrap > li {display:flex; flex-direction:column; margin:0 30px; text-align:center;}
 .dp-perform-diagnosis-info-wrap .dp-perform-label-txt {color:#ecedf0; font-size:18px; font-size:1.8rem;}
