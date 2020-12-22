@@ -172,7 +172,7 @@
 .dp-alarm-icon {display:inline-block; width:50px; height:50px; background:url('../img/alarm.svg') no-repeat center; background-size:100%;}
 .dp-school-icon {display:inline-block; width:45px; height:45px; margin-top:-10px; background:url('../img/school.svg') no-repeat center; background-size:100%;}
 
-.dp-mydata-tab-wrap {margin-top:80px;}
+.dp-mydata-tab-wrap {margin-top:60px;}
 .dp-mydata-tab-wrap .tab {margin:20px 0 0 0;}
 .dp-mydata-tab-wrap .tab > ul {display:flex; flex-direction:row; overflow:hidden; padding:0; margin:0; background:#1a1c2d; list-style:none; border-radius:3px;}
 .dp-mydata-tab-wrap .tab > ul > li {display:flex; flex-direction:column; flex:1; min-height:45px;}
@@ -294,6 +294,17 @@
 .dp-health-heartrate-wrap .dp-chart-area {margin-top:40px; height:280px;}
 .dp-health-sleep-time-wrap {display:flex; flex-direction:column;}
 .dp-health-sleep-time-wrap .dp-chart-area {margin-top:20px; height:300px;}
+
+.dp-my-learning-time-wrap {margin-top:60px;}
+.dp-my-learning-time-wrap .dp-my-learning-time-list {display:flex; flex-direction:row; justify-content:space-around;}
+.dp-my-learning-time-list > li {display:flex; flex-direction:column; flex:1; align-items:center;}
+.dp-my-learning-time-value-wrap {display:flex; flex-direction:row; align-items:flex-start;}
+.dp-my-learning-time-value-txt {display:flex; flex-direction:column; align-items:center;}
+.dp-my-learning-time-wrap .dp-my-learning-time-label {font-size:16px; font-size:1.6rem; color:#fff;}
+.dp-my-learning-time-value-txt {margin-top:10px; font-size:60px; font-size:6.0rem; line-height:120%;}
+.dp-my-learning-time-value-txt .dp-my-learning-time-value {padding:0 5px;}
+.dp-my-learning-time-value-txt .dp-my-learning-time-unit {font-size:12px; font-size:1.2rem; line-height:100%; color:#cdcdd0;}
+
 
 .dp-intro-main {position:relative; z-index:1;}
 .dp-main-stats-wrap {display:flex; flex-direction:column; align-items:center; padding-bottom:50px; background:rgb(0,0,0); background:linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%);}
@@ -534,6 +545,8 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
   .dp-tab-inside-wrap .dp-chart-area::-webkit-scrollbar-thumb {background:#ddd; border-radius:6px;}/* Handle */
   .dp-tab-inside-wrap .dp-chart-area::-webkit-scrollbar-thumb:hover {background:#fff;}/* Handle on hover */
 
+  .dp-my-learning-time-value-txt {font-size:40px; font-size:4.0rem;}
+
   .dp-stats-total-wrap .dp-stats-count-wrap {position:relative; margin-top:10px; width:100%; top:auto; left:auto; align-items:flex-end;}
   .dp-stats-total-wrap .dp-stats-count-wrap > li {margin:0 5px;}
   .dp-clock-wrap {margin-top:40px;}
@@ -645,6 +658,10 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
   .dp-perform-user-guide-wrap .dp-pen-alt-icon {width:24px; height:24px; margin:10px 20px 10px 0;}
   .dp-perform-user-guide-wrap .dp-perform-user-guide-txt01 {font-size:13px; font-size:1.3rem;}
 
+  .dp-my-learning-time-wrap .dp-my-learning-time-list {flex-direction:column;}
+  .dp-my-learning-time-list > li {flex-direction:row; justify-content:space-between; margin-top:15px;}
+  .dp-my-learning-time-wrap .dp-my-learning-time-label {font-size:14px; font-size:1.4rem;}
+  .dp-my-learning-time-value-txt {font-size:24px; font-size:2.4rem;}
 
   .dp-main-stats-wrap .dp-main-stats-tit {font-size:22px; font-size:2.2rem;}
   .dp-main-stats-wrap .dp-main-stats-tit:after {width:28px;}
