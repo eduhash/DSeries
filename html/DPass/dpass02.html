@@ -51,10 +51,12 @@
         </ul>
       </nav>
 
-      <main class="dp-main dp-col-flex">
+      <main class="dp-main">
         <section class="dp-tit-wrap">
           <div class="dp-tit-left">
-            <h2 class="dp-tit dp-color-blue">D-PASS</h2>
+            <h2 class="dp-tit dp-color-blue">
+              <p class="dp-tit-svg dp-tit-dpass">D-PASS</p>
+            </h2>
             <p class="dp-tit-description dp-color-blue">2016 ~ 2020 합격정보 조회</p>
           </div>
           <div class="dp-tit-right dp-col-flex">
@@ -144,24 +146,42 @@
               <button class="dp-filter-btn-reselect">다시 입력하기</button>
             </div>
           </div>
-          <p class="dp-filter-guide-txt">"지역2(지방시/군) 선택"은 충청도 소방직 일반채용과 인천시 행정직 정보조회 시 적용되며, 그 외 직렬은 "통합"으로 선택됩니다.</p>
         </section>
+        <div class="dp-filter-guide-txt">
+          <p>"지역2(지방시/군) 선택"은 충청도 소방직 일반채용과 인천시 행정직 정보조회 시 적용되며, 그 외 직렬은 "통합"으로 선택됩니다.</p>
+        </div>
 
-        <section class="dp-filtered-result-wrap dp-col-flex">
-          <div class="dp-filtered-chart-wrap dp-bg-dark-blue dp-col-flex dp-flex-1">
-            <!-- 조회결과 있을 때 -->
-            <h3 class="dp-chart-tit">합격선/경쟁률 조회결과</h3>
-            <div class="dp-chart-area">
-              <div class="dp-chart-parent">
-                <div class="dp-chart-container">
-                  <div id="dp-rate-chart"></div>
+        <section class="result_graph">
+          <div class="dp-filtered-result-wrap dp-col-flex">
+            <div class="dp-filtered-chart-wrap dp-bg-dark-blue dp-col-flex dp-flex-1">
+              <!-- 조회결과 있을 때 -->
+              <h3 class="dp-chart-tit">
+                합격선/경쟁률 조회결과
+                <ul class="dp-chart-breadcrumb">
+                  <li>경찰직군/일반공채</li>
+                  <li>공개채용-남[경찰청]/서울</li>
+                </ul>
+              </h3>
+              <div class="dp-chart-area">
+                <div class="dp-chart-parent">
+                  <div class="dp-chart-container">
+                    <div id="dp-rate-chart"></div>
+                  </div>
                 </div>
               </div>
+              <!-- //조회결과 있을 때 -->
             </div>
-            <!-- //조회결과 있을 때 -->
           </div>
         </section>
 
+        <section class="dp-chart-guide-wrap">
+          <div class="dp-chart-guide-txt-wrap">
+            <p class="dp-chart-guide-txt01">*조회결과가 “0”으로 나오는 경우, 해당 정보가 비공개이거나 해당 시기에 채용이 없었음을 의미합니다.</p>
+            <p class="dp-chart-guide-txt02">[상기 데이터는 각 기관이 공개한 채용합격자 발표공문 기준임]</p>
+          </div>
+        </section>
+
+        <!--
         <section class="dp-untact-lecture-wrap">
           <div class="dp-untact-lecture-list-wrap">
             <div class="dp-row-flex jc-space-between">
@@ -235,6 +255,13 @@
             <p class="dp-untact-lecture-link-tit">학원과정 이름</p>
 
           </div>
+        </section>
+        -->
+
+        <section class="dp-dynamic-banner-wrap">
+          <a href="http://campus.kpa.co.kr/seoul/index.html" target="_blank">
+            <img src="http://placehold.it/1030x150">
+          </a>
         </section>
 
       </main>

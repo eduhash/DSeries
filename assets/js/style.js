@@ -24,13 +24,13 @@ function popOpen(popup){
 	$('.'+ popup).fadeIn(100);
 
 	setTimeout(function(){
-		popTopPosition($('.'+ popup +' .popWrap'));
+		popTopPosition($('.'+ popup +' .dp-popWrap'));
 	}, 0);
 
 	$('.'+ popup).addClass('open').find('.dim').show();
 	$('body').addClass('bodyFixed').css('top', -posY);
 
-	var objPopWrap = $('.'+ popup +' .popWrap');
+	var objPopWrap = $('.'+ popup +' .dp-popWrap');
 
 	$(window).resize(function(){
 		setTimeout(function(){
@@ -46,7 +46,7 @@ function popClose(e){
 	var posTop = Math.abs(parseInt($('body').css('top')));
 	$('body').removeClass('bodyFixed').css('top', 0);
 	$(window).scrollTop(posTop);
-	e.parents('.popFixedWrap').removeClass('open').fadeOut(300);
+	e.parents('.dp-popFixedWrap').removeClass('open').fadeOut(300);
 }
 
 // 필수 사항 모두 선택 했는지 체크하고, 다음 버튼 활성화
