@@ -58,7 +58,7 @@ body {padding:0; margin:0; font-family:'Roboto', 'notokr', AppleGothic, sans-ser
 .dp-wrap a {text-decoration:none; color:inherit;}
 .dp-wrap img {border:0; vertical-align:top;}
 .dp-wrap em, .dp-wrap address {font-style:normal;}
-.dp-wrap table {width:100%; max-width:100%; border-collapse:collapse;}
+.dp-wrap table {width:100%; max-width:100%; border-collapse:collapse; table-layout:auto;}
 .dp-wrap caption {overflow:hidden; visibility:hidden; position:absolute; width:0; height:0; font-size:0;}
 
 .dp-hidden {position:absolute; top:-9999em; left:-9999em; width:0; height:0; font-size:0; text-indent:-9999em;}

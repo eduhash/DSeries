@@ -34,8 +34,8 @@
 .dp-tit-right .dp-views-txt03 {margin-top:20px; font-size:14px; font-size:1.4rem; color:#a8acaf; line-height:140%;}
 
 .dp-tit-svg {display:inline-block; width:345px; height:70px; text-indent:-99999px; box-sizing:border-box;}
-.dp-tit-dpass {background:url('../img/dp-tit-dpass.svg') no-repeat center; background-size:contain;}
-.dp-tit-mydata {background:url('../img/dp-tit-mydata.svg') no-repeat center; background-size:contain;}
+.dp-tit-dpass {background:url('../img/dp-tit-dpass.svg') no-repeat left; background-size:contain;}
+.dp-tit-mydata {height:91px; background:url('../img/dp-tit-mydata.svg') no-repeat left; background-size:contain;}
 
 .dp-filter-wrap {display:flex; flex-direction:row; margin-top:55px;}
 .dp-filter-wrap .dp-filter-tit {padding:10px 0; margin-bottom:20px; font-size:18px; font-size:1.8rem; font-weight:normal; color:#d2d3d5;}
@@ -153,14 +153,16 @@
 .dp-basic-info-wrap {display:flex; flex-direction:row; margin-top:80px;}
 .dp-user-info-wrap {flex:2.5; padding:35px 40px;}
 .dp-user-icon {display:inline-block; width:64px; height:64px; background:url('../img/reading.svg') no-repeat center; background-size:100%;}
-.dp-learning-time-wrap {flex:7.5; display:flex; flex-direction:row; flex-wrap:wrap; height:100%; padding:0 0 0 40px;}
-.dp-learning-time-by-place-wrap {width:50%; text-align:center;}
-.dp-learning-time-by-type-wrap {width:50%; text-align:center;}
+.dp-learning-time-wrap {flex:7.5; display:flex; flex-direction:column; padding:0 0 0 40px;}
+.dp-learning-time-chart-wrap {display:flex; flex-direction:row;}
+.dp-learning-time-by-place-wrap {flex:1; text-align:center;}
+.dp-learning-time-by-type-wrap {flex:1; text-align:center;}
 .dp-learning-time-wrap .dp-learning-time-guide-txt {margin-top:20px; width:100%; color:#9b9daa; text-align:center;}
 
-.dp-user-info-table tr td, .dp-user-info-table tr th {font-size:14px; font-size:1.4rem;}
+.dp-user-info-table tr td, .dp-user-info-table tr th {font-size:14px; font-size:1.4rem; text-align:left; line-height:140%;}
 .dp-user-info-table td {padding:10px 0 0; color:#c5c7d4;}
-.dp-user-info-table th {padding:10px 25px 0 0; color:#a3a4b9; font-weight:normal;}
+.dp-user-info-table th {padding:10px 25px 0 10px; color:#a3a4b9; font-weight:normal;}
+.dp-user-info-table tr:first-child th {padding-left:0;}
 .dp-user-info-table tr:first-child td, .dp-user-info-table tr:first-child th {padding-top:0; padding-bottom:15px;}
 .dp-user-info-table .dp-user-name {font-size:20px; font-size:2.0rem; font-weight:normal; color:#fcfeff;}
 .dp-user-info-table .dp-user-birth-date {margin-top:5px; font-size:13px; font-size:1.3rem;}
@@ -182,12 +184,13 @@
 
 .dp-mydata-tab-wrap .dp-tab-inside-wrap {margin-top:40px; padding:0 35px 40px;}
 .dp-mydata-tab-wrap .dp-mydata-tab-section-tit {padding-top:40px; font-size:18px; font-size:1.8rem; font-weight:normal;}
+.dp-mydata-tab-wrap .dp-tab-inside-upper-section {display:flex; flex-direction:row;}
 
-.dp-smart-learning-wrap {display:flex; flex-direction:row; flex-wrap:wrap; height:100%; position:relative;}
+.dp-smart-learning-wrap {display:flex; flex-direction:column;}
 .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap {display:flex; flex-direction:column; flex:1.2; padding-right:40px;}
 .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap .dp-chart-area {margin-top:20px; height:300px;}
 .dp-smart-learning-wrap .dp-learning-propensity-diagram-wrap {display:flex; flex-direction:column; flex:2;}
-.dp-smart-learning-wrap .dp-learning-propensity-curating-wrap {display:flex; flex-direction:column; width:100%;}
+.dp-smart-learning-wrap .dp-learning-propensity-curating-wrap {display:flex; flex-direction:column;}
 
 .dp-learning-propensity-diagram-wrap .dp-inner-diagram-wrap {display:flex; flex-direction:row; flex:1; justify-content:space-between; align-items:center; margin-top:20px;}
 .dp-learning-propensity-diagram-wrap .dp-diagram-wrap {display:flex; flex-direction:column; flex:1; margin-top:30px;}
@@ -225,7 +228,7 @@
 .scrollWrapper .scrollContainer::-webkit-scrollbar-thumb {background:#ddd;}/* Handle */
 .scrollWrapper .scrollContainer::-webkit-scrollbar-thumb:hover {background:#fff;}/* Handle on hover */
 
-.dp-score-track-wrap {display:flex; flex-direction:row; flex-wrap:wrap; height:100%;}
+.dp-score-track-wrap {display:flex; flex-direction:column;}
 .dp-score-track-wrap .dp-perform-by-subj-wrap {display:flex; flex-direction:column; flex:1.2;}
 .dp-score-track-wrap .dp-case-study-wrap {display:flex; flex-direction:column; flex:2; margin-left:40px;}
 .dp-score-track-wrap .dp-sixmonth-perform-by-subj-wrap {display:flex; flex-direction:column; width:100%;}
@@ -247,19 +250,19 @@
 .dp-perform-diagnosis-wrap .dp-perform-diagnosis-info-wrap {display:flex; flex-direction:row; justify-content:space-between; align-items:center; margin-top:50px;}
 .dp-perform-diagnosis-info-wrap > li {display:flex; flex-direction:column; margin:0 30px; text-align:center;}
 .dp-perform-diagnosis-info-wrap .dp-perform-label-txt {color:#ecedf0; font-size:18px; font-size:1.8rem;}
-.dp-perform-diagnosis-info-wrap .dp-perform-value-txt {color:#fff; font-size:40px; font-size:4.0rem; line-height:160%;}
+.dp-perform-diagnosis-info-wrap .dp-perform-value-txt {color:#fff; font-size:40px; font-size:4.0rem; line-height:160%; font-weight:800;}
 .dp-perform-diagnosis-wrap .dp-perform-level-wrap {display:flex; flex-direction:column; margin-top:20px;}
 .dp-perform-diagnosis-wrap .dp-perform-level-info-wrap {display:flex; flex-direction:row; justify-content:space-between; align-items:center; background:#060817; border-radius:20px;}
 .dp-perform-level-info-wrap .dp-perform-level-info-txt01 {padding:20px 30px; font-size:18px; font-size:1.8rem; color:#f4f4f4;}
 .dp-perform-level-info-wrap .dp-perform-level-info-txt02 {padding:15px 30px; font-size:14px; font-size:1.4rem; color:#e8e8e8;}
-.dp-perform-level-info-wrap .dp-perform-level-info-txt03 {margin:0 25px; font-size:30px; font-size:3.0rem; color:#eef70b;}
-.dp-perform-level-info-wrap .dp-perform-level-info-txt04 {margin:0 22px; font-size:20px; font-size:2.0rem; color:#e3ff00;}
+.dp-perform-level-info-wrap .dp-perform-level-info-txt03 {margin:0 25px; font-size:30px; font-size:3.0rem; color:#eef70b; font-weight:800;}
+.dp-perform-level-info-wrap .dp-perform-level-info-txt04 {margin:0 22px; font-size:20px; font-size:2.0rem; color:#e3ff00; font-weight:800;}
 .dp-perform-level-wrap .dp-perform-level-gage-wrap {position:relative; display:flex; flex-direction:column; margin-top:30px;}
 .dp-perform-level-gage-wrap .dp-level-gage-chart {position:absolute; top:15px; left:30px; right:30px; height:10px; background:#060818; box-sizing:border-box;}
 .dp-perform-level-gage-wrap .dp-level-gage-chart .dp-level-gage {position:absolute; left:0; top:0; display:block; width:100%; height:100%; background:#2d66c5;}
 .dp-perform-level-gage-wrap .dp-level-chk-list {display:flex; flex-direction:row; justify-content:space-between;}
 .dp-perform-level-gage-wrap .dp-level-chk-list > li {display:flex; flex-direction:column; position:relative; align-items:center; justify-content:center;}
-.dp-level-chk-list .dp-level-txt01 {margin-top:15px; font-size:20px; font-size:2.0rem; color:#b0a9f7;}
+.dp-level-chk-list .dp-level-txt01 {margin-top:15px; font-size:20px; font-size:2.0rem; color:#b0a9f7; font-weight:800;}
 .dp-level-chk-list .dp-level-txt02 {margin-top:15px; padding:5px 10px; font-size:12px; font-size:1.2rem; background-color:#060818; color:#bdbec2; border-radius:10px;}
 .dp-level-chk-list .dp-level-icon {display:block; width:40px; height:40px; border-radius:50%; border:3px solid #060818; box-sizing:border-box;}
 .dp-level-chk-list .dp-level-icon.chevron-circle-right-white-icon {background:#060818 url('../img/chevron-circle-right-white.svg') no-repeat center; background-size:100%;}
@@ -276,13 +279,13 @@
 .dp-perform-user-guide-wrap .dp-perform-user-guide-txt-wrap {display:flex; flex-direction:row; margin-top:20px;}
 .dp-perform-user-guide-wrap .dp-perform-user-guide-txt01 {flex:1; line-height:160%; color:#afb1bd;}
 
-.dp-time-pattern-wrap {display:flex; flex-direction:row; flex-wrap:wrap; height:100%;}
+.dp-time-pattern-wrap {display:flex; flex-direction:column;}
 .dp-time-pattern-wrap .dp-time-pattern-table-wrap {display:flex; flex-direction:column; flex:1;}
 .dp-time-pattern-wrap .dp-time-pattern-analysis-wrap {display:flex; flex-direction:column; flex:2;}
 .dp-time-pattern-wrap .dp-perform-user-guide-wrap {width:100%; box-sizing:border-box;}
 
 .dp-time-pattern-table-wrap {margin:0 60px 0 0;}
-.dp-time-pattern-table-wrap .dp-time-pattern-study-avgtime {display:inline-block; margin:10px 0 0 20px; font-size:40px; font-size:4.0rem; color:#fefefb; line-height:160%;}
+.dp-time-pattern-table-wrap .dp-time-pattern-study-avgtime {display:inline-block; margin:10px 0 0 20px; font-size:40px; font-size:4.0rem; color:#fefefb; line-height:160%; font-weight:800;}
 .dp-avg-time-table {margin-top:10px; text-align:left;}
 .dp-avg-time-table th {padding:5px 0; color:#fcd204; font-size:15px; font-size:1.5rem; font-weight:normal; text-align:left;}
 .dp-avg-time-table td {padding:0.3rem 0; color:#fff; font-size:15px; font-size:1.5rem; text-align:right;}
@@ -295,14 +298,14 @@
 .dp-health-sleep-time-wrap {display:flex; flex-direction:column;}
 .dp-health-sleep-time-wrap .dp-chart-area {margin-top:20px; height:300px;}
 
-.dp-my-learning-time-wrap {margin-top:60px;}
+.dp-my-learning-time-wrap {display:flex; flex-direction:column; margin-top:60px;}
 .dp-my-learning-time-wrap .dp-my-learning-time-list {display:flex; flex-direction:row; justify-content:space-around;}
 .dp-my-learning-time-list > li {display:flex; flex-direction:column; flex:1; align-items:center;}
-.dp-my-learning-time-value-wrap {display:flex; flex-direction:row; align-items:flex-start;}
+.dp-my-learning-time-value-wrap {display:flex; flex-direction:row;}
 .dp-my-learning-time-value-txt {display:flex; flex-direction:column; align-items:center;}
-.dp-my-learning-time-wrap .dp-my-learning-time-label {font-size:16px; font-size:1.6rem; color:#fff;}
+.dp-my-learning-time-wrap .dp-my-learning-time-label {font-size:16px; font-size:1.6rem; color:#fff; line-height:140%;}
 .dp-my-learning-time-value-txt {margin-top:10px; font-size:60px; font-size:6.0rem; line-height:120%;}
-.dp-my-learning-time-value-txt .dp-my-learning-time-value {padding:0 5px;}
+.dp-my-learning-time-value-txt .dp-my-learning-time-value {padding:0 5px; font-size:60px; font-size:6.0rem; font-weight:800; line-height:120%;}
 .dp-my-learning-time-value-txt .dp-my-learning-time-unit {font-size:12px; font-size:1.2rem; line-height:100%; color:#cdcdd0;}
 
 
@@ -505,9 +508,9 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
   .dp-mydata-tab-wrap {margin-top:40px;}
 
   .dp-smart-learning-wrap {flex-direction:column;}
-  .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap {flex:auto; padding-right:0;}
+  .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap {flex:none; padding-right:0;}
   .dp-smart-learning-wrap .dp-learning-propensity-chart-wrap .dp-chart-area {width:100%; max-width:320px; min-width:260px; margin:0 auto;}
-  .dp-smart-learning-wrap .dp-learning-propensity-diagram-wrap {flex:auto;}
+  .dp-smart-learning-wrap .dp-learning-propensity-diagram-wrap {flex:none;}
   .dp-learning-time-wrap .dp-chart-area {width:100%; max-width:320px; margin:0 auto;}
 
   .dp-perform-study-time-wrap {margin-top:40px;}
@@ -546,6 +549,7 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
   .dp-tab-inside-wrap .dp-chart-area::-webkit-scrollbar-thumb:hover {background:#fff;}/* Handle on hover */
 
   .dp-my-learning-time-value-txt {font-size:40px; font-size:4.0rem;}
+  .dp-my-learning-time-value-txt .dp-my-learning-time-value {font-size:40px; font-size:4.0rem;}
 
   .dp-stats-total-wrap .dp-stats-count-wrap {position:relative; margin-top:10px; width:100%; top:auto; left:auto; align-items:flex-end;}
   .dp-stats-total-wrap .dp-stats-count-wrap > li {margin:0 5px;}
@@ -606,7 +610,7 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
   .dp-parents-login-status {padding:5px 15px; font-size:14px; font-size:1.4rem;}
   .dp-tit-right .dp-views-txt03 {font-size:13px; font-size:1.3rem;}
 
-  .dp-tit-svg {width:230px;}
+  .dp-tit-svg {width:230px; height:70px;}
 
   .dp-user-info-table .dp-user-name {font-size:17px; font-size:1.7rem;}
   .dp-learning-time-wrap .dp-learning-time-tit {font-size:16px; font-size:1.6rem;}
@@ -615,21 +619,23 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
   .dp-user-info-wrap {padding:30px 20px;}
 
   .dp-mydata-tab-wrap .dp-tab-inside-wrap {padding:0 20px 30px;}
-  .dp-score-track-wrap .dp-case-study-wrap {margin-left:0;}
+  .dp-mydata-tab-wrap .dp-tab-inside-upper-section {flex-direction:column;}
+  .dp-score-track-wrap .dp-perform-by-subj-wrap {flex:none;}
+  .dp-score-track-wrap .dp-case-study-wrap {flex:none; margin-left:0;}
 
   .dp-comments-list .dp-comments-tit {font-size:16px; font-size:1.6rem;}
   .dp-comments-icon {width:40px; height:40px;}
   .dp-comments-list .dp-comments-txt {font-size:13px; font-size:1.3rem;}
 
-  .dp-case-study-wrap .dp-case-study-guide-wrap {margin-top:30px;}
+  .dp-case-study-wrap .dp-case-study-guide-wrap {flex:none; margin-top:30px;}
   .dp-case-study-wrap .dp-case-study-guide-txt {padding-right:0; font-size:13px; font-size:1.3rem;}
 
-  .dp-learning-time-wrap {flex-direction:column;}
+  .dp-learning-time-chart-wrap {flex-direction:column;}
   .dp-learning-time-by-place-wrap {width:100%;}
   .dp-learning-time-by-type-wrap {width:100%; margin-top:40px;}
 
-  .dp-learning-propensity-diagram-wrap .dp-inner-diagram-wrap {flex-direction:column; align-items:inherit; margin-top:0;}
-  .dp-learning-propensity-diagram-wrap .dp-diagram-wrap {margin-top:40px;}
+  .dp-learning-propensity-diagram-wrap .dp-inner-diagram-wrap {flex-direction:column; flex:none; align-items:inherit; margin-top:0;}
+  .dp-learning-propensity-diagram-wrap .dp-diagram-wrap {flex:none; margin-top:40px;}
 
   .dp-curating-tit-wrap {flex-direction:column;}
   .dp-curating-tit-wrap .dp-curating-guide-txt {padding-top:10px;}
@@ -639,8 +645,8 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
   .dp-perform-diagnosis-wrap .dp-perform-level-wrap {margin-top:30px;}
   .dp-perform-diagnosis-wrap .dp-perform-level-info-wrap {flex-direction:column;}
 
-  .dp-perform-diagnosis-wrap .dp-perform-diagnosis-info-wrap {flex-wrap:wrap; height:100%; margin-top:20px;}
-  .dp-perform-diagnosis-info-wrap > li {margin:0; width:50%; box-sizing:border-box; margin-top:20px;}
+  .dp-perform-diagnosis-wrap .dp-perform-diagnosis-info-wrap {margin-top:20px;}
+  .dp-perform-diagnosis-info-wrap > li {margin:0; margin-top:20px;}
   .dp-perform-diagnosis-info-wrap .dp-perform-label-txt {font-size:14px; font-size:1.4rem;}
   .dp-perform-diagnosis-info-wrap .dp-perform-value-txt {font-size:18px; font-size:1.8rem;}
 
@@ -660,10 +666,11 @@ background:linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(235,230,230,0.7)
 
   .dp-my-learning-time-wrap {margin-top:40px;}
   .dp-my-learning-time-wrap .dp-my-learning-time-list {flex-direction:column;}
-  .dp-my-learning-time-list > li {flex-direction:row; justify-content:space-between; margin-top:15px;}
+  .dp-my-learning-time-list > li {flex-direction:row; flex:none; justify-content:space-between; margin-top:15px;}
   .dp-my-learning-time-list > li:first-child {margin-top:0;}
   .dp-my-learning-time-wrap .dp-my-learning-time-label {font-size:14px; font-size:1.4rem;}
   .dp-my-learning-time-value-txt {font-size:24px; font-size:2.4rem;}
+  .dp-my-learning-time-value-txt .dp-my-learning-time-value {font-size:24px; font-size:2.4rem;}
 
   .dp-main-stats-wrap .dp-main-stats-tit {font-size:22px; font-size:2.2rem;}
   .dp-main-stats-wrap .dp-main-stats-tit:after {width:28px;}
