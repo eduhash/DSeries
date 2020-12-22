@@ -35,7 +35,7 @@
 
 .dp-tit-svg {display:inline-block; width:345px; height:70px; text-indent:-99999px; box-sizing:border-box;}
 .dp-tit-dpass {background:url('../img/dp-tit-dpass.svg') no-repeat center; background-size:contain;}
-
+.dp-tit-mydata {background:url('../img/dp-tit-mydata.svg') no-repeat center; background-size:contain;}
 
 .dp-filter-wrap {display:flex; flex-direction:row; margin-top:55px;}
 .dp-filter-wrap .dp-filter-tit {padding:10px 0; margin-bottom:20px; font-size:18px; font-size:1.8rem; font-weight:normal; color:#d2d3d5;}
