@@ -153,6 +153,11 @@
 .dp-basic-info-wrap {display:flex; flex-direction:row; margin-top:80px;}
 .dp-user-info-wrap {flex:2.5; padding:35px 40px;}
 .dp-user-icon {display:inline-block; width:64px; height:64px; background:url('../img/reading.svg') no-repeat center; background-size:100%;}
+
+.dp-btn-sband-time-sync {display:block; margin-top:30px; padding:10px 15px 9px; width:100%; font-size:14px; font-size:1.4rem; font-weight:800; color:#fff; background:#5546a0; border-radius:20px; outline:0; border:0; line-height:140%; cursor:pointer; transition:0.2s;}
+.dp-btn-sband-time-sync:hover {background:#725ed6;}
+
+
 .dp-learning-time-wrap {flex:7.5; display:flex; flex-direction:column; padding:0 0 0 40px;}
 .dp-learning-time-chart-wrap {display:flex; flex-direction:row;}
 .dp-learning-time-by-place-wrap {flex:1; text-align:center;}
