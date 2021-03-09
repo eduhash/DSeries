@@ -187,7 +187,7 @@
 .dp-mydata-tab-wrap .tab > ul > li:first-child > a {border-left:0;}
 .dp-mydata-tab-wrap .tab > ul > li.on > a {background:#3cb4ff; color:#fff;}
 
-.dp-mydata-tab-wrap .dp-tab-inside-wrap {margin-top:40px; padding:0 35px 40px;}
+.dp-mydata-tab-wrap .dp-tab-inside-wrap {margin-top:40px; padding:0 35px 40px; box-sizing:border-box;}
 .dp-mydata-tab-wrap .dp-mydata-tab-section-tit {padding-top:40px; font-size:18px; font-size:1.8rem; font-weight:normal;}
 .dp-mydata-tab-wrap .dp-tab-inside-upper-section {display:flex; flex-direction:row;}
 
