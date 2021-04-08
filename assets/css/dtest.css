@@ -2,7 +2,6 @@
 .dt-wrap {color:#333;}
 .dt-main {padding-left:330px;}
 
-.dt-my-result-summary {}
 .dt-my-result-summary .dt-result-num {margin-top:10px; font-size:24px; font-size:2.4rem; line-height:133%;}
 .dt-my-result-summary .dt-result-label {margin-top:3px; font-size:14px; font-size:1.4rem; line-height:128%;}
 
@@ -59,7 +58,14 @@
 .dt-ad-section {margin-top:60px;}
 .dt-ad-section img {max-width:100%;}
 
+.dt-content .scrollWrapper .scrollContainer::-webkit-scrollbar {width:9px;}/* width */
+.dt-content .scrollWrapper .scrollContainer::-webkit-scrollbar-track {background:#ddd; border-radius:10px;}/* Track */
+.dt-content .scrollWrapper .scrollContainer::-webkit-scrollbar-thumb {background:#d1c1c1; border-radius:10px;}/* Handle */
+.dt-content .scrollWrapper .scrollContainer::-webkit-scrollbar-thumb:hover {background:#fff;}/* Handle on hover */
+
+
 @media (max-width:767px){
+  .dt-content {padding: 0 15px;}
   .dt-main {padding-left:0;}
   .dt-my-result-summary .dt-result-num {font-size:18px; font-size:1.8rem;}
   .dt-my-result-summary .dt-result-label {font-size:13px; font-size:1.3rem;}
