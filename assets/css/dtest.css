@@ -23,7 +23,7 @@
 .dt-title-section .dt-student-id {margin-top:28px; font-size:18px; font-size:1.8rem; color:#ff9728; text-align:center;}
 .dt-title-section .dt-student-id:after {content:''; position:relative; display:block; margin:10px auto 0; width:57px; height:5px; box-sizing:border-box; background-color:#ff9728; border-radius:5px;}
 .dt-title-section .dt-student-name {margin-top:7px; font-size:22px; font-size:2.2rem; font-weight:bold; color:#333; text-align:center; letter-spacing:5px; line-height:133%;}
-.dt-student-belong {position:relative; margin-top:6px; font-size:18px; font-size:1.8rem; line-height:133%; color: #ff9728;}
+.dt-student-belong {position:relative; margin-top:6px; font-size:18px; font-size:1.8rem; line-height:133%; color:#ff9728;}
 .dt-student-belong:after {content:''; position:absolute; left:50%; top:50%; margin-top:-6px; margin-left:-5.5px; width:11px; height:11px; border-radius:50%; background-color:#ff9728; box-sizing:border-box;}
 .dt-title-section .dt-student-campus {margin:0 15px;}
 .dt-title-section .dt-student-class {margin:0 15px;}
@@ -48,6 +48,9 @@
 .dt-table01 .dt-test-btn.finished {background-color:#e0ac00;}
 .dt-table01 .dt-test-btn.waiting {background-color:#ff002b;}
 .dt-table01 .dt-test-btn.taking:hover {opacity:0.75;}
+.dt-table01 .dt-no-test-notice {padding:30px; line-height:133%;}
+.dt-table01 .dt-no-test-text01 {font-size:16px; font-size:1.6rem; color:#fd7e3d;}
+.dt-table01 .dt-no-test-text02 {margin-top:15px; font-size:14px; font-size:1.4rem; color:#333;}
 
 .dt-link-btn-wrap {margin-top:20px;}
 .dt-link-btn-curator {padding:5px 18px 4px; color:#fff; background-color:#818182; font-size:12px; font-size:1.2rem; line-height:133%; border-radius:6px; border:0; outline:0; transition:0.2s; cursor:pointer;}
@@ -63,9 +66,41 @@
 .dt-content .scrollWrapper .scrollContainer::-webkit-scrollbar-thumb {background:#d1c1c1; border-radius:10px;}/* Handle */
 .dt-content .scrollWrapper .scrollContainer::-webkit-scrollbar-thumb:hover {background:#fff;}/* Handle on hover */
 
+/* 팝업스타일 */
+.dp-dim {display:none; position:fixed; top:0; right:0; bottom:0; left:0; background:rgba(0, 0, 0, 0.3); z-index:110;}
+.dt-popup.dp-popFixedWrap {display:none; position:fixed; top:0; right:0; bottom:0; left:0; z-index:1000; -webkit-overflow-scrolling:touch;}
+.dt-popup.dp-popFixedWrap .dp-dim {display:block; z-index:10;}
+.dt-popup .dp-popWrap {position:relative; overflow:hidden; max-width:1100px; min-height:100px; width:100%; padding:20px; margin:0 auto; border-radius:20px; background:#fff; box-shadow:2px 1px 3px rgba(0, 0, 0, 0.2); z-index:20; box-sizing:border-box;}
+.dt-popContainer {border-radius:15px; overflow:hidden;}
+.dt-curator-wrap {position:relative; padding-top:68px; max-height:800px; box-sizing:border-box; background-color:#f6f6f6;}
+.dt-popBtnClose {position:absolute; right:13px; top:8px; width:40px; height:40px; background-color:transparent; border:0; outline:0; cursor:pointer; font-size:18px; font-size:1.8rem; text-indent:-9999px; box-sizing:border-box;}
+.dt-popBtnClose:before, .dt-popBtnClose:after {content:''; position:absolute; top:50%; margin:0; left:5px; width:30px; height:2px; border-radius:2px; background-color:#333; transition:0.4s;}
+.dt-popBtnClose:before {-webkit-transform:rotate(45deg); transform:rotate(45deg);}
+.dt-popBtnClose:after {-webkit-transform:rotate(135deg); transform:rotate(135deg);}
+.dt-test-taking-wrap .dt-popBtnClose {display:none;}
+.dt-popBtnClose02 {padding:8px 25px; border:0; outline:0; cursor:pointer; font-size:16px; font-size:1.6rem; border-radius:16px; background-color: #4d4e4d; color:#fff;}
+.dt-popBtnClose02:hover {background-color:#7a7b7a; }
+
+.dt-test-taking-wrap {background-color:#f0ebf8;}
+.dt-test-taking-header {display:flex; flex-direction:row; justify-content:space-between; padding:18px 30px 10px 50px;}
+.dt-dtest-icon {display:inline-block; width:27px; height:36px; background:url('../img/ico-dtest.svg') no-repeat center; background-size:100%; box-sizing:border-box; text-indent:-9999px;}
+.dt-test-taking-title {margin-left:18px; font-size:14px; font-size:1.4rem; line-height:128%; color:#333;}
+.dt-ollaedu-icon {display:inline-block; width:110px; height:25px; background:url('../img/ico-ollaedu.svg') no-repeat center; background-size:100%; box-sizing:border-box; text-indent:-9999px;}
+.dt-ollaedu-link-text {margin-right:15px; font-size:11px; font-size:1.1rem; line-height:133%; color:#5a5a5a;}
+
+.dt-test-taking-notice-wrap {padding:0 25px 0 35px;}
+.dt-test-taking-time-wrap {margin-top:35px;}
+.dt-clock-icon {display:inline-block; width:26px; height:26px; margin:0 5px; background:url('../img/ico-clock.svg') no-repeat center; background-size:100%; box-sizing:border-box; text-indent:-9999px;}
+.dt-time-text01 {display:flex; flex-direction:row; justify-content:center; align-items:center; font-size:12px; font-size:1.2rem; color:#333;}
+.dt-time-text02 {font-size:65px; font-size:6.5rem; font-weight:bold; line-height:125%; color:#ff0075;}
+.dt-test-taking-notice-wrap .dt-test-taking-notice-list {margin-top:40px;}
+.dt-test-taking-notice-list > li {position:relative; padding-left:15px; margin-bottom:7px; line-height:145%; font-size:13px; font-size:1.3rem; color:#666;}
+.dt-test-taking-notice-list > li:before {content:''; position:absolute; left:0; top:3px; width:9px; height:9px; border-radius:50%; background-color:#ff0075; box-sizing:border-box;}
+.dt-test-taking-btn-wrap {margin-top:240px;}
+.dt-copyright-text {margin-top:15px; font-size:12px; font-size:1.2rem; color:#333;}
 
 @media (max-width:767px){
-  .dt-content {padding: 0 15px;}
+  .dt-content {padding:0 15px;}
   .dt-main {padding-left:0;}
   .dt-my-result-summary .dt-result-num {font-size:18px; font-size:1.8rem;}
   .dt-my-result-summary .dt-result-label {font-size:13px; font-size:1.3rem;}
@@ -82,5 +117,18 @@
   .dt-student-belong {font-size:13px; font-size:1.3rem;}
   .dt-tab-wrap .tab > ul > li > a {margin:0 3px;}
   .dt-table01 .dt-test-btn {min-width:60px;}
+
+  .dt-popup.dp-popFixedWrap {right:15px; left:15px;}
+  .dt-popup .dp-popWrap {padding:10px;}
+  .dt-popContainer {border-radius:5px;}
+  .dt-curator-wrap {max-height:600px;}
+
+  .dt-test-taking-header {padding:10px 45px 0 15px;}
+  .dt-test-taking-notice-wrap {display:none;}
+  .dt-ollaedu-link-text {display:none;}
+  .dt-ollaedu-icon {display:none; margin-left:10px; width:70px;}
+  .dt-dtest-icon {width:22px;}
+  .dt-test-taking-title {margin-left:5px;}
+  .dt-test-taking-wrap .dt-popBtnClose {display:block; top:15px;}
 
 }

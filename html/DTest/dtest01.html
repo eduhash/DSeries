@@ -38,19 +38,19 @@
           <section class="dp-col-flex">
             <ul class="dt-my-result-summary dp-row-flex jc-space-between ai-center">
               <li class="dp-col-flex ai-center">
-                <strong class="dt-result-num">465</strong>
+                <strong class="dt-result-num dp-counterup" data-counterup-time="1000" data-counterup-delay="30" data-counterup-beginat="0">465</strong>
                 <p class="dt-result-label">내가 푼 문제</p>
               </li>
               <li class="dp-col-flex ai-center">
-                <strong class="dt-result-num">270</strong>
+                <strong class="dt-result-num dp-counterup" data-counterup-time="1000" data-counterup-delay="30" data-counterup-beginat="0">270</strong>
                 <p class="dt-result-label">내가 맞춘 문제</p>
               </li>
               <li class="dp-col-flex ai-center">
-                <strong class="dt-result-num">195</strong>
+                <strong class="dt-result-num dp-counterup" data-counterup-time="1000" data-counterup-delay="30" data-counterup-beginat="0">195</strong>
                 <p class="dt-result-label">내가 틀린 문제</p>
               </li>
               <li class="dp-col-flex ai-center">
-                <strong class="dt-result-num">53%</strong>
+                <strong class="dt-result-num"><span class="dp-counterup" data-counterup-time="1000" data-counterup-delay="30" data-counterup-beginat="0">53</span>%</strong>
                 <p class="dt-result-label">나의 정답률</p>
               </li>
             </ul>
@@ -144,7 +144,7 @@
                       <td>09:30</td>
                       <td>11:30</td>
                       <td>
-                        <button class="dt-test-btn taking">응시하기</button>
+                        <button class="dt-test-btn taking" onclick="popOpen('pop02');">응시하기</button>
                       </td>
                     </tr>
                     <tr>
@@ -191,10 +191,70 @@
                 </table>
               </div>
               <div class="tabCon">
-                9급 행정공무원 내용
+                <table class="dt-table01">
+                  <caption>경찰공무원 D-Test 목록</caption>
+                  <colgroup>
+                    <col width="10%">
+                    <col width="*">
+                    <col width="10%">
+                    <col width="10%">
+                    <col width="10%">
+                    <col width="20%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>KEY</th>
+                      <th>응시과목명</th>
+                      <th>문항수</th>
+                      <th>OPEN</th>
+                      <th>CLOSE</th>
+                      <th>참여상태</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="6">
+                        <div class="dt-no-test-notice">
+                          <strong class="dt-no-test-text01">오늘은 D-TEST가 없습니다.</strong>
+                          <p class="dt-no-test-text02">내일 응시해주세요.</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
               <div class="tabCon">
-                소방공무원 내용
+                <table class="dt-table01">
+                  <caption>경찰공무원 D-Test 목록</caption>
+                  <colgroup>
+                    <col width="10%">
+                    <col width="*">
+                    <col width="10%">
+                    <col width="10%">
+                    <col width="10%">
+                    <col width="20%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>KEY</th>
+                      <th>응시과목명</th>
+                      <th>문항수</th>
+                      <th>OPEN</th>
+                      <th>CLOSE</th>
+                      <th>참여상태</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="6">
+                        <div class="dt-no-test-notice">
+                          <strong class="dt-no-test-text01">오늘은 D-TEST가 없습니다.</strong>
+                          <p class="dt-no-test-text02">내일 응시해주세요.</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
               <div class="tabCon">
                 준비중 내용
@@ -204,7 +264,7 @@
               </div>
             </div>
             <div class="dt-link-btn-wrap dp-row-flex jc-space-between">
-              <button class="dt-link-btn-curator">큐레이터 로그인</button>
+              <button class="dt-link-btn-curator" onclick="popOpen('pop01');">큐레이터 로그인</button>
               <button class="dt-link-btn-report">[보류] D-TEST 종합레포트</button>
             </div>
           </section>
@@ -221,21 +281,65 @@
     </div>
 
     <!-- pop01 -->
-    <div class="dp-popFixedWrap pop01">
+    <div class="dt-popup dp-popFixedWrap pop01">
       <section class="dp-popWrap">
-        <div class="dp-popContainer">
-            <button class="dp-popBtnClose" onclick="popClose($(this));">ë‹«ê¸°</button>
-          <header class="dp-popHeader">
-
-          </header>
-          <div class="dp-popBody">
-
-          </div>
+        <div class="dt-popContainer dt-curator-wrap">
+          <button class="dt-popBtnClose" onclick="popClose($(this));">Close X</button>
+          <iframe src="http://mydata.eduhash.net/" frameborder="0" style="width:100%; height:680px; box-sizing:border-box; margin:0; border:0;"></iframe>
         </div>
       </section>
       <div class="dp-dim"></div>
     </div>
     <!-- //pop01 -->
+
+    <!-- pop02 -->
+    <div class="dt-popup dp-popFixedWrap pop02">
+      <section class="dp-popWrap">
+        <div class="dt-popContainer dt-test-taking-wrap">
+          <div class="dt-test-taking-container dp-col-flex">
+            <div class="dt-test-taking-header">
+              <div class="dp-row-flex ai-center">
+                <i class="dt-dtest-icon">디테스트 아이콘</i>
+                <span class="dt-test-taking-title">D-TEST 시험장에 입장하셨습니다. 10분 내로 답안을 제출하세요!</span>
+              </div>
+              <div class="dp-row-flex ai-center">
+                <span class="dt-ollaedu-link-text">www.ollaedu.com</span>
+                <i class="dt-ollaedu-icon">올라에듀 아이콘</i>
+                <button class="dt-popBtnClose" onclick="popClose($(this));">Close X</button>
+              </div>
+            </div>
+            <div class="dp-row-flex">
+              <div class="dt-test-taking-iframe-wrap dp-flex-1">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemJrbiC7FO9h2L0dpySsHfNkmXhNvpfsdE0WnydYvIFZNnmA/viewform?usp=sf_link" frameborder="0" style="width:100%; height:680px; box-sizing:border-box; margin:0; border:0;"></iframe>
+              </div>
+              <div class="dt-test-taking-notice-wrap dp-col-flex">
+                <div class="dt-test-taking-time-wrap dp-col-flex jc-center ai-center">
+                  <p class="dt-time-text01">남은시간 <i class="dt-clock-icon">시계아이콘</i>입니다.</p>
+                  <strong class="dt-time-text02">09:52</strong>
+                </div>
+                <ul class="dt-test-taking-notice-list">
+                  <li>동일 TEST 중복 응시 시 최초 제출 답안만 유효</li>
+                  <li>소요시간을 스스로 확인하며 풀이에 임합니다.<br>(10제당 10분 / 20제 20분 내 제출완료)</li>
+                  <li>시험코드와 과목코드는 선택 시 1개 코드 필수선택</li>
+                  <li>자동입력되는 응시자 이름과 ID가 본인이 맞는지 확인</li>
+                  <li>문제를 모두 푼 후 반드시 "제출하기"를 눌러주세요!</li>
+                  <li>제출하기 전 본 창을 닫을 시 미응시 처리됩니다.</li>
+                </ul>
+                <div class="dt-test-taking-btn-wrap dp-row-flex jc-center">
+                  <button class="dt-popBtnClose02" onclick="popClose($(this));">X 시험장 나가기</button>
+                </div>
+                <div class="dp-row-flex jc-center">
+                  <span class="dt-copyright-text">2021 © EduHash Global Partners</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <div class="dp-dim"></div>
+    </div>
+    <!-- //pop02 -->
 
 
   </div>

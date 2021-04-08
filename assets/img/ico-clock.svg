@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.3" height="26.3" viewBox="0 0 26.3 26.3">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#989797;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="clock-icon" transform="translate(.5 .5)">
+        <circle id="ellipse" cx="12.65" cy="12.65" r="12.65" class="cls-1"/>
+        <path id="line" d="M0 0L0 12.291" class="cls-1" transform="translate(11.979 3.474)"/>
+        <path id="line-2" d="M7.682 0L0 0" class="cls-1" transform="translate(11.363 14.663)"/>
+    </g>
+</svg>
