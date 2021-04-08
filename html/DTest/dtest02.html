@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!-- saved from url=(0013)about:internet -->
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>DTest02</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+  <link rel="stylesheet" href="../../assets/css/rangeslider.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/contents.css">
+  <link rel="stylesheet" href="../../assets/css/dtest.css">
+  <script src="../../assets/js/jquery-1.11.2.min.js"></script>
+  <script src="../../assets/js/jquery.waypoints.min.js"></script>
+  <script src="../../assets/js/jquery.counterup.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/rangeslider.min.js"></script>
+  <script src="../../assets/js/highcharts.js"></script>
+  <script src="../../assets/js/highcharts-more.js"></script>
+  <script src="../../assets/js/style.js"></script>
+  <!--[if lt IE 9]>
+  		<script src="../../assets/js/respond.js"></script>
+  		<script src="../../assets/js/html5shiv.min.js"></script>
+  	<![endif]-->
+</head>
+
+<body>
+
+  <div class="dp-wrap dt-wrap">
+    <div class="dp-container">
+
+      <main class="dt-main dp-col-flex">
+        <div class="dt-content dp-col-flex">
+          <section class="dp-col-flex">
+            <ul class="dt-my-result-summary dp-row-flex jc-space-between ai-center">
+              <li class="dp-col-flex ai-center">
+                <strong class="dt-result-num dp-counterup" data-counterup-time="1000" data-counterup-delay="30" data-counterup-beginat="0">465</strong>
+                <p class="dt-result-label">내가 푼 문제</p>
+              </li>
+              <li class="dp-col-flex ai-center">
+                <strong class="dt-result-num dp-counterup" data-counterup-time="1000" data-counterup-delay="30" data-counterup-beginat="0">270</strong>
+                <p class="dt-result-label">내가 맞춘 문제</p>
+              </li>
+              <li class="dp-col-flex ai-center">
+                <strong class="dt-result-num dp-counterup" data-counterup-time="1000" data-counterup-delay="30" data-counterup-beginat="0">195</strong>
+                <p class="dt-result-label">내가 틀린 문제</p>
+              </li>
+              <li class="dp-col-flex ai-center">
+                <strong class="dt-result-num"><span class="dp-counterup" data-counterup-time="1000" data-counterup-delay="30" data-counterup-beginat="0">53</span>%</strong>
+                <p class="dt-result-label">나의 정답률</p>
+              </li>
+            </ul>
+          </section>
+          <section class="dt-notice-section">
+            <div class="dt-notice-icon-wrap">
+              <i class="dt-notice-icon"></i>
+              <strong class="dt-notice-label">NOTICE</strong>
+            </div>
+            <div class="dp-col-flex dp-flex-1 scrollWrapper">
+              <div class="dp-col-flex scrollContainer">
+                <ul class="dt-notice-list dp-col-flex">
+                  <li>
+                    <span class="dt-notice-date">2021-04-24</span>
+                    <p class="dt-notice-text"><span class="dt-notice-title">[정정공지]</span>0000-00-00일 경찰한국사 진도별테스트 2회차 9번 문제 정답 오류가 있어 1번과 3번 중복정답 처리하여 반영하였습니다.</p>
+                  </li>
+                  <li>
+                    <span class="dt-notice-date">2021-04-24</span>
+                    <p class="dt-notice-text"><span class="dt-notice-title">[정정공지]</span>0000-00-00일 경찰한국사 진도별테스트 2회차 9번 문제 정답 오류가 있어 1번과 3번 중복정답 처리하여 반영하였습니다.</p>
+                  </li>
+                  <li>
+                    <span class="dt-notice-date">2021-04-24</span>
+                    <p class="dt-notice-text"><span class="dt-notice-title">[정정공지]</span>0000-00-00일 경찰한국사 진도별테스트 2회차 9번 문제 정답 오류가 있어 1번과 3번 중복정답 처리하여 반영하였습니다.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="dt-result-tab-wrap">
+            <div class="tabWrap">
+              <div class="tab">
+                <ul>
+                  <li class="on">
+                    <a href="javascript:void(0);">진도별 테스트</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">데일리 테스트</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">합격반 현장모의고사</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabCon first">
+                <section class="dt-chart-wrap dp-col-flex">
+                  <strong class="dt-chart-title">최근 D-TEST 참여현황</strong>
+                  <div class="dp-chart-area">
+                    <div class="dp-chart-parent">
+                      <div class="dp-chart-container">
+                        <div id="dt-participation-chart"></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="dt-polygon-chart-wrap dp-col-flex">
+                  <div class="dp-row-flex jc-space-between">
+                    <strong class="dt-chart-title">D-TEST 분석결과 확인</strong>
+                    <span>진도별테스트</span>
+                  </div>
+                  <ul class="dt-result-chart-wrap">
+                    <li class="dp-col-flex">
+                      <div class="dp-col-flex ai-center">
+                        <strong class="dt-chart-subtit01">01. 투자진단</strong>
+                        <span class="dt-chart-subtit02">과목별 참여율 비교</span>
+                      </div>
+                      <div class="dp-chart-area">
+                        <div class="dp-chart-parent">
+                          <div class="dp-chart-container">
+                            <div id="dt-result-chart01"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dp-col-flex">
+                      <div class="dp-col-flex ai-center">
+                        <strong class="dt-chart-subtit01">02. 실력진단</strong>
+                        <span class="dt-chart-subtit02">과목별 오답율 비교</span>
+                      </div>
+                      <div class="dp-chart-area">
+                        <div class="dp-chart-parent">
+                          <div class="dp-chart-container">
+                            <div id="dt-result-chart02"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dp-col-flex">
+                      <div class="dp-col-flex ai-center">
+                        <strong class="dt-chart-subtit01">03. 성과진단</strong>
+                        <span class="dt-chart-subtit02">TBD (전월대비 성장률 비교)</span>
+                      </div>
+                      <div class="dp-chart-area">
+                        <div class="dp-chart-parent">
+                          <div class="dp-chart-container">
+                            <div id="dt-result-chart03"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+
+                <section class="dt-tab-wrap">
+                  <div class="tabWrap">
+                    <div class="tab">
+                      <ul>
+                        <li class="on">
+                          <a href="javascript:void(0);">경찰학개론</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">헌법</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">형사법</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">영어Half</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">한국사</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabCon first">
+                      <table class="dt-table01">
+                        <caption>D-Test 목록</caption>
+                        <colgroup>
+                          <col width="10%">
+                          <col width="*">
+                          <col width="10%">
+                          <col width="10%">
+                          <col width="15%">
+                          <col width="20%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>KEY</th>
+                            <th>Test명</th>
+                            <th>응시일</th>
+                            <th>점수</th>
+                            <th>석차</th>
+                            <th>결과조회</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1573</td>
+                            <td><span class="dt-test-title">2022년 대비 집중식 강의 12회차</span></td>
+                            <td>2021-05-01</td>
+                            <td><strong>70점</strong></td>
+                            <td>12등/41명 중</td>
+                            <td>
+                              <button class="dt-test-btn result" onclick="popOpen('pop01');">분석결과보기</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1573</td>
+                            <td><span class="dt-test-title">2022년 대비 집중식 강의 12회차</span></td>
+                            <td>2021-05-01</td>
+                            <td><strong>70점</strong></td>
+                            <td>12등/41명 중</td>
+                            <td>
+                              <button class="dt-test-btn result" onclick="popOpen('pop01');">분석결과보기</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1573</td>
+                            <td><span class="dt-test-title">2022년 대비 집중식 강의 12회차</span></td>
+                            <td>2021-05-01</td>
+                            <td><strong>70점</strong></td>
+                            <td>12등/41명 중</td>
+                            <td>
+                              <button class="dt-test-btn result" onclick="popOpen('pop01');">분석결과보기</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1573</td>
+                            <td><span class="dt-test-title">2022년 대비 집중식 강의 12회차</span></td>
+                            <td>2021-05-01</td>
+                            <td><strong>70점</strong></td>
+                            <td>12등/41명 중</td>
+                            <td>
+                              <button class="dt-test-btn result" onclick="popOpen('pop01');">분석결과보기</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1573</td>
+                            <td><span class="dt-test-title">2022년 대비 집중식 강의 12회차</span></td>
+                            <td>2021-05-01</td>
+                            <td><strong>70점</strong></td>
+                            <td>12등/41명 중</td>
+                            <td>
+                              <button class="dt-test-btn result" onclick="popOpen('pop01');">분석결과보기</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1573</td>
+                            <td><span class="dt-test-title">2022년 대비 집중식 강의 12회차</span></td>
+                            <td>2021-05-01</td>
+                            <td><strong>70점</strong></td>
+                            <td>12등/41명 중</td>
+                            <td>
+                              <button class="dt-test-btn result" onclick="popOpen('pop01');">분석결과보기</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1573</td>
+                            <td><span class="dt-test-title">2022년 대비 집중식 강의 12회차</span></td>
+                            <td>2021-05-01</td>
+                            <td><strong>70점</strong></td>
+                            <td>12등/41명 중</td>
+                            <td>
+                              <button class="dt-test-btn result" onclick="popOpen('pop01');">분석결과보기</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1573</td>
+                            <td><span class="dt-test-title">2022년 대비 집중식 강의 12회차</span></td>
+                            <td>2021-05-01</td>
+                            <td><strong>70점</strong></td>
+                            <td>12등/41명 중</td>
+                            <td>
+                              <button class="dt-test-btn result" onclick="popOpen('pop01');">분석결과보기</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tabCon">
+                      <table class="dt-table01">
+                        <caption>D-Test 목록</caption>
+                        <colgroup>
+                          <col width="10%">
+                          <col width="*">
+                          <col width="10%">
+                          <col width="10%">
+                          <col width="15%">
+                          <col width="20%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>KEY</th>
+                            <th>Test명</th>
+                            <th>응시일</th>
+                            <th>점수</th>
+                            <th>석차</th>
+                            <th>결과조회</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="6">
+                              <div class="dt-no-test-notice">
+                                <strong class="dt-no-test-text01">응시한 D-TEST가 없습니다.</strong>
+                                <p class="dt-no-test-text02">테스트 응시 후 확인해주세요.</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tabCon">
+                      <table class="dt-table01">
+                        <caption>D-Test 목록</caption>
+                        <colgroup>
+                          <col width="10%">
+                          <col width="*">
+                          <col width="10%">
+                          <col width="10%">
+                          <col width="15%">
+                          <col width="20%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>KEY</th>
+                            <th>Test명</th>
+                            <th>응시일</th>
+                            <th>점수</th>
+                            <th>석차</th>
+                            <th>결과조회</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="6">
+                              <div class="dt-no-test-notice">
+                                <strong class="dt-no-test-text01">응시한 D-TEST가 없습니다.</strong>
+                                <p class="dt-no-test-text02">테스트 응시 후 확인해주세요.</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tabCon">
+                      준비중 내용
+                    </div>
+                    <div class="tabCon">
+                      준비중 내용
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tabCon">
+              </div>
+              <div class="tabCon">
+              </div>
+            </div>
+          </section>
+
+
+
+        </div>
+      </main>
+
+    </div>
+
+    <!-- pop01 -->
+    <div class="dt-popup dp-popFixedWrap pop01">
+      <section class="dp-popWrap">
+        <div class="dt-popContainer dt-curator-wrap">
+          <button class="dt-popBtnClose" onclick="popClose($(this));">Close X</button>
+          <iframe src="http://mydata.eduhash.net/" frameborder="0" style="width:100%; height:680px; box-sizing:border-box; margin:0; border:0;"></iframe>
+        </div>
+      </section>
+      <div class="dp-dim"></div>
+    </div>
+    <!-- //pop01 -->
+
+
+  </div>
+
+</body>
+
+<script>
+  Highcharts.chart('dt-participation-chart', {
+    chart: {
+      type: 'column',
+      //renderTo: renderTo,
+      backgroundColor: 'transparent',
+      zoomType: 'xy',
+      height: (3 / 10) * 100 + '%', // 10:1.8 ratio
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: '',
+      align: 'left',
+    },
+    subtitle: {
+      text: '',
+      align: 'left',
+    },
+    xAxis: [{
+      categories: ['5/1', '5/2', '5/3', '5/4', '5/5', '5/6', '5/7', '5/8', '5/9', '5/10', '5/11', '5/12', '5/13', '5/14', '5/15'],
+      crosshair: true,
+      labels: {
+        format: '{value}',
+        style: {
+          color: '#666',
+        },
+      },
+    }, ],
+    yAxis: {
+      min: 0,
+      max: 100,
+      tickInterval: '20',
+      gridLineColor: '#ddd',
+      labels: {
+        format: '{value}',
+        style: {
+          color: '#999',
+        },
+      },
+      title: {
+        text: '',
+      },
+      opposite: true,
+    },
+
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong>{point.x}</strong>월<br/><br/>',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      },
+      valueSuffix: ' 점',
+    },
+    legend: {
+      layout: 'horizontal',
+      align: 'right',
+      x: 0,
+      verticalAlign: 'top',
+      y: -10,
+      floating: false,
+      itemStyle: {
+        color: '#bdbec2',
+      },
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0.2,
+      },
+      series: {
+        borderWidth: 0,
+        borderRadius: 2,
+        groupPadding: 0.2,
+      },
+    },
+    series: [{
+        name: '경찰학개론',
+        type: 'column',
+        color: '#00e3fd',
+        data: [50, 30, 75, 85, 60, 50, 30, 75, 85, 60, 50, 30, 75, 85, 60],
+      },
+      {
+        name: '헌법',
+        type: 'column',
+        color: '#d28d04',
+        data: [60, 45, 80, 65, 65, 60, 45, 80, 65, 65, 60, 45, 80, 65, 65],
+      },
+      {
+        name: '형사법',
+        type: 'column',
+        color: '#5809f8',
+        data: [85, 40, 75, 70, 65, 85, 40, 75, 70, 65, 85, 40, 75, 70, 65],
+      }
+    ],
+  });
+</script>
+<script>
+  Highcharts.chart('dt-result-chart01', {
+    chart: {
+      backgroundColor: 'transparent',
+      polar: true,
+      type: 'line',
+      height: (8.5 / 10) * 100 + '%',
+    },
+    credits: {
+      enabled: false,
+    },
+    accessibility: {
+      description: ''
+    },
+    title: {
+      text: '',
+      x: -20
+    },
+    pane: {
+      size: '90%'
+    },
+    xAxis: {
+      categories: ['과목1', '과목2', '과목3', '과목4', '과목5'],
+      tickmarkPlacement: 'on',
+      color: '#ccc',
+      lineWidth: 0,
+      labels: {
+        style: {
+          color: '#333'
+        }
+      }
+    },
+    yAxis: {
+      gridLineInterpolation: 'polygon',
+      lineWidth: 0,
+      min: 0,
+      max:100,
+      tickAmount: 4,
+      labels: {
+        style: {
+          color: '#ddd'
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong>{point.x}</strong><br/><br/>',
+      pointFormat: '<span style="color:{series.color}">●</span><b>{point.y:,.0f}%</b><br/>',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      }
+    },
+    legend: {
+      enabled:false,
+      align: 'center',
+      verticalAlign: 'top',
+      layout: 'horizontal',
+      itemStyle: {
+        color: '#333',
+      }
+    },
+    series: [{
+      type: 'area',
+      //name: '지난 회차',
+      data: [100, 80, 70, 85, 75],
+      color: '#ff9728',
+      pointPlacement: 'on',
+      opacity:0.8,
+    }],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            enabled:false,
+            align: 'center',
+            verticalAlign: 'bottom',
+            layout: 'horizontal'
+          },
+          pane: {
+            size: '80%'
+          }
+        }
+      }]
+    }
+  });
+</script>
+<script>
+  Highcharts.chart('dt-result-chart02', {
+    chart: {
+      backgroundColor: 'transparent',
+      polar: true,
+      type: 'line',
+      height: (8.5 / 10) * 100 + '%',
+    },
+    credits: {
+      enabled: false,
+    },
+    accessibility: {
+      description: ''
+    },
+    title: {
+      text: '',
+      x: -20
+    },
+    pane: {
+      size: '90%'
+    },
+    xAxis: {
+      categories: ['과목1', '과목2', '과목3', '과목4', '과목5'],
+      tickmarkPlacement: 'on',
+      color: '#ccc',
+      lineWidth: 0,
+      labels: {
+        style: {
+          color: '#333'
+        }
+      }
+    },
+    yAxis: {
+      gridLineInterpolation: 'polygon',
+      lineWidth: 0,
+      min: 0,
+      max:100,
+      tickAmount: 4,
+      labels: {
+        style: {
+          color: '#ddd'
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong>{point.x}</strong><br/><br/>',
+      pointFormat: '<span style="color:{series.color}">●</span><b>{point.y:,.0f}%</b><br/>',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      }
+    },
+    legend: {
+      enabled:false,
+      align: 'center',
+      verticalAlign: 'top',
+      layout: 'horizontal',
+      itemStyle: {
+        color: '#333',
+      }
+    },
+    series: [{
+      type: 'area',
+      //name: '지난 회차',
+      data: [100, 80, 70, 85, 75],
+      color: '#ff9728',
+      pointPlacement: 'on',
+      opacity:0.8,
+    }],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            enabled:false,
+            align: 'center',
+            verticalAlign: 'bottom',
+            layout: 'horizontal'
+          },
+          pane: {
+            size: '80%'
+          }
+        }
+      }]
+    }
+  });
+</script>
+<script>
+  Highcharts.chart('dt-result-chart03', {
+    chart: {
+      backgroundColor: 'transparent',
+      polar: true,
+      type: 'line',
+      height: (8.5 / 10) * 100 + '%',
+    },
+    credits: {
+      enabled: false,
+    },
+    accessibility: {
+      description: ''
+    },
+    title: {
+      text: '',
+      x: -20
+    },
+    pane: {
+      size: '90%'
+    },
+    xAxis: {
+      categories: ['과목1', '과목2', '과목3', '과목4', '과목5'],
+      tickmarkPlacement: 'on',
+      color: '#ccc',
+      lineWidth: 0,
+      labels: {
+        style: {
+          color: '#333'
+        }
+      }
+    },
+    yAxis: {
+      gridLineInterpolation: 'polygon',
+      lineWidth: 0,
+      min: 0,
+      max:100,
+      tickAmount: 4,
+      labels: {
+        style: {
+          color: '#ddd'
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      headerFormat: '<strong>{point.x}</strong><br/><br/>',
+      pointFormat: '<span style="color:{series.color}">●</span><b>{point.y:,.0f}%</b><br/>',
+      style: {
+        color: '#333',
+        fontSize: '12px',
+      }
+    },
+    legend: {
+      enabled:false,
+      align: 'center',
+      verticalAlign: 'top',
+      layout: 'horizontal',
+      itemStyle: {
+        color: '#333',
+      }
+    },
+    series: [{
+      type: 'area',
+      //name: '지난 회차',
+      data: [100, 80, 70, 85, 75],
+      color: '#ff9728',
+      pointPlacement: 'on',
+      opacity:0.8,
+    }],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            enabled:false,
+            align: 'center',
+            verticalAlign: 'bottom',
+            layout: 'horizontal'
+          },
+          pane: {
+            size: '80%'
+          }
+        }
+      }]
+    }
+  });
+</script>
+
+
+</html>
