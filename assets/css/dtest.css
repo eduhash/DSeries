@@ -58,7 +58,7 @@
 .dt-table01 .dt-test-btn.closed {background-color:#959798;}
 .dt-table01 .dt-test-btn.finished {background-color:#e0ac00;}
 .dt-table01 .dt-test-btn.waiting {background-color:#ff002b;}
-.dt-table01 .dt-test-btn.taking:hover {opacity:0.75;}
+.dt-table01 .dt-test-btn.taking:hover, .dt-table01 .dt-test-btn.result:hover {opacity:0.75;}
 .dt-table01 .dt-no-test-notice {padding:30px; line-height:133%;}
 .dt-table01 .dt-no-test-text01 {font-size:16px; font-size:1.6rem; color:#fd7e3d;}
 .dt-table01 .dt-no-test-text02 {margin-top:15px; font-size:14px; font-size:1.4rem; color:#333;}
