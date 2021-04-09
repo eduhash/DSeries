@@ -122,6 +122,14 @@
 .dt-chart-subtit01:after {content:''; position:relative; margin-left:15px; margin-top:5px; width:57px; height:5px; box-sizing:border-box; background-color:#ff9728; border-radius:5px;}
 .dt-chart-subtit02 {margin-top:10px; font-size:14px; font-size:1.4rem; font-weight:bold; color:#333; line-height:133%;}
 
+.dt-pagenation-wrap {padding:20px 15px;}
+.dt-page-link {display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; margin:1px; width:36px; height:36px; font-size:14px; font-size:1.4rem; box-sizing:border-box; cursor:pointer; border-radius:3px;}
+.dt-page-link:hover, .dt-page-link.active {background-color:#f7f7f7;}
+.dt-page-link.prev, .dt-page-link.next {font-size:0;}
+.dt-page-link.prev:before, .dt-page-link.next:before {content:''; position:absolute; top:50%; left:50%; margin-top:-6px; width:10px; height:10px; border-left:2px solid #333; border-top:2px solid #333; border-radius:2px;}
+.dt-page-link.prev:before {margin-left:-3px; transform:rotate(-45deg);}
+.dt-page-link.next:before {margin-left:-8px; transform:rotate(135deg);}
+
 @media (max-width:767px){
   .dt-content {padding:0 15px;}
   .dt-main {padding-left:0;}
@@ -157,5 +165,7 @@
   .dt-chart-wrap .dp-chart-area {overflow-x:scroll; height:250px;}
   .dt-chart-wrap .dp-chart-area .dp-chart-container {min-width:767px; box-sizing:border-box;}
   .dt-result-chart-wrap {flex-direction:column;}
+
+  .dt-pagenation-wrap {padding:15px 0;}
 
 }

@@ -279,6 +279,22 @@
                           </tr>
                         </tbody>
                       </table>
+                      <div class="dt-pagenation-wrap dp-col-flex">
+                        <div class="dt-pagenation dp-row-flex ai-center jc-center">
+                          <a href="javascript:void(0);" class="dt-page-link prev">이전</a>
+                          <a href="javascript:void(0);" class="dt-page-link numbers active">1</a>
+                          <a href="javascript:void(0);" class="dt-page-link numbers">2</a>
+                          <a href="javascript:void(0);" class="dt-page-link numbers">3</a>
+                          <a href="javascript:void(0);" class="dt-page-link numbers">4</a>
+                          <a href="javascript:void(0);" class="dt-page-link numbers">5</a>
+                          <a href="javascript:void(0);" class="dt-page-link numbers">6</a>
+                          <a href="javascript:void(0);" class="dt-page-link numbers">7</a>
+                          <a href="javascript:void(0);" class="dt-page-link numbers">8</a>
+                          <a href="javascript:void(0);" class="dt-page-link numbers">9</a>
+                          <a href="javascript:void(0);" class="dt-page-link numbers">10</a>
+                          <a href="javascript:void(0);" class="dt-page-link next">다음</a>
+                        </div>
+                      </div>
                     </div>
                     <div class="tabCon">
                       <table class="dt-table01">
@@ -347,17 +363,79 @@
                       </table>
                     </div>
                     <div class="tabCon">
-                      준비중 내용
+                      <table class="dt-table01">
+                        <caption>D-Test 목록</caption>
+                        <colgroup>
+                          <col width="10%">
+                          <col width="*">
+                          <col width="10%">
+                          <col width="10%">
+                          <col width="15%">
+                          <col width="20%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>KEY</th>
+                            <th>Test명</th>
+                            <th>응시일</th>
+                            <th>점수</th>
+                            <th>석차</th>
+                            <th>결과조회</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="6">
+                              <div class="dt-no-test-notice">
+                                <strong class="dt-no-test-text01">응시한 D-TEST가 없습니다.</strong>
+                                <p class="dt-no-test-text02">테스트 응시 후 확인해주세요.</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                     <div class="tabCon">
-                      준비중 내용
+                      <table class="dt-table01">
+                        <caption>D-Test 목록</caption>
+                        <colgroup>
+                          <col width="10%">
+                          <col width="*">
+                          <col width="10%">
+                          <col width="10%">
+                          <col width="15%">
+                          <col width="20%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>KEY</th>
+                            <th>Test명</th>
+                            <th>응시일</th>
+                            <th>점수</th>
+                            <th>석차</th>
+                            <th>결과조회</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="6">
+                              <div class="dt-no-test-notice">
+                                <strong class="dt-no-test-text01">응시한 D-TEST가 없습니다.</strong>
+                                <p class="dt-no-test-text02">테스트 응시 후 확인해주세요.</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </section>
               </div>
               <div class="tabCon">
+                데일리 테스트 내용
               </div>
               <div class="tabCon">
+                합격반 현장모의고사 내용
               </div>
             </div>
           </section>
@@ -520,7 +598,7 @@
       gridLineInterpolation: 'polygon',
       lineWidth: 0,
       min: 0,
-      max:100,
+      max: 100,
       tickAmount: 4,
       labels: {
         style: {
@@ -538,7 +616,7 @@
       }
     },
     legend: {
-      enabled:false,
+      enabled: false,
       align: 'center',
       verticalAlign: 'top',
       layout: 'horizontal',
@@ -552,7 +630,7 @@
       data: [100, 80, 70, 85, 75],
       color: '#ff9728',
       pointPlacement: 'on',
-      opacity:0.8,
+      opacity: 0.8,
     }],
     responsive: {
       rules: [{
@@ -561,7 +639,7 @@
         },
         chartOptions: {
           legend: {
-            enabled:false,
+            enabled: false,
             align: 'center',
             verticalAlign: 'bottom',
             layout: 'horizontal'
@@ -610,7 +688,7 @@
       gridLineInterpolation: 'polygon',
       lineWidth: 0,
       min: 0,
-      max:100,
+      max: 100,
       tickAmount: 4,
       labels: {
         style: {
@@ -628,7 +706,7 @@
       }
     },
     legend: {
-      enabled:false,
+      enabled: false,
       align: 'center',
       verticalAlign: 'top',
       layout: 'horizontal',
@@ -642,7 +720,7 @@
       data: [100, 80, 70, 85, 75],
       color: '#ff9728',
       pointPlacement: 'on',
-      opacity:0.8,
+      opacity: 0.8,
     }],
     responsive: {
       rules: [{
@@ -651,7 +729,7 @@
         },
         chartOptions: {
           legend: {
-            enabled:false,
+            enabled: false,
             align: 'center',
             verticalAlign: 'bottom',
             layout: 'horizontal'
@@ -700,7 +778,7 @@
       gridLineInterpolation: 'polygon',
       lineWidth: 0,
       min: 0,
-      max:100,
+      max: 100,
       tickAmount: 4,
       labels: {
         style: {
@@ -711,14 +789,14 @@
     tooltip: {
       shared: true,
       headerFormat: '<strong>{point.x}</strong><br/><br/>',
-      pointFormat: '<span style="color:{series.color}">●</span><b>{point.y:,.0f}%</b><br/>',
+      pointFormat: '<span style="color:{series.color}">●</span><span>{series.name} : </span><b>{point.y:,.0f}%</b><br/>',
       style: {
         color: '#333',
         fontSize: '12px',
       }
     },
     legend: {
-      enabled:false,
+      enabled: false,
       align: 'center',
       verticalAlign: 'top',
       layout: 'horizontal',
@@ -728,11 +806,18 @@
     },
     series: [{
       type: 'area',
-      //name: '지난 회차',
+      name: '지난 회차',
+      data: [85, 75, 100, 80, 70],
+      color: '#4976dd',
+      pointPlacement: 'on',
+      opacity: 0.6,
+    },{
+      type: 'area',
+      name: '이번 회차',
       data: [100, 80, 70, 85, 75],
       color: '#ff9728',
       pointPlacement: 'on',
-      opacity:0.8,
+      opacity: 0.6,
     }],
     responsive: {
       rules: [{
@@ -741,7 +826,7 @@
         },
         chartOptions: {
           legend: {
-            enabled:false,
+            enabled: false,
             align: 'center',
             verticalAlign: 'bottom',
             layout: 'horizontal'
