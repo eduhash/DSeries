@@ -2,13 +2,13 @@
 .dt-wrap {color:#333;}
 .dt-main {padding-left:330px;}
 
-.dt-my-result-summary .dt-result-num {margin-top:10px; font-size:24px; font-size:2.4rem; line-height:133%;}
+.dt-my-result-summary .dt-result-num {margin-top:10px; font-size:24px; font-size:2.4rem; line-height:133%; font-weight:bold;}
 .dt-my-result-summary .dt-result-label {margin-top:3px; font-size:14px; font-size:1.4rem; line-height:128%;}
 
 .dt-notice-section {display:flex; flex-direction:row; margin-top:24px; padding:25px; height:215px; background-color:#eaeaea; box-sizing:border-box;}
 .dt-notice-icon-wrap {display:flex; flex-direction:column; margin:0 20px; align-items:center; justify-content:center;}
 .dt-notice-icon {display:inline-block; width:53px; height:53px; background:url('../img/notifications.svg') no-repeat center; background-size:100%; box-sizing:border-box;}
-.dt-notice-label {font-size:18px; font-size:1.8rem; color:#664a2f; line-height:133%;}
+.dt-notice-label {font-size:18px; font-size:1.8rem; font-weight:bold; color:#664a2f; line-height:133%;}
 
 .dt-notice-section .dt-notice-list {padding:0 32px 20px 30px;}
 .dt-notice-list > li {margin-top:25px;}
@@ -18,7 +18,7 @@
 .dt-notice-title {margin-right:8px;}
 
 .dt-title-section {margin-top:42px;}
-.dt-title-section .dt-main-copy {font-size:24px; font-size:2.4rem; text-align:center; color:#5887f9; line-height:133%;}
+.dt-title-section .dt-main-copy {font-size:24px; font-size:2.4rem; text-align:center; color:#5887f9; line-height:133%; font-weight:bold;}
 .dt-title-section .dt-main-title {margin-top:10px; font-size:16px; font-size:1.6rem; text-align:center; color:#4c5264; line-height:131%;}
 .dt-title-section .dt-student-id {margin-top:28px; font-size:18px; font-size:1.8rem; color:#ff9728; text-align:center;}
 .dt-title-section .dt-student-id:after {content:''; position:relative; display:block; margin:10px auto 0; width:57px; height:5px; box-sizing:border-box; background-color:#ff9728; border-radius:5px;}
