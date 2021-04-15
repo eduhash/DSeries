@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <!-- saved from url=(0013)about:internet -->
-  <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-  	<title>DTest</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="../../assets/css/swiper.min.css">
-    <link rel="stylesheet" href="../../assets/css/rangeslider.css">
-    <link rel="stylesheet" href="../../assets/css/base.css">
-    <link rel="stylesheet" href="../../assets/css/common.css">
-    <link rel="stylesheet" href="../../assets/css/contents.css">
-    <link rel="stylesheet" href="../../assets/css/dtest.css">
-    <script src="../../assets/js/jquery-1.11.2.min.js"></script>
-    <script src="../../assets/js/jquery.waypoints.min.js"></script>
-    <script src="../../assets/js/jquery.counterup.js"></script>
-    <script src="../../assets/js/swiper.min.js"></script>
-    <script src="../../assets/js/rangeslider.min.js"></script>
-    <script src="../../assets/js/highcharts.js"></script>
-    <script src="../../assets/js/highcharts-more.js"></script>
-    <script src="../../assets/js/style.js"></script>
-  	<!--[if lt IE 9]>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>DTest</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+  <link rel="stylesheet" href="../../assets/css/rangeslider.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/contents.css">
+  <link rel="stylesheet" href="../../assets/css/dtest.css">
+  <script src="../../assets/js/jquery-1.11.2.min.js"></script>
+  <script src="../../assets/js/jquery.waypoints.min.js"></script>
+  <script src="../../assets/js/jquery.counterup.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/rangeslider.min.js"></script>
+  <script src="../../assets/js/highcharts.js"></script>
+  <script src="../../assets/js/highcharts-more.js"></script>
+  <script src="../../assets/js/style.js"></script>
+  <!--[if lt IE 9]>
   		<script src="../../assets/js/respond.js"></script>
   		<script src="../../assets/js/html5shiv.min.js"></script>
   	<![endif]-->
@@ -31,7 +32,7 @@
 <body>
 
   <div class="dp-wrap dt-wrap">
-    <div  class="dp-container">
+    <div class="dp-container">
 
       <main class="dt-main dp-col-flex">
         <div class="dt-content dp-col-flex">
@@ -164,7 +165,7 @@
                       <td>09:30</td>
                       <td>11:30</td>
                       <td>
-                        <button class="dt-test-btn finished">응시완료</button>
+                        <button class="dt-test-btn finished" onclick="popOpen('pop03');">응시완료</button><!-- 20210415 수정 -->
                       </td>
                     </tr>
                     <tr>
@@ -270,8 +271,8 @@
           </section>
           <section class="dt-ad-section">
             <a href="https://kimcodi.kr/p/freeclass/index">
-							<img src="https://kimcodi.kr/new_images/sub/lecture_redirection.jpg">
-						</a>
+              <img src="https://kimcodi.kr/new_images/sub/lecture_redirection.jpg">
+            </a>
             <img src="https://kimcodi.kr/new_images/sub/dtest_notice.jpg">
           </section>
 
@@ -310,7 +311,8 @@
             </div>
             <div class="dp-row-flex">
               <div class="dt-test-taking-iframe-wrap dp-flex-1">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemJrbiC7FO9h2L0dpySsHfNkmXhNvpfsdE0WnydYvIFZNnmA/viewform?usp=sf_link" frameborder="0" style="width:100%; height:580px; box-sizing:border-box; margin:0; margin-bottom:20px; border:0;"></iframe><!-- 20210414 수정 -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemJrbiC7FO9h2L0dpySsHfNkmXhNvpfsdE0WnydYvIFZNnmA/viewform?usp=sf_link" frameborder="0"
+                  style="width:100%; height:580px; box-sizing:border-box; margin:0; margin-bottom:20px; border:0;"></iframe><!-- 20210414 수정 -->
               </div>
               <div class="dt-test-taking-notice-wrap dp-col-flex">
                 <div class="dt-test-taking-time-wrap dp-col-flex jc-center ai-center">
@@ -334,12 +336,145 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
       <div class="dp-dim"></div>
     </div>
     <!-- //pop02 -->
+
+    <!-- 20210415 추가 -->
+    <!-- pop03 -->
+    <div class="dt-popup dp-popFixedWrap pop03">
+      <section class="dp-popWrap">
+        <div class="dt-popContainer dt-odap-wrap">
+          <button class="dt-popBtnClose" onclick="popClose($(this));">Close X</button>
+          <div class="dt-result-odap-wrap">
+            <div class="dt-summaryWrapper">
+              <h3 class="dt-titUnit">&lt;영어 하프모의고사&gt;</h3>
+              <div class="dt-summaryBlock brd-type-01 dp-bg-white">
+                <div class="dt-summary dp-flex-1">
+                  <strong class="dp-flex-1 dt-color-dove-blue">날짜</strong>
+                  <div class="dp-flex-1 dt-txtData">2020-10-10</div>
+                </div>
+                <div class="dt-summary dp-flex-1">
+                  <strong class="dp-flex-1 dt-color-dove-blue">점수</strong>
+                  <div class="dp-flex-1 dt-txtData dp-row-flex jc-center">
+                    <div>30</div>
+                    <div>점</div>
+                  </div>
+                </div>
+                <div class="dt-summary dp-flex-1">
+                  <strong class="dp-flex-1 dt-color-dove-blue">당회 석차</strong>
+                  <div class="dp-flex-1 dt-txtData dp-row-flex jc-center">
+                    <div>187</div>
+                    <div>등</div>
+                    <div class="ml-05 mr-05">/</div>
+                    <div>276</div>
+                    <div>명</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dt-odapNote dp-col-flex">
+              <div class="dt-odabList-wrap">
+                <div class="dt-odabList brd-type-01 dp-bg-white wrong">
+                  <div class="dt-odabWrapper dp-col-flex">
+                    <p class="dt-question">1. 밑줄 친 부분과 의미가 가장 가까운 것은?</p><img src="https://drive.google.com/uc?export=view&amp;id=1rYp4OcvHplxH8P_TxDMQsCt8td596bOD" alt="지문이미지" class="dt-imgPassage">
+                    <ul>
+                      <li class="dt-qChoices">① impervious</li>
+                      <li class="dt-qChoices answer">② conscientious</li>
+                      <li class="dt-qChoices marked">③ considerate</li>
+                      <li class="dt-qChoices">④ acute</li>
+                    </ul>
+                  </div>
+                  <div class="dt-odabWrapper">
+                    <ul class="dt-commentaryList dp-row-flex dp-flex-1 jc-space-between">
+                      <li>
+                        <strong class="dt-titLeftBar dt-color-dove-blue">정답</strong>
+                        <p class="dt-boxAnswer-data">2</p>
+                      </li>
+                      <li>
+                        <strong class="dt-titLeftBar dt-color-dove-blue">본인 선택</strong>
+                        <p class="dt-boxAnswer-data">3</p>
+                      </li>
+                      <li>
+                        <strong class="dt-titLeftBar dt-color-dove-blue">문제분류</strong>
+                        <p class="dt-boxAnswer-data">어휘_단어</p>
+                      </li>
+                    </ul>
+                    <div class="dt-boxCommentary">
+                      <strong class="dt-titLeftBar dt-color-dove-blue">해설</strong>
+                      <div class="dt-boxAnswer-data">
+                        <span>&lt;어휘&gt;
+                          <br></span><span>cunning 교활한
+                          <br></span><span>fairly 상당히
+                          <br></span><span>impervious 불 침투성의, 통과시키지 않는
+                          <br></span><span>conscientious 양심적인; 성실한
+                          <br></span><span>considerate 사려 깊은
+                          <br></span><span>acute 급성의; 심한, 격렬한; 뾰족한.
+                          <br></span><span>
+                          <br></span><span>&lt;해석&gt;
+                          <br></span><span>그는 교활하지만 상당히 양심적인 사업가이다.
+                          <br></span><span>
+                          <br></span><span>&lt;해설&gt;
+                          <br></span><span>scrupulous 양심적인; 세심한, 꼼꼼한.<br></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dt-odabList-wrap mt-2">
+                <div class="dt-odabList brd-type-01 dp-bg-white pa-1">
+                  <div class="dt-odabWrapper dp-col-flex">
+                    <p class="dt-question">2. 밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.</p><img src="https://drive.google.com/uc?export=view&amp;id=1NuyFWrqFPoOe_qX1IWc4QKrrgwjmtyCs" alt="지문이미지" class="dt-imgPassage">
+                    <ul>
+                      <li class="dt-qChoices">① take a short trip</li>
+                      <li class="dt-qChoices">② stay at home</li>
+                      <li class="dt-qChoices">③ feel at ease</li>
+                      <li class="dt-qChoices marked answer">④ take a nap</li>
+                    </ul>
+                  </div>
+                  <div class="dt-odabWrapper">
+                    <ul class="dt-commentaryList dp-row-flex dp-flex-1 jc-space-between">
+                      <li>
+                        <strong class="dt-titLeftBar dt-color-dove-blue">정답</strong>
+                        <p class="dt-boxAnswer-data">4</p>
+                      </li>
+                      <li>
+                        <strong class="dt-titLeftBar dt-color-dove-blue">본인 선택</strong>
+                        <p class="dt-boxAnswer-data">4</p>
+                      </li>
+                      <li>
+                        <!-- <strong class="dt-titLeftBar dt-color-dove-blue">문제분류</strong>
+                        <p class="dt-boxAnswer-data">어휘_숙어, 이디엄</p> -->
+                      </li>
+                    </ul>
+                    <div class="dt-boxCommentary">
+                      <strong class="dt-titLeftBar dt-color-dove-blue">해설</strong>
+                      <div class="dt-boxAnswer-data">
+                        <span>&lt;어휘&gt;
+                          <br></span><span>take a short trip 짧은 여행을 가다
+                          <br></span><span>feel at ease 안심하다, 마음 놓다
+                          <br></span><span>take a nap 잠깐 잠을 자다.
+                          <br></span><span>
+                          <br></span><span>&lt;해석&gt;
+                          <br></span><span>나는 어젯밤에 너무 피곤해서 저녁식사를 빨리 한 후에 잠깐 잠을 자기로 결정했다.
+                          <br></span><span>
+                          <br></span><span>&lt;해설&gt;
+                          <br></span><span>get forty winks잠깐 잠을 자다(take a nap).<br></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="dp-dim"></div>
+    </div>
+    <!-- //pop03 -->
+    <!-- 20210415 추가 -->
 
 
   </div>

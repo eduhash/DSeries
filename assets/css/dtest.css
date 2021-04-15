@@ -130,6 +130,33 @@
 .dt-page-link.prev:before {margin-left:-3px; transform:rotate(-45deg);}
 .dt-page-link.next:before {margin-left:-8px; transform:rotate(135deg);}
 
+/* 20210415 추가 */
+.dt-odap-wrap {position:relative; padding-top:68px; max-height:670px; box-sizing:border-box; background-color:#f6f6f6;}
+.dt-result-odap-wrap {max-height:602px; overflow-y:auto; padding-bottom:50px; box-sizing:border-box;}
+.dt-summaryWrapper {padding:0 20px 20px;}
+.dt-titUnit {font-size:18px; padding-left:20px;}
+.dt-summaryBlock {display:flex; flex-direction:row; margin-top:20px; padding:20px 10px;}
+.dt-summary {display:flex; flex-direction:column; justify-content:space-around; text-align:center;}
+.dt-txtData {font-size:16px; padding-top:20px;}
+.brd-type-01 {border:1px solid #cecece; border-radius:20px;}
+
+.dt-odapNote {padding:0 20px 20px;}
+.dt-odabList-wrap {position:relative; margin-top:20px;}
+.dt-odabList {display:flex; flex-direction:row; flex:1 1; line-height:1.4; position:relative; padding:10px;}
+.dt-odabList.wrong {border:6px solid #f17b7c;}
+.dt-odabWrapper {flex:1 1; padding:10px 20px; box-sizing:border-box;}
+.dt-imgPassage {margin:10px 0; max-width:700px; width:100%;}
+.dt-question {padding:15px 0 10px;}
+.dt-qChoices {margin-top:10px;}
+.dt-qChoices.answer {color:#de3636;}
+.dt-qChoices.marked {color:#3470e6;}
+.dt-commentaryList > li {padding:0 20px 0 10px;}
+.dt-boxCommentary {padding:0 20px 0 10px;}
+.dt-boxAnswer-data {padding:15px 0; font-size:14px; font-size:1.4rem;}
+
+.dt-color-dove-blue {color:#627594!important;}
+/* //20210415 추가 */
+
 @media (max-width:767px){
   .dt-content {padding:0 15px;}
   .dt-main {padding-left:0;}
@@ -167,5 +194,13 @@
   .dt-result-chart-wrap {flex-direction:column;}
 
   .dt-pagenation-wrap {padding:15px 0;}
+
+  /* 20210415 추가 */
+  .dt-odabList {flex-direction:column;}
+  .dt-odabWrapper {padding:15px 10px;}
+  .dt-boxCommentary {padding:0;}
+  .dt-commentaryList > li {padding:0;}
+  .dt-txtData {font-size:14px; font-size:1.4rem; padding-top:10px;}
+  /* //20210415 추가 */
 
 }
